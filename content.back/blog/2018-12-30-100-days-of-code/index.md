@@ -1,0 +1,78 @@
+---
+title: "100 Days of Code"
+layout: "post"
+date: "2018-12-30T00:00:00.000Z"
+headerImage: true
+read-time: true
+tags:
+  - "100DaysOfCode"
+category: "blog"
+author: "ludusrusso"
+description: "Ho deciso di partecipare alla challange 100DaysOfCode."
+path: "/2018/12/30/100-days-of-code/"
+image: "./main.png"
+---
+
+**Nota bene**: questo posto non c'entra niente con i _buoni propositi per il 2019_. Non credo moltissimo in queste cose :D. Il fatto che inizi oggi (30 Dicembre 2018) è solamente un puro caso.
+
+Recentemente mi sono imbattuto nella challenge _100DaysOfCode_ e ho deciso di parteciparci.
+
+<blockquote class="twitter-tweet" data-lang="it"><p lang="en" dir="ltr">I&#39;m going to start my personal challenge <a href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfCode</a>!<a href="https://t.co/hpX1EZn5Xg">https://t.co/hpX1EZn5Xg</a></p>&mdash; ludusrusso (@ludusrusso) <a href="https://twitter.com/ludusrusso/status/1079337161806303234?ref_src=twsrc%5Etfw">30 dicembre 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+L'idea è molto semplice, devo **codare** (parola bruttisima, ma in questo caso ci sta) almeno un'ora al giorno per 100 giorno di fila. Lo scopo è quello di migliorare le proprie capacità di programmazione, ed anche se nasce per chi vuole imparare a scrivere codice (non il mio caso), vedo che viene molto apprezzata dai programmatori più esperti.
+
+Le regole della sfida sono molto semplici. Trovate le [regole originali qui](https://www.100daysofcode.com/), ma ho preferito fare alcune modifiche alle regole.
+
+### Regole originali
+
+1. Codare almeno 1 ora ogni giorno per 100 giorni di fila.
+2. Twittare i progressi ogni giorno con l'hashtag #100DaysOfCode.
+
+### Come ho modificato le regole
+
+1. Codare almeno 1 ora ogni giorno per 100 giorni di fila per progetti personali! **quindi non conterò lo sviluppo che faccio normalmente per lavoro**.
+2. Oltre a twittare sul [mio profilo Twitter](https://twitter.com/ludusrusso), che uso poco (anche se userò questa scusa per ricominciare a twittare), condividerò i progressi anche sulla mia [pagina facebook](https://www.facebook.com/ludusrusso.cc/).
+3. Aggiornerò periodicamente questo post con i miei progressi.
+
+## Perchè ho deciso di partecipare a #100DaysOfCode?
+
+Anche se ormai mi posso definire un programmatore abbastanza "esperto" (diciamo _middle developer_), mi rendo conto di non avere mai tempo per approfondire nuove tecnologie e/o dedicare del tempo a qualche progetto personale. Voglio quindi usare questa sfida per trovare il tempo per sperimentare nuove tecnologie e fare qualcosa per me.
+
+## Cosa voglio approfondire in questo tempo
+
+Ci sono un po' di tecnologie che voglio approfondire, ecco qui le mie idee su cosa sviluppare in questi 100 giorni.
+
+### 1. Sviluppo siti statici con Hugo
+
+Chi mi segue dall'inizio sa che mi diverto a smanettare con il codice dietro questo stesso blog. Inizialmente ho usato la scusa del blog per imparare a usare [Python e Flask](https://ludusrusso.cc/2016/12/22/inauguriamo-il-blog/). In seguito, circa un annetto fa, ho rimodernato il blog sviluppandolo in [Jekyll e GitHub Pages](https://ludusrusso.cc/2017/09/17/nuovo-blog/).
+
+Recentemente ho scoperto il generatore di siti statici [Hugo](https://gohugo.io/), che sembra essere molto più performante di Jekyll. Ho quindi deciso di fare un po' di esperienza con questo nuovo generatore di siti statici.
+
+Farò quindi due cose:
+
+1. Sviluppare un blog personale per mia madre, che me lo chiede da quasi un anno. Il blog sarà sviluppato in Hugo.
+2. Migrare questo blog ad Hugo.
+
+### 2. Hackability
+
+L'associazione [Hackability](http://www.hackability.it/), di cui sono fondatore, ha una grossa necessità di un rinnovo della propria presenza online. Ma un po' per stanchezza ed un po' per pigrizia non lo faccio mai. Spero che questo sia il momento giusto.
+
+### 3. Go
+
+Vorrei portare avanti quache progetto utilizzando il linguaggio di programmazione Go, che da quasi un anno vorrei approfondire ma non trovo mai il tempo. Non ho ben chiaro ancora che progetto sviluppare, mi inventerò qualcosa quando sarà il momento. Probabilmente questo punto sarà legato al punto 2.
+
+## Come seguirmi
+
+Potete seguire i mie progressi in vari modi:
+
+1. Seguire la mia [pagina facebook](https://www.facebook.com/ludusrusso.cc/)
+2. Seguire il [mio profilo Twitter](https://twitter.com/ludusrusso)
+3. Ho forkato la repo [GitHub ufficiale](https://github.com/ludusrusso/100-days-of-code) su cui annoterò i progressi e le sensazioni
+4. Questo blog ed in particolare questa post.
+
+<blockquote class="twitter-tweet" data-lang="it"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfCode</a> <a href="https://twitter.com/hashtag/ludusrusso?src=hash&amp;ref_src=twsrc%5Etfw">#ludusrusso</a> Day 1<br>Started working on a Hugo theme. Setup the development environment and written some simple code for header and footer! I need to understand some low feature of <a href="https://twitter.com/hashtag/Hugo?src=hash&amp;ref_src=twsrc%5Etfw">#Hugo</a>.<a href="https://t.co/hpX1EZn5Xg">https://t.co/hpX1EZn5Xg</a></p>&mdash; ludusrusso (@ludusrusso) <a href="https://twitter.com/ludusrusso/status/1079447404628398086?ref_src=twsrc%5Etfw">30 dicembre 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="it"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfCode</a> <a href="https://twitter.com/hashtag/ludusrusso?src=hash&amp;ref_src=twsrc%5Etfw">#ludusrusso</a> Day 2<br>I spent some time playing with hugo pipes and developing from scratch a responsive header. <a href="https://twitter.com/hashtag/Hugo?src=hash&amp;ref_src=twsrc%5Etfw">#Hugo</a> need to integrate in some way <a href="https://twitter.com/hashtag/webpack?src=hash&amp;ref_src=twsrc%5Etfw">#webpack</a> to manage better js deps :D<a href="https://t.co/hpX1EZn5Xg">https://t.co/hpX1EZn5Xg</a></p>&mdash; ludusrusso (@ludusrusso) <a href="https://twitter.com/ludusrusso/status/1079797070565949440?ref_src=twsrc%5Etfw">31 dicembre 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
