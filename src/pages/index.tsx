@@ -2,8 +2,9 @@ import { graphql } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
 import { BlogPostPreview } from "../components/post-preview"
+import { TestPageQuery } from "../graphqlTypes"
 
-const TestPage: React.FC<{ data: any }> = ({ data }) => {
+const TestPage: React.FC<{ data: TestPageQuery }> = ({ data }) => {
   return (
     <Layout>
       <div className="max-w-6xl m-auto">
@@ -23,10 +24,22 @@ export const query = graphql`
   query TestPage {
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
+        id
+        timeToRead
         frontmatter {
           path
           title
-          author
+          author {
+            id
+            name
+            profile {
+              childCloudinaryAsset {
+                fixed(width: 50) {
+                  ...CloudinaryAssetFixed
+                }
+              }
+            }
+          }
           description
           date(locale: "it", formatString: "DD/MM/yyyy")
           image {

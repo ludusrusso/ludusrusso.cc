@@ -1,8 +1,11 @@
 import { Link } from "gatsby"
 import React from "react"
 import Image from "gatsby-image"
+import { PostPreviewFragment } from "../graphqlTypes"
 
-export const BlogPostPreview = ({ post }) => {
+export const BlogPostPreview: React.FC<{ post: PostPreviewFragment }> = ({
+  post,
+}) => {
   const { description, title, path, author, date } = post.frontmatter
   const { timeToRead } = post
   const image = post.frontmatter.image.childCloudinaryAsset.fluid
