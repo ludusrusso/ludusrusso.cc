@@ -8,7 +8,7 @@ export const BlogPostPreview = ({ post }) => {
   const image = post.frontmatter.image.childImageSharp.fluid
   return (
     <Link to={path}>
-      <div className="mt-4 max-w-lg flex flex-col rounded-lg hover:shadow-2xl shadow-lg overflow-hidden">
+      <div className="mt-4 flex flex-col rounded-lg hover:shadow-2xl shadow-lg overflow-hidden">
         <div className="flex-shrink-0">
           <Image className="w-full h-auto" fluid={image} alt={title} />
         </div>

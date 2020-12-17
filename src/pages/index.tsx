@@ -6,8 +6,8 @@ import { BlogPostPreview } from "../components/post-preview"
 const TestPage: React.FC<{ data: any }> = ({ data }) => {
   return (
     <Layout>
-      <div className="max-w-4xl m-auto">
-        <ul className="grid grid-cols-2 gap-2">
+      <div className="max-w-6xl m-auto">
+        <ul className="mx-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {data.allMarkdownRemark.nodes.map(post => {
             return <BlogPostPreview key={post.id} post={post} />
           })}
@@ -21,7 +21,7 @@ export default TestPage
 
 export const query = graphql`
   query TestPage {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
         frontmatter {
           path

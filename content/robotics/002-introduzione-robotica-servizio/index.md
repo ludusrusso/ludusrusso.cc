@@ -4,7 +4,7 @@ title: "Robotica di Servizio, ROS e Cloud Robotics"
 author: "ludusrusso"
 description: "Iniziamo insieme un viaggio alla scoperta dei robot e della robotica!"
 date: "2018-01-10T00:00:00.000Z"
-path: "/robotics/robotica-di-servizio-ros-e-cloud-robotics/"
+path: "/robotica/002-introduzione-robotica-servizio"
 image: "./maxresdefault.jpg"
 tags: []
 ---
@@ -48,7 +48,7 @@ Limitiamoci al caso specifico di robot su ruote: i programmatori non possono far
 - **path planning** Il robot deve essere in grado di pianificare una traiettoria da seguire per raggiungere un punto specifico della mappa.
 - **path following** Il robot deve essere in grado di seguire una traiettoria pianificata nel punto sopra, considerando la possibilità di trovare ostacoli non previsti come persone in movimento o oggetti non presenti in fase di costruzione della mappa.
 
-![navigazione robotica](./MTUzNTI1OA)
+![navigazione robotica](./navigazione.png)
 
 Queste 4 capacità vengono solitamente raggruppate sotto il noto problema del **robot navigation**, problema ancora tecnologicamente aperto e non completamente risolto.
 

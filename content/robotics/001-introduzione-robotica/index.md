@@ -4,7 +4,7 @@ title: "La robotica: la scienza che sta rivoluzionando il mondo"
 author: "ludusrusso"
 description: "Iniziamo insieme un viaggio alla scoperta dei robot e della robotica!"
 date: "2018-01-10T00:00:00.000Z"
-path: "/robotics/la-robotica-la-scienza-che-sta-rivoluzionando-il-mondo/"
+path: "/robotica/001-introduzione-robotica/"
 image: "./robots.png"
 tags: []
 ---

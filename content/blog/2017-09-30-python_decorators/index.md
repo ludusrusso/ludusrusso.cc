@@ -9,6 +9,7 @@ category: "blog"
 author: "ludusrusso"
 description: "Introduzione ai decoratori in Python"
 path: "/2017/09/30/python-decorators/"
+image: "./json_resp.png"
 ---
 
 Python è un linguaggio di programmazione molto pragmatico e potente.
