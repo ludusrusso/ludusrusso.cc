@@ -5,7 +5,7 @@ import Image from "gatsby-image"
 export const BlogPostPreview = ({ post }) => {
   const { description, title, path, author, date } = post.frontmatter
   const { timeToRead } = post
-  const image = post.frontmatter.image.childImageSharp.fluid
+  const image = post.frontmatter.image.childCloudinaryAsset.fluid
   return (
     <Link to={path}>
       <div className="mt-4 flex flex-col rounded-lg hover:shadow-2xl shadow-lg overflow-hidden">

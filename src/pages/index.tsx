@@ -30,9 +30,9 @@ export const query = graphql`
           description
           date(locale: "it", formatString: "DD/MM/yyyy")
           image {
-            childImageSharp {
+            childCloudinaryAsset {
               fluid(maxWidth: 500) {
-                ...GatsbyImageSharpFluid
+                ...CloudinaryAssetFluid
               }
             }
           }
