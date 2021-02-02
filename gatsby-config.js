@@ -7,6 +7,7 @@ module.exports = {
     title: `ludusrusso`,
     description: `Il mio blog personale sulla programmazione e il making.`,
     author: `@ludusrusso`,
+    siteUrl: process.env.SITE_URL || "https://preview.ludusrusso.space",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
