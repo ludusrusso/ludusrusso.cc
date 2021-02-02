@@ -2,11 +2,13 @@ import { graphql } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
 import { BlogPostPreview } from "../components/post-preview"
+import SEO from "../components/seo"
 import { TestPageQuery } from "../graphqlTypes"
 
-const TestPage: React.FC<{ data: TestPageQuery }> = ({ data }) => {
+const IndexPage: React.FC<{ data: TestPageQuery }> = ({ data }) => {
   return (
     <Layout>
+      <SEO />
       <div className="max-w-6xl m-auto">
         <ul className="mx-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {data.allMarkdownRemark.nodes.map(post => {
@@ -18,7 +20,7 @@ const TestPage: React.FC<{ data: TestPageQuery }> = ({ data }) => {
   )
 }
 
-export default TestPage
+export default IndexPage
 
 export const query = graphql`
   query TestPage {
