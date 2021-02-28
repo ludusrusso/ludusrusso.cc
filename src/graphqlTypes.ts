@@ -15,6 +15,352 @@ export type Scalars = {
   JSON: any;
 };
 
+export type AuthorYaml = Node & {
+  __typename?: 'AuthorYaml';
+  id: Scalars['ID'];
+  parent?: Maybe<Node>;
+  children: Array<Node>;
+  internal: Internal;
+  name?: Maybe<Scalars['String']>;
+  bio?: Maybe<Scalars['String']>;
+  profile?: Maybe<File>;
+};
+
+export type AuthorYamlConnection = {
+  __typename?: 'AuthorYamlConnection';
+  totalCount: Scalars['Int'];
+  edges: Array<AuthorYamlEdge>;
+  nodes: Array<AuthorYaml>;
+  pageInfo: PageInfo;
+  distinct: Array<Scalars['String']>;
+  group: Array<AuthorYamlGroupConnection>;
+};
+
+
+export type AuthorYamlConnectionDistinctArgs = {
+  field: AuthorYamlFieldsEnum;
+};
+
+
+export type AuthorYamlConnectionGroupArgs = {
+  skip?: Maybe<Scalars['Int']>;
+  limit?: Maybe<Scalars['Int']>;
+  field: AuthorYamlFieldsEnum;
+};
+
+export type AuthorYamlEdge = {
+  __typename?: 'AuthorYamlEdge';
+  next?: Maybe<AuthorYaml>;
+  node: AuthorYaml;
+  previous?: Maybe<AuthorYaml>;
+};
+
+export enum AuthorYamlFieldsEnum {
+  Id = 'id',
+  ParentId = 'parent___id',
+  ParentParentId = 'parent___parent___id',
+  ParentParentParentId = 'parent___parent___parent___id',
+  ParentParentParentChildren = 'parent___parent___parent___children',
+  ParentParentChildren = 'parent___parent___children',
+  ParentParentChildrenId = 'parent___parent___children___id',
+  ParentParentChildrenChildren = 'parent___parent___children___children',
+  ParentParentInternalContent = 'parent___parent___internal___content',
+  ParentParentInternalContentDigest = 'parent___parent___internal___contentDigest',
+  ParentParentInternalDescription = 'parent___parent___internal___description',
+  ParentParentInternalFieldOwners = 'parent___parent___internal___fieldOwners',
+  ParentParentInternalIgnoreType = 'parent___parent___internal___ignoreType',
+  ParentParentInternalMediaType = 'parent___parent___internal___mediaType',
+  ParentParentInternalOwner = 'parent___parent___internal___owner',
+  ParentParentInternalType = 'parent___parent___internal___type',
+  ParentChildren = 'parent___children',
+  ParentChildrenId = 'parent___children___id',
+  ParentChildrenParentId = 'parent___children___parent___id',
+  ParentChildrenParentChildren = 'parent___children___parent___children',
+  ParentChildrenChildren = 'parent___children___children',
+  ParentChildrenChildrenId = 'parent___children___children___id',
+  ParentChildrenChildrenChildren = 'parent___children___children___children',
+  ParentChildrenInternalContent = 'parent___children___internal___content',
+  ParentChildrenInternalContentDigest = 'parent___children___internal___contentDigest',
+  ParentChildrenInternalDescription = 'parent___children___internal___description',
+  ParentChildrenInternalFieldOwners = 'parent___children___internal___fieldOwners',
+  ParentChildrenInternalIgnoreType = 'parent___children___internal___ignoreType',
+  ParentChildrenInternalMediaType = 'parent___children___internal___mediaType',
+  ParentChildrenInternalOwner = 'parent___children___internal___owner',
+  ParentChildrenInternalType = 'parent___children___internal___type',
+  ParentInternalContent = 'parent___internal___content',
+  ParentInternalContentDigest = 'parent___internal___contentDigest',
+  ParentInternalDescription = 'parent___internal___description',
+  ParentInternalFieldOwners = 'parent___internal___fieldOwners',
+  ParentInternalIgnoreType = 'parent___internal___ignoreType',
+  ParentInternalMediaType = 'parent___internal___mediaType',
+  ParentInternalOwner = 'parent___internal___owner',
+  ParentInternalType = 'parent___internal___type',
+  Children = 'children',
+  ChildrenId = 'children___id',
+  ChildrenParentId = 'children___parent___id',
+  ChildrenParentParentId = 'children___parent___parent___id',
+  ChildrenParentParentChildren = 'children___parent___parent___children',
+  ChildrenParentChildren = 'children___parent___children',
+  ChildrenParentChildrenId = 'children___parent___children___id',
+  ChildrenParentChildrenChildren = 'children___parent___children___children',
+  ChildrenParentInternalContent = 'children___parent___internal___content',
+  ChildrenParentInternalContentDigest = 'children___parent___internal___contentDigest',
+  ChildrenParentInternalDescription = 'children___parent___internal___description',
+  ChildrenParentInternalFieldOwners = 'children___parent___internal___fieldOwners',
+  ChildrenParentInternalIgnoreType = 'children___parent___internal___ignoreType',
+  ChildrenParentInternalMediaType = 'children___parent___internal___mediaType',
+  ChildrenParentInternalOwner = 'children___parent___internal___owner',
+  ChildrenParentInternalType = 'children___parent___internal___type',
+  ChildrenChildren = 'children___children',
+  ChildrenChildrenId = 'children___children___id',
+  ChildrenChildrenParentId = 'children___children___parent___id',
+  ChildrenChildrenParentChildren = 'children___children___parent___children',
+  ChildrenChildrenChildren = 'children___children___children',
+  ChildrenChildrenChildrenId = 'children___children___children___id',
+  ChildrenChildrenChildrenChildren = 'children___children___children___children',
+  ChildrenChildrenInternalContent = 'children___children___internal___content',
+  ChildrenChildrenInternalContentDigest = 'children___children___internal___contentDigest',
+  ChildrenChildrenInternalDescription = 'children___children___internal___description',
+  ChildrenChildrenInternalFieldOwners = 'children___children___internal___fieldOwners',
+  ChildrenChildrenInternalIgnoreType = 'children___children___internal___ignoreType',
+  ChildrenChildrenInternalMediaType = 'children___children___internal___mediaType',
+  ChildrenChildrenInternalOwner = 'children___children___internal___owner',
+  ChildrenChildrenInternalType = 'children___children___internal___type',
+  ChildrenInternalContent = 'children___internal___content',
+  ChildrenInternalContentDigest = 'children___internal___contentDigest',
+  ChildrenInternalDescription = 'children___internal___description',
+  ChildrenInternalFieldOwners = 'children___internal___fieldOwners',
+  ChildrenInternalIgnoreType = 'children___internal___ignoreType',
+  ChildrenInternalMediaType = 'children___internal___mediaType',
+  ChildrenInternalOwner = 'children___internal___owner',
+  ChildrenInternalType = 'children___internal___type',
+  InternalContent = 'internal___content',
+  InternalContentDigest = 'internal___contentDigest',
+  InternalDescription = 'internal___description',
+  InternalFieldOwners = 'internal___fieldOwners',
+  InternalIgnoreType = 'internal___ignoreType',
+  InternalMediaType = 'internal___mediaType',
+  InternalOwner = 'internal___owner',
+  InternalType = 'internal___type',
+  Name = 'name',
+  Bio = 'bio',
+  ProfileSourceInstanceName = 'profile___sourceInstanceName',
+  ProfileAbsolutePath = 'profile___absolutePath',
+  ProfileRelativePath = 'profile___relativePath',
+  ProfileExtension = 'profile___extension',
+  ProfileSize = 'profile___size',
+  ProfilePrettySize = 'profile___prettySize',
+  ProfileModifiedTime = 'profile___modifiedTime',
+  ProfileAccessTime = 'profile___accessTime',
+  ProfileChangeTime = 'profile___changeTime',
+  ProfileBirthTime = 'profile___birthTime',
+  ProfileRoot = 'profile___root',
+  ProfileDir = 'profile___dir',
+  ProfileBase = 'profile___base',
+  ProfileExt = 'profile___ext',
+  ProfileName = 'profile___name',
+  ProfileRelativeDirectory = 'profile___relativeDirectory',
+  ProfileDev = 'profile___dev',
+  ProfileMode = 'profile___mode',
+  ProfileNlink = 'profile___nlink',
+  ProfileUid = 'profile___uid',
+  ProfileGid = 'profile___gid',
+  ProfileRdev = 'profile___rdev',
+  ProfileIno = 'profile___ino',
+  ProfileAtimeMs = 'profile___atimeMs',
+  ProfileMtimeMs = 'profile___mtimeMs',
+  ProfileCtimeMs = 'profile___ctimeMs',
+  ProfileAtime = 'profile___atime',
+  ProfileMtime = 'profile___mtime',
+  ProfileCtime = 'profile___ctime',
+  ProfileBirthtime = 'profile___birthtime',
+  ProfileBirthtimeMs = 'profile___birthtimeMs',
+  ProfileBlksize = 'profile___blksize',
+  ProfileBlocks = 'profile___blocks',
+  ProfilePublicUrl = 'profile___publicURL',
+  ProfileId = 'profile___id',
+  ProfileParentId = 'profile___parent___id',
+  ProfileParentParentId = 'profile___parent___parent___id',
+  ProfileParentParentChildren = 'profile___parent___parent___children',
+  ProfileParentChildren = 'profile___parent___children',
+  ProfileParentChildrenId = 'profile___parent___children___id',
+  ProfileParentChildrenChildren = 'profile___parent___children___children',
+  ProfileParentInternalContent = 'profile___parent___internal___content',
+  ProfileParentInternalContentDigest = 'profile___parent___internal___contentDigest',
+  ProfileParentInternalDescription = 'profile___parent___internal___description',
+  ProfileParentInternalFieldOwners = 'profile___parent___internal___fieldOwners',
+  ProfileParentInternalIgnoreType = 'profile___parent___internal___ignoreType',
+  ProfileParentInternalMediaType = 'profile___parent___internal___mediaType',
+  ProfileParentInternalOwner = 'profile___parent___internal___owner',
+  ProfileParentInternalType = 'profile___parent___internal___type',
+  ProfileChildren = 'profile___children',
+  ProfileChildrenId = 'profile___children___id',
+  ProfileChildrenParentId = 'profile___children___parent___id',
+  ProfileChildrenParentChildren = 'profile___children___parent___children',
+  ProfileChildrenChildren = 'profile___children___children',
+  ProfileChildrenChildrenId = 'profile___children___children___id',
+  ProfileChildrenChildrenChildren = 'profile___children___children___children',
+  ProfileChildrenInternalContent = 'profile___children___internal___content',
+  ProfileChildrenInternalContentDigest = 'profile___children___internal___contentDigest',
+  ProfileChildrenInternalDescription = 'profile___children___internal___description',
+  ProfileChildrenInternalFieldOwners = 'profile___children___internal___fieldOwners',
+  ProfileChildrenInternalIgnoreType = 'profile___children___internal___ignoreType',
+  ProfileChildrenInternalMediaType = 'profile___children___internal___mediaType',
+  ProfileChildrenInternalOwner = 'profile___children___internal___owner',
+  ProfileChildrenInternalType = 'profile___children___internal___type',
+  ProfileInternalContent = 'profile___internal___content',
+  ProfileInternalContentDigest = 'profile___internal___contentDigest',
+  ProfileInternalDescription = 'profile___internal___description',
+  ProfileInternalFieldOwners = 'profile___internal___fieldOwners',
+  ProfileInternalIgnoreType = 'profile___internal___ignoreType',
+  ProfileInternalMediaType = 'profile___internal___mediaType',
+  ProfileInternalOwner = 'profile___internal___owner',
+  ProfileInternalType = 'profile___internal___type',
+  ProfileChildCloudinaryAssetFixedAspectRatio = 'profile___childCloudinaryAsset___fixed___aspectRatio',
+  ProfileChildCloudinaryAssetFixedBase64 = 'profile___childCloudinaryAsset___fixed___base64',
+  ProfileChildCloudinaryAssetFixedHeight = 'profile___childCloudinaryAsset___fixed___height',
+  ProfileChildCloudinaryAssetFixedSrc = 'profile___childCloudinaryAsset___fixed___src',
+  ProfileChildCloudinaryAssetFixedSrcSet = 'profile___childCloudinaryAsset___fixed___srcSet',
+  ProfileChildCloudinaryAssetFixedWidth = 'profile___childCloudinaryAsset___fixed___width',
+  ProfileChildCloudinaryAssetFluidAspectRatio = 'profile___childCloudinaryAsset___fluid___aspectRatio',
+  ProfileChildCloudinaryAssetFluidBase64 = 'profile___childCloudinaryAsset___fluid___base64',
+  ProfileChildCloudinaryAssetFluidPresentationHeight = 'profile___childCloudinaryAsset___fluid___presentationHeight',
+  ProfileChildCloudinaryAssetFluidPresentationWidth = 'profile___childCloudinaryAsset___fluid___presentationWidth',
+  ProfileChildCloudinaryAssetFluidSizes = 'profile___childCloudinaryAsset___fluid___sizes',
+  ProfileChildCloudinaryAssetFluidSrc = 'profile___childCloudinaryAsset___fluid___src',
+  ProfileChildCloudinaryAssetFluidSrcSet = 'profile___childCloudinaryAsset___fluid___srcSet',
+  ProfileChildCloudinaryAssetId = 'profile___childCloudinaryAsset___id',
+  ProfileChildCloudinaryAssetParentId = 'profile___childCloudinaryAsset___parent___id',
+  ProfileChildCloudinaryAssetParentChildren = 'profile___childCloudinaryAsset___parent___children',
+  ProfileChildCloudinaryAssetChildren = 'profile___childCloudinaryAsset___children',
+  ProfileChildCloudinaryAssetChildrenId = 'profile___childCloudinaryAsset___children___id',
+  ProfileChildCloudinaryAssetChildrenChildren = 'profile___childCloudinaryAsset___children___children',
+  ProfileChildCloudinaryAssetInternalContent = 'profile___childCloudinaryAsset___internal___content',
+  ProfileChildCloudinaryAssetInternalContentDigest = 'profile___childCloudinaryAsset___internal___contentDigest',
+  ProfileChildCloudinaryAssetInternalDescription = 'profile___childCloudinaryAsset___internal___description',
+  ProfileChildCloudinaryAssetInternalFieldOwners = 'profile___childCloudinaryAsset___internal___fieldOwners',
+  ProfileChildCloudinaryAssetInternalIgnoreType = 'profile___childCloudinaryAsset___internal___ignoreType',
+  ProfileChildCloudinaryAssetInternalMediaType = 'profile___childCloudinaryAsset___internal___mediaType',
+  ProfileChildCloudinaryAssetInternalOwner = 'profile___childCloudinaryAsset___internal___owner',
+  ProfileChildCloudinaryAssetInternalType = 'profile___childCloudinaryAsset___internal___type',
+  ProfileChildAuthorYamlId = 'profile___childAuthorYaml___id',
+  ProfileChildAuthorYamlParentId = 'profile___childAuthorYaml___parent___id',
+  ProfileChildAuthorYamlParentChildren = 'profile___childAuthorYaml___parent___children',
+  ProfileChildAuthorYamlChildren = 'profile___childAuthorYaml___children',
+  ProfileChildAuthorYamlChildrenId = 'profile___childAuthorYaml___children___id',
+  ProfileChildAuthorYamlChildrenChildren = 'profile___childAuthorYaml___children___children',
+  ProfileChildAuthorYamlInternalContent = 'profile___childAuthorYaml___internal___content',
+  ProfileChildAuthorYamlInternalContentDigest = 'profile___childAuthorYaml___internal___contentDigest',
+  ProfileChildAuthorYamlInternalDescription = 'profile___childAuthorYaml___internal___description',
+  ProfileChildAuthorYamlInternalFieldOwners = 'profile___childAuthorYaml___internal___fieldOwners',
+  ProfileChildAuthorYamlInternalIgnoreType = 'profile___childAuthorYaml___internal___ignoreType',
+  ProfileChildAuthorYamlInternalMediaType = 'profile___childAuthorYaml___internal___mediaType',
+  ProfileChildAuthorYamlInternalOwner = 'profile___childAuthorYaml___internal___owner',
+  ProfileChildAuthorYamlInternalType = 'profile___childAuthorYaml___internal___type',
+  ProfileChildAuthorYamlName = 'profile___childAuthorYaml___name',
+  ProfileChildAuthorYamlBio = 'profile___childAuthorYaml___bio',
+  ProfileChildAuthorYamlProfileSourceInstanceName = 'profile___childAuthorYaml___profile___sourceInstanceName',
+  ProfileChildAuthorYamlProfileAbsolutePath = 'profile___childAuthorYaml___profile___absolutePath',
+  ProfileChildAuthorYamlProfileRelativePath = 'profile___childAuthorYaml___profile___relativePath',
+  ProfileChildAuthorYamlProfileExtension = 'profile___childAuthorYaml___profile___extension',
+  ProfileChildAuthorYamlProfileSize = 'profile___childAuthorYaml___profile___size',
+  ProfileChildAuthorYamlProfilePrettySize = 'profile___childAuthorYaml___profile___prettySize',
+  ProfileChildAuthorYamlProfileModifiedTime = 'profile___childAuthorYaml___profile___modifiedTime',
+  ProfileChildAuthorYamlProfileAccessTime = 'profile___childAuthorYaml___profile___accessTime',
+  ProfileChildAuthorYamlProfileChangeTime = 'profile___childAuthorYaml___profile___changeTime',
+  ProfileChildAuthorYamlProfileBirthTime = 'profile___childAuthorYaml___profile___birthTime',
+  ProfileChildAuthorYamlProfileRoot = 'profile___childAuthorYaml___profile___root',
+  ProfileChildAuthorYamlProfileDir = 'profile___childAuthorYaml___profile___dir',
+  ProfileChildAuthorYamlProfileBase = 'profile___childAuthorYaml___profile___base',
+  ProfileChildAuthorYamlProfileExt = 'profile___childAuthorYaml___profile___ext',
+  ProfileChildAuthorYamlProfileName = 'profile___childAuthorYaml___profile___name',
+  ProfileChildAuthorYamlProfileRelativeDirectory = 'profile___childAuthorYaml___profile___relativeDirectory',
+  ProfileChildAuthorYamlProfileDev = 'profile___childAuthorYaml___profile___dev',
+  ProfileChildAuthorYamlProfileMode = 'profile___childAuthorYaml___profile___mode',
+  ProfileChildAuthorYamlProfileNlink = 'profile___childAuthorYaml___profile___nlink',
+  ProfileChildAuthorYamlProfileUid = 'profile___childAuthorYaml___profile___uid',
+  ProfileChildAuthorYamlProfileGid = 'profile___childAuthorYaml___profile___gid',
+  ProfileChildAuthorYamlProfileRdev = 'profile___childAuthorYaml___profile___rdev',
+  ProfileChildAuthorYamlProfileIno = 'profile___childAuthorYaml___profile___ino',
+  ProfileChildAuthorYamlProfileAtimeMs = 'profile___childAuthorYaml___profile___atimeMs',
+  ProfileChildAuthorYamlProfileMtimeMs = 'profile___childAuthorYaml___profile___mtimeMs',
+  ProfileChildAuthorYamlProfileCtimeMs = 'profile___childAuthorYaml___profile___ctimeMs',
+  ProfileChildAuthorYamlProfileAtime = 'profile___childAuthorYaml___profile___atime',
+  ProfileChildAuthorYamlProfileMtime = 'profile___childAuthorYaml___profile___mtime',
+  ProfileChildAuthorYamlProfileCtime = 'profile___childAuthorYaml___profile___ctime',
+  ProfileChildAuthorYamlProfileBirthtime = 'profile___childAuthorYaml___profile___birthtime',
+  ProfileChildAuthorYamlProfileBirthtimeMs = 'profile___childAuthorYaml___profile___birthtimeMs',
+  ProfileChildAuthorYamlProfileBlksize = 'profile___childAuthorYaml___profile___blksize',
+  ProfileChildAuthorYamlProfileBlocks = 'profile___childAuthorYaml___profile___blocks',
+  ProfileChildAuthorYamlProfilePublicUrl = 'profile___childAuthorYaml___profile___publicURL',
+  ProfileChildAuthorYamlProfileId = 'profile___childAuthorYaml___profile___id',
+  ProfileChildAuthorYamlProfileChildren = 'profile___childAuthorYaml___profile___children',
+  ProfileChildMarkdownRemarkId = 'profile___childMarkdownRemark___id',
+  ProfileChildMarkdownRemarkFrontmatterTitle = 'profile___childMarkdownRemark___frontmatter___title',
+  ProfileChildMarkdownRemarkFrontmatterLayout = 'profile___childMarkdownRemark___frontmatter___layout',
+  ProfileChildMarkdownRemarkFrontmatterDescription = 'profile___childMarkdownRemark___frontmatter___description',
+  ProfileChildMarkdownRemarkFrontmatterDate = 'profile___childMarkdownRemark___frontmatter___date',
+  ProfileChildMarkdownRemarkFrontmatterPath = 'profile___childMarkdownRemark___frontmatter___path',
+  ProfileChildMarkdownRemarkFrontmatterTags = 'profile___childMarkdownRemark___frontmatter___tags',
+  ProfileChildMarkdownRemarkFrontmatterHeaderImage = 'profile___childMarkdownRemark___frontmatter___headerImage',
+  ProfileChildMarkdownRemarkFrontmatterReadTime = 'profile___childMarkdownRemark___frontmatter___read_time',
+  ProfileChildMarkdownRemarkFrontmatterCategory = 'profile___childMarkdownRemark___frontmatter___category',
+  ProfileChildMarkdownRemarkExcerpt = 'profile___childMarkdownRemark___excerpt',
+  ProfileChildMarkdownRemarkRawMarkdownBody = 'profile___childMarkdownRemark___rawMarkdownBody',
+  ProfileChildMarkdownRemarkFileAbsolutePath = 'profile___childMarkdownRemark___fileAbsolutePath',
+  ProfileChildMarkdownRemarkFieldsSlug = 'profile___childMarkdownRemark___fields___slug',
+  ProfileChildMarkdownRemarkHtml = 'profile___childMarkdownRemark___html',
+  ProfileChildMarkdownRemarkHtmlAst = 'profile___childMarkdownRemark___htmlAst',
+  ProfileChildMarkdownRemarkExcerptAst = 'profile___childMarkdownRemark___excerptAst',
+  ProfileChildMarkdownRemarkHeadings = 'profile___childMarkdownRemark___headings',
+  ProfileChildMarkdownRemarkHeadingsId = 'profile___childMarkdownRemark___headings___id',
+  ProfileChildMarkdownRemarkHeadingsValue = 'profile___childMarkdownRemark___headings___value',
+  ProfileChildMarkdownRemarkHeadingsDepth = 'profile___childMarkdownRemark___headings___depth',
+  ProfileChildMarkdownRemarkTimeToRead = 'profile___childMarkdownRemark___timeToRead',
+  ProfileChildMarkdownRemarkTableOfContents = 'profile___childMarkdownRemark___tableOfContents',
+  ProfileChildMarkdownRemarkWordCountParagraphs = 'profile___childMarkdownRemark___wordCount___paragraphs',
+  ProfileChildMarkdownRemarkWordCountSentences = 'profile___childMarkdownRemark___wordCount___sentences',
+  ProfileChildMarkdownRemarkWordCountWords = 'profile___childMarkdownRemark___wordCount___words',
+  ProfileChildMarkdownRemarkParentId = 'profile___childMarkdownRemark___parent___id',
+  ProfileChildMarkdownRemarkParentChildren = 'profile___childMarkdownRemark___parent___children',
+  ProfileChildMarkdownRemarkChildren = 'profile___childMarkdownRemark___children',
+  ProfileChildMarkdownRemarkChildrenId = 'profile___childMarkdownRemark___children___id',
+  ProfileChildMarkdownRemarkChildrenChildren = 'profile___childMarkdownRemark___children___children',
+  ProfileChildMarkdownRemarkInternalContent = 'profile___childMarkdownRemark___internal___content',
+  ProfileChildMarkdownRemarkInternalContentDigest = 'profile___childMarkdownRemark___internal___contentDigest',
+  ProfileChildMarkdownRemarkInternalDescription = 'profile___childMarkdownRemark___internal___description',
+  ProfileChildMarkdownRemarkInternalFieldOwners = 'profile___childMarkdownRemark___internal___fieldOwners',
+  ProfileChildMarkdownRemarkInternalIgnoreType = 'profile___childMarkdownRemark___internal___ignoreType',
+  ProfileChildMarkdownRemarkInternalMediaType = 'profile___childMarkdownRemark___internal___mediaType',
+  ProfileChildMarkdownRemarkInternalOwner = 'profile___childMarkdownRemark___internal___owner',
+  ProfileChildMarkdownRemarkInternalType = 'profile___childMarkdownRemark___internal___type'
+}
+
+export type AuthorYamlFilterInput = {
+  id?: Maybe<StringQueryOperatorInput>;
+  parent?: Maybe<NodeFilterInput>;
+  children?: Maybe<NodeFilterListInput>;
+  internal?: Maybe<InternalFilterInput>;
+  name?: Maybe<StringQueryOperatorInput>;
+  bio?: Maybe<StringQueryOperatorInput>;
+  profile?: Maybe<FileFilterInput>;
+};
+
+export type AuthorYamlGroupConnection = {
+  __typename?: 'AuthorYamlGroupConnection';
+  totalCount: Scalars['Int'];
+  edges: Array<AuthorYamlEdge>;
+  nodes: Array<AuthorYaml>;
+  pageInfo: PageInfo;
+  field: Scalars['String'];
+  fieldValue?: Maybe<Scalars['String']>;
+};
+
+export type AuthorYamlSortInput = {
+  fields?: Maybe<Array<Maybe<AuthorYamlFieldsEnum>>>;
+  order?: Maybe<Array<Maybe<SortOrderEnum>>>;
+};
+
 export type BooleanQueryOperatorInput = {
   eq?: Maybe<Scalars['Boolean']>;
   ne?: Maybe<Scalars['Boolean']>;
@@ -609,6 +955,7 @@ export type File = Node & {
   children: Array<Node>;
   internal: Internal;
   childCloudinaryAsset?: Maybe<CloudinaryAsset>;
+  childAuthorYaml?: Maybe<AuthorYaml>;
   childMarkdownRemark?: Maybe<MarkdownRemark>;
 };
 
@@ -869,10 +1216,118 @@ export enum FileFieldsEnum {
   ChildCloudinaryAssetInternalMediaType = 'childCloudinaryAsset___internal___mediaType',
   ChildCloudinaryAssetInternalOwner = 'childCloudinaryAsset___internal___owner',
   ChildCloudinaryAssetInternalType = 'childCloudinaryAsset___internal___type',
+  ChildAuthorYamlId = 'childAuthorYaml___id',
+  ChildAuthorYamlParentId = 'childAuthorYaml___parent___id',
+  ChildAuthorYamlParentParentId = 'childAuthorYaml___parent___parent___id',
+  ChildAuthorYamlParentParentChildren = 'childAuthorYaml___parent___parent___children',
+  ChildAuthorYamlParentChildren = 'childAuthorYaml___parent___children',
+  ChildAuthorYamlParentChildrenId = 'childAuthorYaml___parent___children___id',
+  ChildAuthorYamlParentChildrenChildren = 'childAuthorYaml___parent___children___children',
+  ChildAuthorYamlParentInternalContent = 'childAuthorYaml___parent___internal___content',
+  ChildAuthorYamlParentInternalContentDigest = 'childAuthorYaml___parent___internal___contentDigest',
+  ChildAuthorYamlParentInternalDescription = 'childAuthorYaml___parent___internal___description',
+  ChildAuthorYamlParentInternalFieldOwners = 'childAuthorYaml___parent___internal___fieldOwners',
+  ChildAuthorYamlParentInternalIgnoreType = 'childAuthorYaml___parent___internal___ignoreType',
+  ChildAuthorYamlParentInternalMediaType = 'childAuthorYaml___parent___internal___mediaType',
+  ChildAuthorYamlParentInternalOwner = 'childAuthorYaml___parent___internal___owner',
+  ChildAuthorYamlParentInternalType = 'childAuthorYaml___parent___internal___type',
+  ChildAuthorYamlChildren = 'childAuthorYaml___children',
+  ChildAuthorYamlChildrenId = 'childAuthorYaml___children___id',
+  ChildAuthorYamlChildrenParentId = 'childAuthorYaml___children___parent___id',
+  ChildAuthorYamlChildrenParentChildren = 'childAuthorYaml___children___parent___children',
+  ChildAuthorYamlChildrenChildren = 'childAuthorYaml___children___children',
+  ChildAuthorYamlChildrenChildrenId = 'childAuthorYaml___children___children___id',
+  ChildAuthorYamlChildrenChildrenChildren = 'childAuthorYaml___children___children___children',
+  ChildAuthorYamlChildrenInternalContent = 'childAuthorYaml___children___internal___content',
+  ChildAuthorYamlChildrenInternalContentDigest = 'childAuthorYaml___children___internal___contentDigest',
+  ChildAuthorYamlChildrenInternalDescription = 'childAuthorYaml___children___internal___description',
+  ChildAuthorYamlChildrenInternalFieldOwners = 'childAuthorYaml___children___internal___fieldOwners',
+  ChildAuthorYamlChildrenInternalIgnoreType = 'childAuthorYaml___children___internal___ignoreType',
+  ChildAuthorYamlChildrenInternalMediaType = 'childAuthorYaml___children___internal___mediaType',
+  ChildAuthorYamlChildrenInternalOwner = 'childAuthorYaml___children___internal___owner',
+  ChildAuthorYamlChildrenInternalType = 'childAuthorYaml___children___internal___type',
+  ChildAuthorYamlInternalContent = 'childAuthorYaml___internal___content',
+  ChildAuthorYamlInternalContentDigest = 'childAuthorYaml___internal___contentDigest',
+  ChildAuthorYamlInternalDescription = 'childAuthorYaml___internal___description',
+  ChildAuthorYamlInternalFieldOwners = 'childAuthorYaml___internal___fieldOwners',
+  ChildAuthorYamlInternalIgnoreType = 'childAuthorYaml___internal___ignoreType',
+  ChildAuthorYamlInternalMediaType = 'childAuthorYaml___internal___mediaType',
+  ChildAuthorYamlInternalOwner = 'childAuthorYaml___internal___owner',
+  ChildAuthorYamlInternalType = 'childAuthorYaml___internal___type',
+  ChildAuthorYamlName = 'childAuthorYaml___name',
+  ChildAuthorYamlBio = 'childAuthorYaml___bio',
+  ChildAuthorYamlProfileSourceInstanceName = 'childAuthorYaml___profile___sourceInstanceName',
+  ChildAuthorYamlProfileAbsolutePath = 'childAuthorYaml___profile___absolutePath',
+  ChildAuthorYamlProfileRelativePath = 'childAuthorYaml___profile___relativePath',
+  ChildAuthorYamlProfileExtension = 'childAuthorYaml___profile___extension',
+  ChildAuthorYamlProfileSize = 'childAuthorYaml___profile___size',
+  ChildAuthorYamlProfilePrettySize = 'childAuthorYaml___profile___prettySize',
+  ChildAuthorYamlProfileModifiedTime = 'childAuthorYaml___profile___modifiedTime',
+  ChildAuthorYamlProfileAccessTime = 'childAuthorYaml___profile___accessTime',
+  ChildAuthorYamlProfileChangeTime = 'childAuthorYaml___profile___changeTime',
+  ChildAuthorYamlProfileBirthTime = 'childAuthorYaml___profile___birthTime',
+  ChildAuthorYamlProfileRoot = 'childAuthorYaml___profile___root',
+  ChildAuthorYamlProfileDir = 'childAuthorYaml___profile___dir',
+  ChildAuthorYamlProfileBase = 'childAuthorYaml___profile___base',
+  ChildAuthorYamlProfileExt = 'childAuthorYaml___profile___ext',
+  ChildAuthorYamlProfileName = 'childAuthorYaml___profile___name',
+  ChildAuthorYamlProfileRelativeDirectory = 'childAuthorYaml___profile___relativeDirectory',
+  ChildAuthorYamlProfileDev = 'childAuthorYaml___profile___dev',
+  ChildAuthorYamlProfileMode = 'childAuthorYaml___profile___mode',
+  ChildAuthorYamlProfileNlink = 'childAuthorYaml___profile___nlink',
+  ChildAuthorYamlProfileUid = 'childAuthorYaml___profile___uid',
+  ChildAuthorYamlProfileGid = 'childAuthorYaml___profile___gid',
+  ChildAuthorYamlProfileRdev = 'childAuthorYaml___profile___rdev',
+  ChildAuthorYamlProfileIno = 'childAuthorYaml___profile___ino',
+  ChildAuthorYamlProfileAtimeMs = 'childAuthorYaml___profile___atimeMs',
+  ChildAuthorYamlProfileMtimeMs = 'childAuthorYaml___profile___mtimeMs',
+  ChildAuthorYamlProfileCtimeMs = 'childAuthorYaml___profile___ctimeMs',
+  ChildAuthorYamlProfileAtime = 'childAuthorYaml___profile___atime',
+  ChildAuthorYamlProfileMtime = 'childAuthorYaml___profile___mtime',
+  ChildAuthorYamlProfileCtime = 'childAuthorYaml___profile___ctime',
+  ChildAuthorYamlProfileBirthtime = 'childAuthorYaml___profile___birthtime',
+  ChildAuthorYamlProfileBirthtimeMs = 'childAuthorYaml___profile___birthtimeMs',
+  ChildAuthorYamlProfileBlksize = 'childAuthorYaml___profile___blksize',
+  ChildAuthorYamlProfileBlocks = 'childAuthorYaml___profile___blocks',
+  ChildAuthorYamlProfilePublicUrl = 'childAuthorYaml___profile___publicURL',
+  ChildAuthorYamlProfileId = 'childAuthorYaml___profile___id',
+  ChildAuthorYamlProfileParentId = 'childAuthorYaml___profile___parent___id',
+  ChildAuthorYamlProfileParentChildren = 'childAuthorYaml___profile___parent___children',
+  ChildAuthorYamlProfileChildren = 'childAuthorYaml___profile___children',
+  ChildAuthorYamlProfileChildrenId = 'childAuthorYaml___profile___children___id',
+  ChildAuthorYamlProfileChildrenChildren = 'childAuthorYaml___profile___children___children',
+  ChildAuthorYamlProfileInternalContent = 'childAuthorYaml___profile___internal___content',
+  ChildAuthorYamlProfileInternalContentDigest = 'childAuthorYaml___profile___internal___contentDigest',
+  ChildAuthorYamlProfileInternalDescription = 'childAuthorYaml___profile___internal___description',
+  ChildAuthorYamlProfileInternalFieldOwners = 'childAuthorYaml___profile___internal___fieldOwners',
+  ChildAuthorYamlProfileInternalIgnoreType = 'childAuthorYaml___profile___internal___ignoreType',
+  ChildAuthorYamlProfileInternalMediaType = 'childAuthorYaml___profile___internal___mediaType',
+  ChildAuthorYamlProfileInternalOwner = 'childAuthorYaml___profile___internal___owner',
+  ChildAuthorYamlProfileInternalType = 'childAuthorYaml___profile___internal___type',
+  ChildAuthorYamlProfileChildCloudinaryAssetId = 'childAuthorYaml___profile___childCloudinaryAsset___id',
+  ChildAuthorYamlProfileChildCloudinaryAssetChildren = 'childAuthorYaml___profile___childCloudinaryAsset___children',
+  ChildAuthorYamlProfileChildAuthorYamlId = 'childAuthorYaml___profile___childAuthorYaml___id',
+  ChildAuthorYamlProfileChildAuthorYamlChildren = 'childAuthorYaml___profile___childAuthorYaml___children',
+  ChildAuthorYamlProfileChildAuthorYamlName = 'childAuthorYaml___profile___childAuthorYaml___name',
+  ChildAuthorYamlProfileChildAuthorYamlBio = 'childAuthorYaml___profile___childAuthorYaml___bio',
+  ChildAuthorYamlProfileChildMarkdownRemarkId = 'childAuthorYaml___profile___childMarkdownRemark___id',
+  ChildAuthorYamlProfileChildMarkdownRemarkExcerpt = 'childAuthorYaml___profile___childMarkdownRemark___excerpt',
+  ChildAuthorYamlProfileChildMarkdownRemarkRawMarkdownBody = 'childAuthorYaml___profile___childMarkdownRemark___rawMarkdownBody',
+  ChildAuthorYamlProfileChildMarkdownRemarkFileAbsolutePath = 'childAuthorYaml___profile___childMarkdownRemark___fileAbsolutePath',
+  ChildAuthorYamlProfileChildMarkdownRemarkHtml = 'childAuthorYaml___profile___childMarkdownRemark___html',
+  ChildAuthorYamlProfileChildMarkdownRemarkHtmlAst = 'childAuthorYaml___profile___childMarkdownRemark___htmlAst',
+  ChildAuthorYamlProfileChildMarkdownRemarkExcerptAst = 'childAuthorYaml___profile___childMarkdownRemark___excerptAst',
+  ChildAuthorYamlProfileChildMarkdownRemarkHeadings = 'childAuthorYaml___profile___childMarkdownRemark___headings',
+  ChildAuthorYamlProfileChildMarkdownRemarkTimeToRead = 'childAuthorYaml___profile___childMarkdownRemark___timeToRead',
+  ChildAuthorYamlProfileChildMarkdownRemarkTableOfContents = 'childAuthorYaml___profile___childMarkdownRemark___tableOfContents',
+  ChildAuthorYamlProfileChildMarkdownRemarkChildren = 'childAuthorYaml___profile___childMarkdownRemark___children',
   ChildMarkdownRemarkId = 'childMarkdownRemark___id',
   ChildMarkdownRemarkFrontmatterTitle = 'childMarkdownRemark___frontmatter___title',
   ChildMarkdownRemarkFrontmatterLayout = 'childMarkdownRemark___frontmatter___layout',
-  ChildMarkdownRemarkFrontmatterAuthor = 'childMarkdownRemark___frontmatter___author',
+  ChildMarkdownRemarkFrontmatterAuthorId = 'childMarkdownRemark___frontmatter___author___id',
+  ChildMarkdownRemarkFrontmatterAuthorChildren = 'childMarkdownRemark___frontmatter___author___children',
+  ChildMarkdownRemarkFrontmatterAuthorName = 'childMarkdownRemark___frontmatter___author___name',
+  ChildMarkdownRemarkFrontmatterAuthorBio = 'childMarkdownRemark___frontmatter___author___bio',
   ChildMarkdownRemarkFrontmatterDescription = 'childMarkdownRemark___frontmatter___description',
   ChildMarkdownRemarkFrontmatterDate = 'childMarkdownRemark___frontmatter___date',
   ChildMarkdownRemarkFrontmatterPath = 'childMarkdownRemark___frontmatter___path',
@@ -916,12 +1371,6 @@ export enum FileFieldsEnum {
   ChildMarkdownRemarkFrontmatterHeaderImage = 'childMarkdownRemark___frontmatter___headerImage',
   ChildMarkdownRemarkFrontmatterReadTime = 'childMarkdownRemark___frontmatter___read_time',
   ChildMarkdownRemarkFrontmatterCategory = 'childMarkdownRemark___frontmatter___category',
-  ChildMarkdownRemarkFrontmatterRedirectFrom = 'childMarkdownRemark___frontmatter___redirect_from',
-  ChildMarkdownRemarkFrontmatterPermalink = 'childMarkdownRemark___frontmatter___permalink',
-  ChildMarkdownRemarkFrontmatterMultiple = 'childMarkdownRemark___frontmatter___multiple',
-  ChildMarkdownRemarkFrontmatterProjects = 'childMarkdownRemark___frontmatter___projects',
-  ChildMarkdownRemarkFrontmatterStar = 'childMarkdownRemark___frontmatter___star',
-  ChildMarkdownRemarkFrontmatterHidden = 'childMarkdownRemark___frontmatter___hidden',
   ChildMarkdownRemarkExcerpt = 'childMarkdownRemark___excerpt',
   ChildMarkdownRemarkRawMarkdownBody = 'childMarkdownRemark___rawMarkdownBody',
   ChildMarkdownRemarkFileAbsolutePath = 'childMarkdownRemark___fileAbsolutePath',
@@ -1017,6 +1466,7 @@ export type FileFilterInput = {
   children?: Maybe<NodeFilterListInput>;
   internal?: Maybe<InternalFilterInput>;
   childCloudinaryAsset?: Maybe<CloudinaryAssetFilterInput>;
+  childAuthorYaml?: Maybe<AuthorYamlFilterInput>;
   childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
 };
 
@@ -1206,7 +1656,58 @@ export enum MarkdownRemarkFieldsEnum {
   Id = 'id',
   FrontmatterTitle = 'frontmatter___title',
   FrontmatterLayout = 'frontmatter___layout',
-  FrontmatterAuthor = 'frontmatter___author',
+  FrontmatterAuthorId = 'frontmatter___author___id',
+  FrontmatterAuthorParentId = 'frontmatter___author___parent___id',
+  FrontmatterAuthorParentChildren = 'frontmatter___author___parent___children',
+  FrontmatterAuthorChildren = 'frontmatter___author___children',
+  FrontmatterAuthorChildrenId = 'frontmatter___author___children___id',
+  FrontmatterAuthorChildrenChildren = 'frontmatter___author___children___children',
+  FrontmatterAuthorInternalContent = 'frontmatter___author___internal___content',
+  FrontmatterAuthorInternalContentDigest = 'frontmatter___author___internal___contentDigest',
+  FrontmatterAuthorInternalDescription = 'frontmatter___author___internal___description',
+  FrontmatterAuthorInternalFieldOwners = 'frontmatter___author___internal___fieldOwners',
+  FrontmatterAuthorInternalIgnoreType = 'frontmatter___author___internal___ignoreType',
+  FrontmatterAuthorInternalMediaType = 'frontmatter___author___internal___mediaType',
+  FrontmatterAuthorInternalOwner = 'frontmatter___author___internal___owner',
+  FrontmatterAuthorInternalType = 'frontmatter___author___internal___type',
+  FrontmatterAuthorName = 'frontmatter___author___name',
+  FrontmatterAuthorBio = 'frontmatter___author___bio',
+  FrontmatterAuthorProfileSourceInstanceName = 'frontmatter___author___profile___sourceInstanceName',
+  FrontmatterAuthorProfileAbsolutePath = 'frontmatter___author___profile___absolutePath',
+  FrontmatterAuthorProfileRelativePath = 'frontmatter___author___profile___relativePath',
+  FrontmatterAuthorProfileExtension = 'frontmatter___author___profile___extension',
+  FrontmatterAuthorProfileSize = 'frontmatter___author___profile___size',
+  FrontmatterAuthorProfilePrettySize = 'frontmatter___author___profile___prettySize',
+  FrontmatterAuthorProfileModifiedTime = 'frontmatter___author___profile___modifiedTime',
+  FrontmatterAuthorProfileAccessTime = 'frontmatter___author___profile___accessTime',
+  FrontmatterAuthorProfileChangeTime = 'frontmatter___author___profile___changeTime',
+  FrontmatterAuthorProfileBirthTime = 'frontmatter___author___profile___birthTime',
+  FrontmatterAuthorProfileRoot = 'frontmatter___author___profile___root',
+  FrontmatterAuthorProfileDir = 'frontmatter___author___profile___dir',
+  FrontmatterAuthorProfileBase = 'frontmatter___author___profile___base',
+  FrontmatterAuthorProfileExt = 'frontmatter___author___profile___ext',
+  FrontmatterAuthorProfileName = 'frontmatter___author___profile___name',
+  FrontmatterAuthorProfileRelativeDirectory = 'frontmatter___author___profile___relativeDirectory',
+  FrontmatterAuthorProfileDev = 'frontmatter___author___profile___dev',
+  FrontmatterAuthorProfileMode = 'frontmatter___author___profile___mode',
+  FrontmatterAuthorProfileNlink = 'frontmatter___author___profile___nlink',
+  FrontmatterAuthorProfileUid = 'frontmatter___author___profile___uid',
+  FrontmatterAuthorProfileGid = 'frontmatter___author___profile___gid',
+  FrontmatterAuthorProfileRdev = 'frontmatter___author___profile___rdev',
+  FrontmatterAuthorProfileIno = 'frontmatter___author___profile___ino',
+  FrontmatterAuthorProfileAtimeMs = 'frontmatter___author___profile___atimeMs',
+  FrontmatterAuthorProfileMtimeMs = 'frontmatter___author___profile___mtimeMs',
+  FrontmatterAuthorProfileCtimeMs = 'frontmatter___author___profile___ctimeMs',
+  FrontmatterAuthorProfileAtime = 'frontmatter___author___profile___atime',
+  FrontmatterAuthorProfileMtime = 'frontmatter___author___profile___mtime',
+  FrontmatterAuthorProfileCtime = 'frontmatter___author___profile___ctime',
+  FrontmatterAuthorProfileBirthtime = 'frontmatter___author___profile___birthtime',
+  FrontmatterAuthorProfileBirthtimeMs = 'frontmatter___author___profile___birthtimeMs',
+  FrontmatterAuthorProfileBlksize = 'frontmatter___author___profile___blksize',
+  FrontmatterAuthorProfileBlocks = 'frontmatter___author___profile___blocks',
+  FrontmatterAuthorProfilePublicUrl = 'frontmatter___author___profile___publicURL',
+  FrontmatterAuthorProfileId = 'frontmatter___author___profile___id',
+  FrontmatterAuthorProfileChildren = 'frontmatter___author___profile___children',
   FrontmatterDescription = 'frontmatter___description',
   FrontmatterDate = 'frontmatter___date',
   FrontmatterPath = 'frontmatter___path',
@@ -1260,6 +1761,10 @@ export enum MarkdownRemarkFieldsEnum {
   FrontmatterImageInternalType = 'frontmatter___image___internal___type',
   FrontmatterImageChildCloudinaryAssetId = 'frontmatter___image___childCloudinaryAsset___id',
   FrontmatterImageChildCloudinaryAssetChildren = 'frontmatter___image___childCloudinaryAsset___children',
+  FrontmatterImageChildAuthorYamlId = 'frontmatter___image___childAuthorYaml___id',
+  FrontmatterImageChildAuthorYamlChildren = 'frontmatter___image___childAuthorYaml___children',
+  FrontmatterImageChildAuthorYamlName = 'frontmatter___image___childAuthorYaml___name',
+  FrontmatterImageChildAuthorYamlBio = 'frontmatter___image___childAuthorYaml___bio',
   FrontmatterImageChildMarkdownRemarkId = 'frontmatter___image___childMarkdownRemark___id',
   FrontmatterImageChildMarkdownRemarkExcerpt = 'frontmatter___image___childMarkdownRemark___excerpt',
   FrontmatterImageChildMarkdownRemarkRawMarkdownBody = 'frontmatter___image___childMarkdownRemark___rawMarkdownBody',
@@ -1275,12 +1780,6 @@ export enum MarkdownRemarkFieldsEnum {
   FrontmatterHeaderImage = 'frontmatter___headerImage',
   FrontmatterReadTime = 'frontmatter___read_time',
   FrontmatterCategory = 'frontmatter___category',
-  FrontmatterRedirectFrom = 'frontmatter___redirect_from',
-  FrontmatterPermalink = 'frontmatter___permalink',
-  FrontmatterMultiple = 'frontmatter___multiple',
-  FrontmatterProjects = 'frontmatter___projects',
-  FrontmatterStar = 'frontmatter___star',
-  FrontmatterHidden = 'frontmatter___hidden',
   Excerpt = 'excerpt',
   RawMarkdownBody = 'rawMarkdownBody',
   FileAbsolutePath = 'fileAbsolutePath',
@@ -1411,7 +1910,7 @@ export type MarkdownRemarkFrontmatter = {
   __typename?: 'MarkdownRemarkFrontmatter';
   title?: Maybe<Scalars['String']>;
   layout?: Maybe<Scalars['String']>;
-  author?: Maybe<Scalars['String']>;
+  author?: Maybe<AuthorYaml>;
   description?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
   path?: Maybe<Scalars['String']>;
@@ -1420,12 +1919,6 @@ export type MarkdownRemarkFrontmatter = {
   headerImage?: Maybe<Scalars['Boolean']>;
   read_time?: Maybe<Scalars['Boolean']>;
   category?: Maybe<Scalars['String']>;
-  redirect_from?: Maybe<Array<Maybe<Scalars['String']>>>;
-  permalink?: Maybe<Scalars['String']>;
-  multiple?: Maybe<Scalars['String']>;
-  projects?: Maybe<Scalars['Boolean']>;
-  star?: Maybe<Scalars['Boolean']>;
-  hidden?: Maybe<Scalars['Boolean']>;
 };
 
 
@@ -1439,7 +1932,7 @@ export type MarkdownRemarkFrontmatterDateArgs = {
 export type MarkdownRemarkFrontmatterFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   layout?: Maybe<StringQueryOperatorInput>;
-  author?: Maybe<StringQueryOperatorInput>;
+  author?: Maybe<AuthorYamlFilterInput>;
   description?: Maybe<StringQueryOperatorInput>;
   date?: Maybe<DateQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
@@ -1448,12 +1941,6 @@ export type MarkdownRemarkFrontmatterFilterInput = {
   headerImage?: Maybe<BooleanQueryOperatorInput>;
   read_time?: Maybe<BooleanQueryOperatorInput>;
   category?: Maybe<StringQueryOperatorInput>;
-  redirect_from?: Maybe<StringQueryOperatorInput>;
-  permalink?: Maybe<StringQueryOperatorInput>;
-  multiple?: Maybe<StringQueryOperatorInput>;
-  projects?: Maybe<BooleanQueryOperatorInput>;
-  star?: Maybe<BooleanQueryOperatorInput>;
-  hidden?: Maybe<BooleanQueryOperatorInput>;
 };
 
 export type MarkdownRemarkGroupConnection = {
@@ -1528,6 +2015,8 @@ export type Query = {
   allCloudinaryAsset: CloudinaryAssetConnection;
   markdownRemark?: Maybe<MarkdownRemark>;
   allMarkdownRemark: MarkdownRemarkConnection;
+  authorYaml?: Maybe<AuthorYaml>;
+  allAuthorYaml: AuthorYamlConnection;
   siteBuildMetadata?: Maybe<SiteBuildMetadata>;
   allSiteBuildMetadata: SiteBuildMetadataConnection;
   sitePlugin?: Maybe<SitePlugin>;
@@ -1575,6 +2064,7 @@ export type QueryFileArgs = {
   children?: Maybe<NodeFilterListInput>;
   internal?: Maybe<InternalFilterInput>;
   childCloudinaryAsset?: Maybe<CloudinaryAssetFilterInput>;
+  childAuthorYaml?: Maybe<AuthorYamlFilterInput>;
   childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
 };
 
@@ -1641,6 +2131,7 @@ export type QuerySiteArgs = {
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
   port?: Maybe<IntQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
+  mapping?: Maybe<SiteMappingFilterInput>;
   polyfill?: Maybe<BooleanQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
@@ -1730,6 +2221,25 @@ export type QueryAllMarkdownRemarkArgs = {
 };
 
 
+export type QueryAuthorYamlArgs = {
+  id?: Maybe<StringQueryOperatorInput>;
+  parent?: Maybe<NodeFilterInput>;
+  children?: Maybe<NodeFilterListInput>;
+  internal?: Maybe<InternalFilterInput>;
+  name?: Maybe<StringQueryOperatorInput>;
+  bio?: Maybe<StringQueryOperatorInput>;
+  profile?: Maybe<FileFilterInput>;
+};
+
+
+export type QueryAllAuthorYamlArgs = {
+  filter?: Maybe<AuthorYamlFilterInput>;
+  sort?: Maybe<AuthorYamlSortInput>;
+  skip?: Maybe<Scalars['Int']>;
+  limit?: Maybe<Scalars['Int']>;
+};
+
+
 export type QuerySiteBuildMetadataArgs = {
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
@@ -1777,6 +2287,7 @@ export type Site = Node & {
   siteMetadata?: Maybe<SiteSiteMetadata>;
   port?: Maybe<Scalars['Int']>;
   host?: Maybe<Scalars['String']>;
+  mapping?: Maybe<SiteMapping>;
   polyfill?: Maybe<Scalars['Boolean']>;
   pathPrefix?: Maybe<Scalars['String']>;
   id: Scalars['ID'];
@@ -1986,8 +2497,10 @@ export enum SiteFieldsEnum {
   SiteMetadataTitle = 'siteMetadata___title',
   SiteMetadataDescription = 'siteMetadata___description',
   SiteMetadataAuthor = 'siteMetadata___author',
+  SiteMetadataSiteUrl = 'siteMetadata___siteUrl',
   Port = 'port',
   Host = 'host',
+  MappingMarkdownRemarkFrontmatterAuthor = 'mapping___MarkdownRemark_frontmatter_author',
   Polyfill = 'polyfill',
   PathPrefix = 'pathPrefix',
   Id = 'id',
@@ -2083,6 +2596,7 @@ export type SiteFilterInput = {
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
   port?: Maybe<IntQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
+  mapping?: Maybe<SiteMappingFilterInput>;
   polyfill?: Maybe<BooleanQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
@@ -2099,6 +2613,15 @@ export type SiteGroupConnection = {
   pageInfo: PageInfo;
   field: Scalars['String'];
   fieldValue?: Maybe<Scalars['String']>;
+};
+
+export type SiteMapping = {
+  __typename?: 'SiteMapping';
+  MarkdownRemark_frontmatter_author?: Maybe<Scalars['String']>;
+};
+
+export type SiteMappingFilterInput = {
+  MarkdownRemark_frontmatter_author?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePage = Node & {
@@ -2300,7 +2823,6 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsPluginsNodeApIs = 'pluginCreator___pluginOptions___plugins___nodeAPIs',
   PluginCreatorPluginOptionsPluginsBrowserApIs = 'pluginCreator___pluginOptions___plugins___browserAPIs',
   PluginCreatorPluginOptionsPluginsPluginFilepath = 'pluginCreator___pluginOptions___plugins___pluginFilepath',
-  PluginCreatorPluginOptionsName = 'pluginCreator___pluginOptions___name',
   PluginCreatorPluginOptionsPath = 'pluginCreator___pluginOptions___path',
   PluginCreatorPluginOptionsBase64Width = 'pluginCreator___pluginOptions___base64Width',
   PluginCreatorPluginOptionsStripMetadata = 'pluginCreator___pluginOptions___stripMetadata',
@@ -2322,6 +2844,7 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsLoading = 'pluginCreator___pluginOptions___loading',
   PluginCreatorPluginOptionsDisableBgImageOnAlpha = 'pluginCreator___pluginOptions___disableBgImageOnAlpha',
   PluginCreatorPluginOptionsDisableBgImage = 'pluginCreator___pluginOptions___disableBgImage',
+  PluginCreatorPluginOptionsName = 'pluginCreator___pluginOptions___name',
   PluginCreatorPluginOptionsShortName = 'pluginCreator___pluginOptions___short_name',
   PluginCreatorPluginOptionsStartUrl = 'pluginCreator___pluginOptions___start_url',
   PluginCreatorPluginOptionsBackgroundColor = 'pluginCreator___pluginOptions___background_color',
@@ -2554,7 +3077,6 @@ export enum SitePluginFieldsEnum {
   PluginOptionsPluginsNodeApIs = 'pluginOptions___plugins___nodeAPIs',
   PluginOptionsPluginsBrowserApIs = 'pluginOptions___plugins___browserAPIs',
   PluginOptionsPluginsPluginFilepath = 'pluginOptions___plugins___pluginFilepath',
-  PluginOptionsName = 'pluginOptions___name',
   PluginOptionsPath = 'pluginOptions___path',
   PluginOptionsBase64Width = 'pluginOptions___base64Width',
   PluginOptionsStripMetadata = 'pluginOptions___stripMetadata',
@@ -2576,6 +3098,7 @@ export enum SitePluginFieldsEnum {
   PluginOptionsLoading = 'pluginOptions___loading',
   PluginOptionsDisableBgImageOnAlpha = 'pluginOptions___disableBgImageOnAlpha',
   PluginOptionsDisableBgImage = 'pluginOptions___disableBgImage',
+  PluginOptionsName = 'pluginOptions___name',
   PluginOptionsShortName = 'pluginOptions___short_name',
   PluginOptionsStartUrl = 'pluginOptions___start_url',
   PluginOptionsBackgroundColor = 'pluginOptions___background_color',
@@ -2719,7 +3242,6 @@ export type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 export type SitePluginPluginOptions = {
   __typename?: 'SitePluginPluginOptions';
   plugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPlugins>>>;
-  name?: Maybe<Scalars['String']>;
   path?: Maybe<Scalars['String']>;
   base64Width?: Maybe<Scalars['Int']>;
   stripMetadata?: Maybe<Scalars['Boolean']>;
@@ -2741,6 +3263,7 @@ export type SitePluginPluginOptions = {
   loading?: Maybe<Scalars['String']>;
   disableBgImageOnAlpha?: Maybe<Scalars['Boolean']>;
   disableBgImage?: Maybe<Scalars['Boolean']>;
+  name?: Maybe<Scalars['String']>;
   short_name?: Maybe<Scalars['String']>;
   start_url?: Maybe<Scalars['String']>;
   background_color?: Maybe<Scalars['String']>;
@@ -2765,7 +3288,6 @@ export type SitePluginPluginOptions = {
 
 export type SitePluginPluginOptionsFilterInput = {
   plugins?: Maybe<SitePluginPluginOptionsPluginsFilterListInput>;
-  name?: Maybe<StringQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
   base64Width?: Maybe<IntQueryOperatorInput>;
   stripMetadata?: Maybe<BooleanQueryOperatorInput>;
@@ -2787,6 +3309,7 @@ export type SitePluginPluginOptionsFilterInput = {
   loading?: Maybe<StringQueryOperatorInput>;
   disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>;
   disableBgImage?: Maybe<BooleanQueryOperatorInput>;
+  name?: Maybe<StringQueryOperatorInput>;
   short_name?: Maybe<StringQueryOperatorInput>;
   start_url?: Maybe<StringQueryOperatorInput>;
   background_color?: Maybe<StringQueryOperatorInput>;
@@ -2877,12 +3400,14 @@ export type SiteSiteMetadata = {
   title?: Maybe<Scalars['String']>;
   description?: Maybe<Scalars['String']>;
   author?: Maybe<Scalars['String']>;
+  siteUrl?: Maybe<Scalars['String']>;
 };
 
 export type SiteSiteMetadataFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   description?: Maybe<StringQueryOperatorInput>;
   author?: Maybe<StringQueryOperatorInput>;
+  siteUrl?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SiteSortInput = {
@@ -2918,6 +3443,20 @@ export type SiteTitleQueryQuery = (
   )> }
 );
 
+export type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type Unnamed_1_Query = (
+  { __typename?: 'Query' }
+  & { site?: Maybe<(
+    { __typename?: 'Site' }
+    & { siteMetadata?: Maybe<(
+      { __typename?: 'SiteSiteMetadata' }
+      & Pick<SiteSiteMetadata, 'title' | 'description' | 'author' | 'siteUrl'>
+    )> }
+  )> }
+);
+
 export type CloudinaryAssetFluidFragment = (
   { __typename?: 'CloudinaryAssetFluid' }
   & Pick<CloudinaryAssetFluid, 'aspectRatio' | 'base64' | 'sizes' | 'src' | 'srcSet'>
@@ -2933,8 +3472,21 @@ export type PostPreviewFragment = (
   & Pick<MarkdownRemark, 'id' | 'timeToRead'>
   & { frontmatter?: Maybe<(
     { __typename?: 'MarkdownRemarkFrontmatter' }
-    & Pick<MarkdownRemarkFrontmatter, 'path' | 'title' | 'author' | 'description' | 'date'>
-    & { image?: Maybe<(
+    & Pick<MarkdownRemarkFrontmatter, 'path' | 'title' | 'description' | 'date'>
+    & { author?: Maybe<(
+      { __typename?: 'AuthorYaml' }
+      & Pick<AuthorYaml, 'id' | 'name'>
+      & { profile?: Maybe<(
+        { __typename?: 'File' }
+        & { childCloudinaryAsset?: Maybe<(
+          { __typename?: 'CloudinaryAsset' }
+          & { fixed: (
+            { __typename?: 'CloudinaryAssetFixed' }
+            & CloudinaryAssetFixedFragment
+          ) }
+        )> }
+      )> }
+    )>, image?: Maybe<(
       { __typename?: 'File' }
       & { childCloudinaryAsset?: Maybe<(
         { __typename?: 'CloudinaryAsset' }
@@ -2961,7 +3513,34 @@ export type TestPageQuery = (
     { __typename?: 'MarkdownRemarkConnection' }
     & { nodes: Array<(
       { __typename?: 'MarkdownRemark' }
-      & PostPreviewFragment
+      & Pick<MarkdownRemark, 'id' | 'timeToRead'>
+      & { frontmatter?: Maybe<(
+        { __typename?: 'MarkdownRemarkFrontmatter' }
+        & Pick<MarkdownRemarkFrontmatter, 'path' | 'title' | 'description' | 'date'>
+        & { author?: Maybe<(
+          { __typename?: 'AuthorYaml' }
+          & Pick<AuthorYaml, 'id' | 'name'>
+          & { profile?: Maybe<(
+            { __typename?: 'File' }
+            & { childCloudinaryAsset?: Maybe<(
+              { __typename?: 'CloudinaryAsset' }
+              & { fixed: (
+                { __typename?: 'CloudinaryAssetFixed' }
+                & CloudinaryAssetFixedFragment
+              ) }
+            )> }
+          )> }
+        )>, image?: Maybe<(
+          { __typename?: 'File' }
+          & { childCloudinaryAsset?: Maybe<(
+            { __typename?: 'CloudinaryAsset' }
+            & { fluid: (
+              { __typename?: 'CloudinaryAssetFluid' }
+              & CloudinaryAssetFluidFragment
+            ) }
+          )> }
+        )> }
+      )> }
     )> }
   ) }
 );
