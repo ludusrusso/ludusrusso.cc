@@ -16,13 +16,6 @@ path: "/2017/09/11/un-super-grazie-ai-ragazzi-del-corso-laboratorio-di-robotica/
 image: "./5.jpg"
 ---
 
-<style>
-.rwd-video {height: 0;overflow: hidden;padding-bottom: 56.25%;padding-top: 30px;position: relative;}
-.rwd-video iframe,
-.rwd-video object,
-.rwd-video embed {height: 100%;left: 0;position: absolute;top: 0;width: 100%;}
-</style>
-
 Con un po' di dispiacere, qualche giorno fa si è concluso il corso "Laboratorio di Robotica", organizzato dal mio vecchio Liceo (il Liceo Stampacchia di Tricase) a cui io ho partecipato come docente!
 
 Il corso è stato organizzato dal Liceo Stampacchia di Tricase in collaborazione con il CINI (Consorzio Interuniversitario Nazionale di Informatica). Durante il corso, gli studenti hanno potuto imparare ad utilizzare tecnologie innovative come Stampa 3D e programmazione Arduino per costruire (partendo da zero) un robot in grado di disegnare.

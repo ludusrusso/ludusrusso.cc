@@ -1,13 +1,13 @@
 import { graphql, useStaticQuery } from "gatsby"
-import React, { FC } from "react"
+import { FC } from "react"
 import { Helmet } from "react-helmet"
 
 interface SEOProps {
-  description: string
-  lang: string
-  meta: any[]
   title: string
-  image: string
+  description?: string
+  lang?: string
+  meta?: any[]
+  image?: string
 }
 
 const SEO: FC<SEOProps> = ({

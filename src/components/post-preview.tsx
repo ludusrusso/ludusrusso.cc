@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React from "react"
-import Image from "gatsby-image"
 import { PostPreviewFragment } from "../graphqlTypes"
 
 export const BlogPostPreview: React.FC<{ post: PostPreviewFragment }> = ({
@@ -8,12 +8,13 @@ export const BlogPostPreview: React.FC<{ post: PostPreviewFragment }> = ({
 }) => {
   const { description, title, path, author, date } = post.frontmatter
   const { timeToRead } = post
-  const image = post.frontmatter.image.childCloudinaryAsset.fluid
+  const image = getImage(post.frontmatter.image)
+  const authorImage = getImage(post.frontmatter.author.profile)
   return (
     <Link to={path}>
       <div className="mt-4 flex flex-col rounded-lg hover:shadow-2xl shadow-lg overflow-hidden">
         <div className="flex-shrink-0">
-          <Image className="w-full h-auto" fluid={image} alt={title} />
+          <GatsbyImage className="w-full h-auto" image={image} alt={title} />
         </div>
         <div className="flex-1 bg-white p-6 flex flex-col justify-between">
           <div className="flex-1">
@@ -30,9 +31,9 @@ export const BlogPostPreview: React.FC<{ post: PostPreviewFragment }> = ({
           <div className="mt-6 flex items-center">
             <div className="flex-shrink-0">
               <div>
-                <Image
+                <GatsbyImage
                   className="h-10 w-10 rounded-full"
-                  fixed={author?.profile?.childCloudinaryAsset.fixed}
+                  image={authorImage}
                   alt=""
                 />
               </div>

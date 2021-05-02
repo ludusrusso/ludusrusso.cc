@@ -1,24 +1,7 @@
 import { graphql } from "gatsby"
 
-export const cloudinaryAssetFluid = graphql`
-  fragment CloudinaryAssetFluid on CloudinaryAssetFluid {
-    aspectRatio
-    base64
-    sizes
-    src
-    srcSet
-  }
-`
-
-export const cloudinaryAssetFluidLimitPresentationSize = graphql`
-  fragment CloudinaryAssetFluidLimitPresentationSize on CloudinaryAssetFluid {
-    maxHeight: presentationHeight
-    maxWidth: presentationWidth
-  }
-`
-
 export const postPreview = graphql`
-  fragment PostPreview on MarkdownRemark {
+  fragment PostPreview on Mdx {
     id
     timeToRead
     frontmatter {
@@ -28,32 +11,18 @@ export const postPreview = graphql`
         id
         name
         profile {
-          childCloudinaryAsset {
-            fixed(width: 100) {
-              ...CloudinaryAssetFixed
-            }
+          childImageSharp {
+            gatsbyImageData(width: 100)
           }
         }
       }
       description
       date(locale: "it", formatString: "DD/MM/yyyy")
       image {
-        childCloudinaryAsset {
-          fluid(maxWidth: 500) {
-            ...CloudinaryAssetFluid
-          }
+        childImageSharp {
+          gatsbyImageData(width: 500)
         }
       }
     }
-  }
-`
-
-export const cloudinaryAssetFixed = graphql`
-  fragment CloudinaryAssetFixed on CloudinaryAssetFixed {
-    base64
-    height
-    src
-    srcSet
-    width
   }
 `

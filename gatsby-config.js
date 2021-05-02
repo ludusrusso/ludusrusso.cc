@@ -3,6 +3,9 @@ require("dotenv").config({
 })
 
 module.exports = {
+  flags: {
+    FAST_DEV: true,
+  },
   siteMetadata: {
     title: `ludusrusso`,
     description: `Il mio blog personale sulla programmazione e il making.`,
@@ -10,6 +13,7 @@ module.exports = {
     siteUrl: process.env.SITE_URL || "https://preview.ludusrusso.space",
   },
   plugins: [
+    `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-yaml`,
     {
@@ -19,19 +23,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
-      resolve: "gatsby-transformer-cloudinary",
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-        apiKey: process.env.CLOUDINARY_API_KEY,
-        apiSecret: process.env.CLOUDINARY_API_SECRET,
-        uploadFolder: "ludusrusso.cc",
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -55,12 +52,8 @@ module.exports = {
     },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-emotion`,
-
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
   mapping: {
-    "MarkdownRemark.frontmatter.author": `AuthorYaml`,
+    "Mdx.frontmatter.author": `AuthorYaml`,
   },
 }

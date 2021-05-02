@@ -112,22 +112,6 @@ Iscriviti alla mailing list tramite il form qui sotto, ti arriverà via email in
 
 > Altra nota: se sei già iscritto alla mailing list, devi reinsierire la tua mail qui, ho preso questa decisione per non spammare gli altri iscritti che non sono interessati a ricevere questo tipo di materiale!
 
-<div id="mc_embed_signup_main">
-  <form action="https://ludusrusso.us17.list-manage.com/subscribe/post?u=b834c0b2ad6188cfdad0234c3&amp;id=1c7f43d627" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div id="form-group">
-        <p>	<strong>    Ricevi gratuitamente il materiale del corso! </strong>
-        </p>
-        <div class="input-group mb-3">
-          <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="La tua email" required>
-          <div class="input-group-append">
-            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn">Registrati</button>
-          </div>
-        </div>
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      </div>
-  </form>
-</div>
-
 ### Conclusioni
 
 Hai mai costruito un Robot Open Source? Che tecnologie hai utilizzato, e cose era
