@@ -22,6 +22,8 @@ path: "/2018/04/05/sviluppiamo-un-robot-con-tecnologie-open-source/"
 image: "./main.png"
 ---
 
+import Youtube from "react-youtube"
+
 Molti di voi sono smanettoni, e molti smanettoni sono super interessati a costruire robot e sistemi IoT,
 anche se spesso questi progetti sono accantonati per mancanza di tempo!
 
@@ -96,7 +98,10 @@ Ecco quindi come potete aiutarmi:
 
 Vi lascio al video di presentazione del corso!
 
-{% include youtube.html id="7qF5eKDu1pM" %}
+<Youtube
+  videoId="7qF5eKDu1pM"
+  ops={{ host: "https://www.youtube-nocookie.com/" }}
+/>
 
 #### Mi interessa, come faccio a rimanere aggiornato?
 
@@ -122,11 +127,3 @@ in grado di fare questo robot?
 Qui sotto trovate tutto il materiale pubblicato fino ad ora legato al progetto. Oltre ai video,
 pubblicherò anche post di approfondimento e tutto quello che credo possa servire per
 seguire al meglio il progetto.
-
-<div class="row">
-  {% for post in site.posts %}
-    {% if post.tags contains "Robot Open Source" %}
-      {% include blog-post.html %}
-    {% endif %}
-  {% endfor %}
-</div>

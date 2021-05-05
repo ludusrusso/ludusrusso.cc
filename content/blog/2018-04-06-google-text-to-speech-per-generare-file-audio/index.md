@@ -45,7 +45,7 @@ Una volta lanciato il programma, troverete un file nella cartella di lavoro chia
 Ecco cosa viene fuori!
 
 <audio controls>
-  <source src="/assets/audio/saluti.mp3" type="audio/ogg">
+  <source src="/assets/audio/saluti.mp3" type="audio/ogg" />
   Il tuo browser non supporta gli elementi audio
 </audio>
 
@@ -62,7 +62,7 @@ tts = gTTS(text=TEXT, lang="it", slow=True)
 Che genera questa traccia audio:
 
 <audio controls>
-  <source src="/assets/audio/saluti_lento.mp3" type="audio/ogg">
+  <source src="/assets/audio/saluti_lento.mp3" type="audio/ogg" />
   Il tuo browser non supporta gli elementi audio
 </audio>
 
@@ -131,7 +131,7 @@ tts = gTTS(text="Hello from Ludovico!", lang="en")
 ```
 
 <audio controls>
-  <source src="/assets/audio/saluti_en.mp3" type="audio/ogg">
+  <source src="/assets/audio/saluti_en.mp3" type="audio/ogg" />
   Il tuo browser non supporta gli elementi audio
 </audio>
 

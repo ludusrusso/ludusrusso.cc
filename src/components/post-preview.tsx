@@ -1,54 +1,46 @@
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import React from "react"
 import { PostPreviewFragment } from "../graphqlTypes"
 
-export const BlogPostPreview: React.FC<{ post: PostPreviewFragment }> = ({
-  post,
-}) => {
-  const { description, title, path, author, date } = post.frontmatter
-  const { timeToRead } = post
-  const image = getImage(post.frontmatter.image)
-  const authorImage = getImage(post.frontmatter.author.profile)
-  return (
-    <Link to={path}>
-      <div className="mt-4 flex flex-col rounded-lg hover:shadow-2xl shadow-lg overflow-hidden">
-        <div className="flex-shrink-0">
-          <GatsbyImage className="w-full h-auto" image={image} alt={title} />
-        </div>
-        <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-          <div className="flex-1">
-            <div className="block">
-              <h3 className="mt-2 text-xl h-14 truncate-2-lines leading-7  text-gray-900">
-                {title}
-              </h3>
-              <p className="mt-3 truncate-3-lines mb-4 text-base leading-6 text-gray-500">
-                {description}
-              </p>
-            </div>
-          </div>
+interface PostPreviewProps {
+  post: PostPreviewFragment
+}
 
-          <div className="mt-6 flex items-center">
-            <div className="flex-shrink-0">
-              <div>
-                <GatsbyImage
-                  className="h-10 w-10 rounded-full"
-                  image={authorImage}
-                  alt=""
-                />
-              </div>
-            </div>
-            <div className="ml-3">
-              <p className="text-sm leading-5 font-medium text-gray-900">
-                {author?.name}
-              </p>
-              <div className="flex text-sm leading-5 text-gray-500">
-                <time dateTime={date}>{date}</time>
-                <span className="mx-1">&middot;</span>
-                <span>Lettura in {timeToRead} min</span>
-              </div>
-            </div>
+export const BlogPostPreview = ({ post }: PostPreviewProps) => {
+  const image = getImage(post.frontmatter.image as any)
+  const authorImage = getImage(post.frontmatter.author.profile as any)
+
+  const { title, description, date, path, author } = post.frontmatter
+  const { timeToRead } = post
+  return (
+    <Link to={path} className="max-w-sm m-auto mt-12 hover:opacity-75">
+      <div className="relative shadow">
+        <GatsbyImage image={image} alt={title} className="rounded" />
+      </div>
+      <div className="relative py-4 px-6 w-11/12 m-auto -mt-10 bg-gray-100 rounded z-20 shadow-lg">
+        <div className="flex items-center">
+          <GatsbyImage
+            className="w-12 h-12 rounded-full"
+            image={authorImage}
+            alt={author.name}
+          />
+          <div className="ml-3">
+            <h4 className="text font-semibold text-green-700">{author.name}</h4>
+            <p className="text-xs uppercase tracking-wide text-gray-700 ">
+              {date}
+            </p>
+            <p className="text-xs uppercase tracking-wide text-gray-700 ">
+              read in {timeToRead} min
+            </p>
           </div>
+        </div>
+        <h3 className="text-lg text-gray-800 mt-3 font-semibold leading-tight">
+          {title}
+        </h3>
+        <p className="text-gray-700 text-sm mt-2">{description}</p>
+
+        <div className="px-4 py-2 rounded text-white inline-block mt-3 border-b-2 bg-green-600 hover:bg-green-700">
+          Read more...
         </div>
       </div>
     </Link>

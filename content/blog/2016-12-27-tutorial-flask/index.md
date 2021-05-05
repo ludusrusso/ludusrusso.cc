@@ -29,11 +29,6 @@ path: "/2016/12/27/scriviamo-un-blog-in-python-e-flask/"
 image: "./cover_text_typed.png"
 ---
 
-- TOC
-  {:toc}
-
-{% raw %}
-
 Prendendo spunta da [Miguel Grinberg](https://blog.miguelgrinberg.com), noto esperto di Flask da cui ho appreso molte delle cose che conosco di questo microframework, ho deciso di seguire, passo passo, in questo tutorial l'implementazione del sito che ho reallizato.
 
 Quindi, questa guida seguirà, passo passo, i vari step che e le varie migliorie che implementerò sul mio stesso blog.
@@ -1752,5 +1747,3 @@ e riapriamo il sito da browser. Se tutto va bene, vedrete il testo modificarsi c
 ### Conclusioni
 
 Anche questo tutorial è completo. Il codice lo trovate come al solito su [github](https://github.com/ludusrusso/ludoblog/tree/p7).
-
-{% endraw %}

@@ -309,14 +309,15 @@ export enum AuthorYamlFieldsEnum {
   ProfileChildrenMdxFileAbsolutePath = 'profile___childrenMdx___fileAbsolutePath',
   ProfileChildrenMdxFrontmatterTitle = 'profile___childrenMdx___frontmatter___title',
   ProfileChildrenMdxFrontmatterLayout = 'profile___childrenMdx___frontmatter___layout',
+  ProfileChildrenMdxFrontmatterDescription = 'profile___childrenMdx___frontmatter___description',
   ProfileChildrenMdxFrontmatterDate = 'profile___childrenMdx___frontmatter___date',
+  ProfileChildrenMdxFrontmatterPath = 'profile___childrenMdx___frontmatter___path',
+  ProfileChildrenMdxFrontmatterTags = 'profile___childrenMdx___frontmatter___tags',
   ProfileChildrenMdxFrontmatterHeaderImage = 'profile___childrenMdx___frontmatter___headerImage',
   ProfileChildrenMdxFrontmatterReadTime = 'profile___childrenMdx___frontmatter___read_time',
-  ProfileChildrenMdxFrontmatterTags = 'profile___childrenMdx___frontmatter___tags',
   ProfileChildrenMdxFrontmatterCategory = 'profile___childrenMdx___frontmatter___category',
-  ProfileChildrenMdxFrontmatterDescription = 'profile___childrenMdx___frontmatter___description',
-  ProfileChildrenMdxFrontmatterPath = 'profile___childrenMdx___frontmatter___path',
   ProfileChildrenMdxFrontmatterRedirectFrom = 'profile___childrenMdx___frontmatter___redirect_from',
+  ProfileChildrenMdxFrontmatterPermalink = 'profile___childrenMdx___frontmatter___permalink',
   ProfileChildrenMdxFrontmatterMultiple = 'profile___childrenMdx___frontmatter___multiple',
   ProfileChildrenMdxFrontmatterProjects = 'profile___childrenMdx___frontmatter___projects',
   ProfileChildrenMdxFrontmatterStar = 'profile___childrenMdx___frontmatter___star',
@@ -334,7 +335,7 @@ export enum AuthorYamlFieldsEnum {
   ProfileChildrenMdxWordCountParagraphs = 'profile___childrenMdx___wordCount___paragraphs',
   ProfileChildrenMdxWordCountSentences = 'profile___childrenMdx___wordCount___sentences',
   ProfileChildrenMdxWordCountWords = 'profile___childrenMdx___wordCount___words',
-  ProfileChildrenMdxFieldsSlug = 'profile___childrenMdx___fields___slug',
+  ProfileChildrenMdxGatsbyPath = 'profile___childrenMdx___gatsbyPath',
   ProfileChildrenMdxId = 'profile___childrenMdx___id',
   ProfileChildrenMdxParentId = 'profile___childrenMdx___parent___id',
   ProfileChildrenMdxParentChildren = 'profile___childrenMdx___parent___children',
@@ -353,14 +354,15 @@ export enum AuthorYamlFieldsEnum {
   ProfileChildMdxFileAbsolutePath = 'profile___childMdx___fileAbsolutePath',
   ProfileChildMdxFrontmatterTitle = 'profile___childMdx___frontmatter___title',
   ProfileChildMdxFrontmatterLayout = 'profile___childMdx___frontmatter___layout',
+  ProfileChildMdxFrontmatterDescription = 'profile___childMdx___frontmatter___description',
   ProfileChildMdxFrontmatterDate = 'profile___childMdx___frontmatter___date',
+  ProfileChildMdxFrontmatterPath = 'profile___childMdx___frontmatter___path',
+  ProfileChildMdxFrontmatterTags = 'profile___childMdx___frontmatter___tags',
   ProfileChildMdxFrontmatterHeaderImage = 'profile___childMdx___frontmatter___headerImage',
   ProfileChildMdxFrontmatterReadTime = 'profile___childMdx___frontmatter___read_time',
-  ProfileChildMdxFrontmatterTags = 'profile___childMdx___frontmatter___tags',
   ProfileChildMdxFrontmatterCategory = 'profile___childMdx___frontmatter___category',
-  ProfileChildMdxFrontmatterDescription = 'profile___childMdx___frontmatter___description',
-  ProfileChildMdxFrontmatterPath = 'profile___childMdx___frontmatter___path',
   ProfileChildMdxFrontmatterRedirectFrom = 'profile___childMdx___frontmatter___redirect_from',
+  ProfileChildMdxFrontmatterPermalink = 'profile___childMdx___frontmatter___permalink',
   ProfileChildMdxFrontmatterMultiple = 'profile___childMdx___frontmatter___multiple',
   ProfileChildMdxFrontmatterProjects = 'profile___childMdx___frontmatter___projects',
   ProfileChildMdxFrontmatterStar = 'profile___childMdx___frontmatter___star',
@@ -378,7 +380,7 @@ export enum AuthorYamlFieldsEnum {
   ProfileChildMdxWordCountParagraphs = 'profile___childMdx___wordCount___paragraphs',
   ProfileChildMdxWordCountSentences = 'profile___childMdx___wordCount___sentences',
   ProfileChildMdxWordCountWords = 'profile___childMdx___wordCount___words',
-  ProfileChildMdxFieldsSlug = 'profile___childMdx___fields___slug',
+  ProfileChildMdxGatsbyPath = 'profile___childMdx___gatsbyPath',
   ProfileChildMdxId = 'profile___childMdx___id',
   ProfileChildMdxParentId = 'profile___childMdx___parent___id',
   ProfileChildMdxParentChildren = 'profile___childMdx___parent___children',
@@ -1269,16 +1271,12 @@ export enum FileFieldsEnum {
   ChildrenMdxFileAbsolutePath = 'childrenMdx___fileAbsolutePath',
   ChildrenMdxFrontmatterTitle = 'childrenMdx___frontmatter___title',
   ChildrenMdxFrontmatterLayout = 'childrenMdx___frontmatter___layout',
-  ChildrenMdxFrontmatterDate = 'childrenMdx___frontmatter___date',
-  ChildrenMdxFrontmatterHeaderImage = 'childrenMdx___frontmatter___headerImage',
-  ChildrenMdxFrontmatterReadTime = 'childrenMdx___frontmatter___read_time',
-  ChildrenMdxFrontmatterTags = 'childrenMdx___frontmatter___tags',
-  ChildrenMdxFrontmatterCategory = 'childrenMdx___frontmatter___category',
   ChildrenMdxFrontmatterAuthorId = 'childrenMdx___frontmatter___author___id',
   ChildrenMdxFrontmatterAuthorChildren = 'childrenMdx___frontmatter___author___children',
   ChildrenMdxFrontmatterAuthorName = 'childrenMdx___frontmatter___author___name',
   ChildrenMdxFrontmatterAuthorBio = 'childrenMdx___frontmatter___author___bio',
   ChildrenMdxFrontmatterDescription = 'childrenMdx___frontmatter___description',
+  ChildrenMdxFrontmatterDate = 'childrenMdx___frontmatter___date',
   ChildrenMdxFrontmatterPath = 'childrenMdx___frontmatter___path',
   ChildrenMdxFrontmatterImageSourceInstanceName = 'childrenMdx___frontmatter___image___sourceInstanceName',
   ChildrenMdxFrontmatterImageAbsolutePath = 'childrenMdx___frontmatter___image___absolutePath',
@@ -1319,7 +1317,12 @@ export enum FileFieldsEnum {
   ChildrenMdxFrontmatterImageChildrenAuthorYaml = 'childrenMdx___frontmatter___image___childrenAuthorYaml',
   ChildrenMdxFrontmatterImageId = 'childrenMdx___frontmatter___image___id',
   ChildrenMdxFrontmatterImageChildren = 'childrenMdx___frontmatter___image___children',
+  ChildrenMdxFrontmatterTags = 'childrenMdx___frontmatter___tags',
+  ChildrenMdxFrontmatterHeaderImage = 'childrenMdx___frontmatter___headerImage',
+  ChildrenMdxFrontmatterReadTime = 'childrenMdx___frontmatter___read_time',
+  ChildrenMdxFrontmatterCategory = 'childrenMdx___frontmatter___category',
   ChildrenMdxFrontmatterRedirectFrom = 'childrenMdx___frontmatter___redirect_from',
+  ChildrenMdxFrontmatterPermalink = 'childrenMdx___frontmatter___permalink',
   ChildrenMdxFrontmatterMultiple = 'childrenMdx___frontmatter___multiple',
   ChildrenMdxFrontmatterProjects = 'childrenMdx___frontmatter___projects',
   ChildrenMdxFrontmatterStar = 'childrenMdx___frontmatter___star',
@@ -1337,7 +1340,7 @@ export enum FileFieldsEnum {
   ChildrenMdxWordCountParagraphs = 'childrenMdx___wordCount___paragraphs',
   ChildrenMdxWordCountSentences = 'childrenMdx___wordCount___sentences',
   ChildrenMdxWordCountWords = 'childrenMdx___wordCount___words',
-  ChildrenMdxFieldsSlug = 'childrenMdx___fields___slug',
+  ChildrenMdxGatsbyPath = 'childrenMdx___gatsbyPath',
   ChildrenMdxId = 'childrenMdx___id',
   ChildrenMdxParentId = 'childrenMdx___parent___id',
   ChildrenMdxParentParentId = 'childrenMdx___parent___parent___id',
@@ -1380,16 +1383,12 @@ export enum FileFieldsEnum {
   ChildMdxFileAbsolutePath = 'childMdx___fileAbsolutePath',
   ChildMdxFrontmatterTitle = 'childMdx___frontmatter___title',
   ChildMdxFrontmatterLayout = 'childMdx___frontmatter___layout',
-  ChildMdxFrontmatterDate = 'childMdx___frontmatter___date',
-  ChildMdxFrontmatterHeaderImage = 'childMdx___frontmatter___headerImage',
-  ChildMdxFrontmatterReadTime = 'childMdx___frontmatter___read_time',
-  ChildMdxFrontmatterTags = 'childMdx___frontmatter___tags',
-  ChildMdxFrontmatterCategory = 'childMdx___frontmatter___category',
   ChildMdxFrontmatterAuthorId = 'childMdx___frontmatter___author___id',
   ChildMdxFrontmatterAuthorChildren = 'childMdx___frontmatter___author___children',
   ChildMdxFrontmatterAuthorName = 'childMdx___frontmatter___author___name',
   ChildMdxFrontmatterAuthorBio = 'childMdx___frontmatter___author___bio',
   ChildMdxFrontmatterDescription = 'childMdx___frontmatter___description',
+  ChildMdxFrontmatterDate = 'childMdx___frontmatter___date',
   ChildMdxFrontmatterPath = 'childMdx___frontmatter___path',
   ChildMdxFrontmatterImageSourceInstanceName = 'childMdx___frontmatter___image___sourceInstanceName',
   ChildMdxFrontmatterImageAbsolutePath = 'childMdx___frontmatter___image___absolutePath',
@@ -1430,7 +1429,12 @@ export enum FileFieldsEnum {
   ChildMdxFrontmatterImageChildrenAuthorYaml = 'childMdx___frontmatter___image___childrenAuthorYaml',
   ChildMdxFrontmatterImageId = 'childMdx___frontmatter___image___id',
   ChildMdxFrontmatterImageChildren = 'childMdx___frontmatter___image___children',
+  ChildMdxFrontmatterTags = 'childMdx___frontmatter___tags',
+  ChildMdxFrontmatterHeaderImage = 'childMdx___frontmatter___headerImage',
+  ChildMdxFrontmatterReadTime = 'childMdx___frontmatter___read_time',
+  ChildMdxFrontmatterCategory = 'childMdx___frontmatter___category',
   ChildMdxFrontmatterRedirectFrom = 'childMdx___frontmatter___redirect_from',
+  ChildMdxFrontmatterPermalink = 'childMdx___frontmatter___permalink',
   ChildMdxFrontmatterMultiple = 'childMdx___frontmatter___multiple',
   ChildMdxFrontmatterProjects = 'childMdx___frontmatter___projects',
   ChildMdxFrontmatterStar = 'childMdx___frontmatter___star',
@@ -1448,7 +1452,7 @@ export enum FileFieldsEnum {
   ChildMdxWordCountParagraphs = 'childMdx___wordCount___paragraphs',
   ChildMdxWordCountSentences = 'childMdx___wordCount___sentences',
   ChildMdxWordCountWords = 'childMdx___wordCount___words',
-  ChildMdxFieldsSlug = 'childMdx___fields___slug',
+  ChildMdxGatsbyPath = 'childMdx___gatsbyPath',
   ChildMdxId = 'childMdx___id',
   ChildMdxParentId = 'childMdx___parent___id',
   ChildMdxParentParentId = 'childMdx___parent___parent___id',
@@ -1580,6 +1584,7 @@ export enum FileFieldsEnum {
   ChildrenAuthorYamlProfileChildrenMdxMdxAst = 'childrenAuthorYaml___profile___childrenMdx___mdxAST',
   ChildrenAuthorYamlProfileChildrenMdxTableOfContents = 'childrenAuthorYaml___profile___childrenMdx___tableOfContents',
   ChildrenAuthorYamlProfileChildrenMdxTimeToRead = 'childrenAuthorYaml___profile___childrenMdx___timeToRead',
+  ChildrenAuthorYamlProfileChildrenMdxGatsbyPath = 'childrenAuthorYaml___profile___childrenMdx___gatsbyPath',
   ChildrenAuthorYamlProfileChildrenMdxId = 'childrenAuthorYaml___profile___childrenMdx___id',
   ChildrenAuthorYamlProfileChildrenMdxChildren = 'childrenAuthorYaml___profile___childrenMdx___children',
   ChildrenAuthorYamlProfileChildMdxRawBody = 'childrenAuthorYaml___profile___childMdx___rawBody',
@@ -1592,6 +1597,7 @@ export enum FileFieldsEnum {
   ChildrenAuthorYamlProfileChildMdxMdxAst = 'childrenAuthorYaml___profile___childMdx___mdxAST',
   ChildrenAuthorYamlProfileChildMdxTableOfContents = 'childrenAuthorYaml___profile___childMdx___tableOfContents',
   ChildrenAuthorYamlProfileChildMdxTimeToRead = 'childrenAuthorYaml___profile___childMdx___timeToRead',
+  ChildrenAuthorYamlProfileChildMdxGatsbyPath = 'childrenAuthorYaml___profile___childMdx___gatsbyPath',
   ChildrenAuthorYamlProfileChildMdxId = 'childrenAuthorYaml___profile___childMdx___id',
   ChildrenAuthorYamlProfileChildMdxChildren = 'childrenAuthorYaml___profile___childMdx___children',
   ChildrenAuthorYamlProfileChildrenAuthorYaml = 'childrenAuthorYaml___profile___childrenAuthorYaml',
@@ -1709,6 +1715,7 @@ export enum FileFieldsEnum {
   ChildAuthorYamlProfileChildrenMdxMdxAst = 'childAuthorYaml___profile___childrenMdx___mdxAST',
   ChildAuthorYamlProfileChildrenMdxTableOfContents = 'childAuthorYaml___profile___childrenMdx___tableOfContents',
   ChildAuthorYamlProfileChildrenMdxTimeToRead = 'childAuthorYaml___profile___childrenMdx___timeToRead',
+  ChildAuthorYamlProfileChildrenMdxGatsbyPath = 'childAuthorYaml___profile___childrenMdx___gatsbyPath',
   ChildAuthorYamlProfileChildrenMdxId = 'childAuthorYaml___profile___childrenMdx___id',
   ChildAuthorYamlProfileChildrenMdxChildren = 'childAuthorYaml___profile___childrenMdx___children',
   ChildAuthorYamlProfileChildMdxRawBody = 'childAuthorYaml___profile___childMdx___rawBody',
@@ -1721,6 +1728,7 @@ export enum FileFieldsEnum {
   ChildAuthorYamlProfileChildMdxMdxAst = 'childAuthorYaml___profile___childMdx___mdxAST',
   ChildAuthorYamlProfileChildMdxTableOfContents = 'childAuthorYaml___profile___childMdx___tableOfContents',
   ChildAuthorYamlProfileChildMdxTimeToRead = 'childAuthorYaml___profile___childMdx___timeToRead',
+  ChildAuthorYamlProfileChildMdxGatsbyPath = 'childAuthorYaml___profile___childMdx___gatsbyPath',
   ChildAuthorYamlProfileChildMdxId = 'childAuthorYaml___profile___childMdx___id',
   ChildAuthorYamlProfileChildMdxChildren = 'childAuthorYaml___profile___childMdx___children',
   ChildAuthorYamlProfileChildrenAuthorYaml = 'childAuthorYaml___profile___childrenAuthorYaml',
@@ -2418,7 +2426,7 @@ export type Mdx = Node & {
   tableOfContents?: Maybe<Scalars['JSON']>;
   timeToRead?: Maybe<Scalars['Int']>;
   wordCount?: Maybe<MdxWordCount>;
-  fields?: Maybe<MdxFields>;
+  gatsbyPath?: Maybe<Scalars['String']>;
   id: Scalars['ID'];
   parent?: Maybe<Node>;
   children: Array<Node>;
@@ -2439,6 +2447,11 @@ export type MdxHeadingsArgs = {
 
 export type MdxTableOfContentsArgs = {
   maxDepth?: Maybe<Scalars['Int']>;
+};
+
+
+export type MdxGatsbyPathArgs = {
+  filePath?: Maybe<Scalars['String']>;
 };
 
 export type MdxConnection = {
@@ -2488,21 +2501,11 @@ export type MdxEdge = {
   previous?: Maybe<Mdx>;
 };
 
-export type MdxFields = {
-  __typename?: 'MdxFields';
-  slug?: Maybe<Scalars['String']>;
-};
-
 export enum MdxFieldsEnum {
   RawBody = 'rawBody',
   FileAbsolutePath = 'fileAbsolutePath',
   FrontmatterTitle = 'frontmatter___title',
   FrontmatterLayout = 'frontmatter___layout',
-  FrontmatterDate = 'frontmatter___date',
-  FrontmatterHeaderImage = 'frontmatter___headerImage',
-  FrontmatterReadTime = 'frontmatter___read_time',
-  FrontmatterTags = 'frontmatter___tags',
-  FrontmatterCategory = 'frontmatter___category',
   FrontmatterAuthorId = 'frontmatter___author___id',
   FrontmatterAuthorParentId = 'frontmatter___author___parent___id',
   FrontmatterAuthorParentChildren = 'frontmatter___author___parent___children',
@@ -2559,6 +2562,7 @@ export enum MdxFieldsEnum {
   FrontmatterAuthorProfileId = 'frontmatter___author___profile___id',
   FrontmatterAuthorProfileChildren = 'frontmatter___author___profile___children',
   FrontmatterDescription = 'frontmatter___description',
+  FrontmatterDate = 'frontmatter___date',
   FrontmatterPath = 'frontmatter___path',
   FrontmatterImageSourceInstanceName = 'frontmatter___image___sourceInstanceName',
   FrontmatterImageAbsolutePath = 'frontmatter___image___absolutePath',
@@ -2612,6 +2616,7 @@ export enum MdxFieldsEnum {
   FrontmatterImageChildrenMdxMdxAst = 'frontmatter___image___childrenMdx___mdxAST',
   FrontmatterImageChildrenMdxTableOfContents = 'frontmatter___image___childrenMdx___tableOfContents',
   FrontmatterImageChildrenMdxTimeToRead = 'frontmatter___image___childrenMdx___timeToRead',
+  FrontmatterImageChildrenMdxGatsbyPath = 'frontmatter___image___childrenMdx___gatsbyPath',
   FrontmatterImageChildrenMdxId = 'frontmatter___image___childrenMdx___id',
   FrontmatterImageChildrenMdxChildren = 'frontmatter___image___childrenMdx___children',
   FrontmatterImageChildMdxRawBody = 'frontmatter___image___childMdx___rawBody',
@@ -2624,6 +2629,7 @@ export enum MdxFieldsEnum {
   FrontmatterImageChildMdxMdxAst = 'frontmatter___image___childMdx___mdxAST',
   FrontmatterImageChildMdxTableOfContents = 'frontmatter___image___childMdx___tableOfContents',
   FrontmatterImageChildMdxTimeToRead = 'frontmatter___image___childMdx___timeToRead',
+  FrontmatterImageChildMdxGatsbyPath = 'frontmatter___image___childMdx___gatsbyPath',
   FrontmatterImageChildMdxId = 'frontmatter___image___childMdx___id',
   FrontmatterImageChildMdxChildren = 'frontmatter___image___childMdx___children',
   FrontmatterImageChildrenAuthorYaml = 'frontmatter___image___childrenAuthorYaml',
@@ -2649,7 +2655,12 @@ export enum MdxFieldsEnum {
   FrontmatterImageInternalMediaType = 'frontmatter___image___internal___mediaType',
   FrontmatterImageInternalOwner = 'frontmatter___image___internal___owner',
   FrontmatterImageInternalType = 'frontmatter___image___internal___type',
+  FrontmatterTags = 'frontmatter___tags',
+  FrontmatterHeaderImage = 'frontmatter___headerImage',
+  FrontmatterReadTime = 'frontmatter___read_time',
+  FrontmatterCategory = 'frontmatter___category',
   FrontmatterRedirectFrom = 'frontmatter___redirect_from',
+  FrontmatterPermalink = 'frontmatter___permalink',
   FrontmatterMultiple = 'frontmatter___multiple',
   FrontmatterProjects = 'frontmatter___projects',
   FrontmatterStar = 'frontmatter___star',
@@ -2667,7 +2678,7 @@ export enum MdxFieldsEnum {
   WordCountParagraphs = 'wordCount___paragraphs',
   WordCountSentences = 'wordCount___sentences',
   WordCountWords = 'wordCount___words',
-  FieldsSlug = 'fields___slug',
+  GatsbyPath = 'gatsbyPath',
   Id = 'id',
   ParentId = 'parent___id',
   ParentParentId = 'parent___parent___id',
@@ -2756,10 +2767,6 @@ export enum MdxFieldsEnum {
   InternalType = 'internal___type'
 }
 
-export type MdxFieldsFilterInput = {
-  slug?: Maybe<StringQueryOperatorInput>;
-};
-
 export type MdxFilterInput = {
   rawBody?: Maybe<StringQueryOperatorInput>;
   fileAbsolutePath?: Maybe<StringQueryOperatorInput>;
@@ -2773,7 +2780,7 @@ export type MdxFilterInput = {
   tableOfContents?: Maybe<JsonQueryOperatorInput>;
   timeToRead?: Maybe<IntQueryOperatorInput>;
   wordCount?: Maybe<MdxWordCountFilterInput>;
-  fields?: Maybe<MdxFieldsFilterInput>;
+  gatsbyPath?: Maybe<StringQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
@@ -2788,16 +2795,17 @@ export type MdxFrontmatter = {
   __typename?: 'MdxFrontmatter';
   title: Scalars['String'];
   layout?: Maybe<Scalars['String']>;
-  date?: Maybe<Scalars['Date']>;
-  headerImage?: Maybe<Scalars['Boolean']>;
-  read_time?: Maybe<Scalars['Boolean']>;
-  tags?: Maybe<Array<Maybe<Scalars['String']>>>;
-  category?: Maybe<Scalars['String']>;
   author?: Maybe<AuthorYaml>;
   description?: Maybe<Scalars['String']>;
+  date?: Maybe<Scalars['Date']>;
   path?: Maybe<Scalars['String']>;
   image?: Maybe<File>;
+  tags?: Maybe<Array<Maybe<Scalars['String']>>>;
+  headerImage?: Maybe<Scalars['Boolean']>;
+  read_time?: Maybe<Scalars['Boolean']>;
+  category?: Maybe<Scalars['String']>;
   redirect_from?: Maybe<Array<Maybe<Scalars['String']>>>;
+  permalink?: Maybe<Scalars['String']>;
   multiple?: Maybe<Scalars['String']>;
   projects?: Maybe<Scalars['Boolean']>;
   star?: Maybe<Scalars['Boolean']>;
@@ -2815,16 +2823,17 @@ export type MdxFrontmatterDateArgs = {
 export type MdxFrontmatterFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   layout?: Maybe<StringQueryOperatorInput>;
-  date?: Maybe<DateQueryOperatorInput>;
-  headerImage?: Maybe<BooleanQueryOperatorInput>;
-  read_time?: Maybe<BooleanQueryOperatorInput>;
-  tags?: Maybe<StringQueryOperatorInput>;
-  category?: Maybe<StringQueryOperatorInput>;
   author?: Maybe<AuthorYamlFilterInput>;
   description?: Maybe<StringQueryOperatorInput>;
+  date?: Maybe<DateQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
   image?: Maybe<FileFilterInput>;
+  tags?: Maybe<StringQueryOperatorInput>;
+  headerImage?: Maybe<BooleanQueryOperatorInput>;
+  read_time?: Maybe<BooleanQueryOperatorInput>;
+  category?: Maybe<StringQueryOperatorInput>;
   redirect_from?: Maybe<StringQueryOperatorInput>;
+  permalink?: Maybe<StringQueryOperatorInput>;
   multiple?: Maybe<StringQueryOperatorInput>;
   projects?: Maybe<BooleanQueryOperatorInput>;
   star?: Maybe<BooleanQueryOperatorInput>;
@@ -3165,7 +3174,7 @@ export type QueryMdxArgs = {
   tableOfContents?: Maybe<JsonQueryOperatorInput>;
   timeToRead?: Maybe<IntQueryOperatorInput>;
   wordCount?: Maybe<MdxWordCountFilterInput>;
-  fields?: Maybe<MdxFieldsFilterInput>;
+  gatsbyPath?: Maybe<StringQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
@@ -3873,11 +3882,24 @@ export type SitePageConnectionGroupArgs = {
 
 export type SitePageContext = {
   __typename?: 'SitePageContext';
-  path?: Maybe<Scalars['String']>;
+  id?: Maybe<Scalars['String']>;
+  frontmatter__path?: Maybe<Scalars['String']>;
+  _xparams?: Maybe<SitePageContext_Xparams>;
 };
 
 export type SitePageContextFilterInput = {
-  path?: Maybe<StringQueryOperatorInput>;
+  id?: Maybe<StringQueryOperatorInput>;
+  frontmatter__path?: Maybe<StringQueryOperatorInput>;
+  _xparams?: Maybe<SitePageContext_XparamsFilterInput>;
+};
+
+export type SitePageContext_Xparams = {
+  __typename?: 'SitePageContext_xparams';
+  frontmatter__path?: Maybe<Scalars['String']>;
+};
+
+export type SitePageContext_XparamsFilterInput = {
+  frontmatter__path?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePageEdge = {
@@ -3980,7 +4002,9 @@ export enum SitePageFieldsEnum {
   InternalOwner = 'internal___owner',
   InternalType = 'internal___type',
   IsCreatedByStatefulCreatePages = 'isCreatedByStatefulCreatePages',
-  ContextPath = 'context___path',
+  ContextId = 'context___id',
+  ContextFrontmatterPath = 'context___frontmatter__path',
+  ContextXparamsFrontmatterPath = 'context____xparams___frontmatter__path',
   PluginCreatorId = 'pluginCreator___id',
   PluginCreatorParentId = 'pluginCreator___parent___id',
   PluginCreatorParentParentId = 'pluginCreator___parent___parent___id',
@@ -4028,6 +4052,8 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsDefaultQuality = 'pluginCreator___pluginOptions___defaultQuality',
   PluginCreatorPluginOptionsFailOnError = 'pluginCreator___pluginOptions___failOnError',
   PluginCreatorPluginOptionsExtensions = 'pluginCreator___pluginOptions___extensions',
+  PluginCreatorPluginOptionsGatsbyRemarkPlugins = 'pluginCreator___pluginOptions___gatsbyRemarkPlugins',
+  PluginCreatorPluginOptionsGatsbyRemarkPluginsResolve = 'pluginCreator___pluginOptions___gatsbyRemarkPlugins___resolve',
   PluginCreatorPluginOptionsLessBabel = 'pluginCreator___pluginOptions___lessBabel',
   PluginCreatorPluginOptionsMediaTypes = 'pluginCreator___pluginOptions___mediaTypes',
   PluginCreatorPluginOptionsRoot = 'pluginCreator___pluginOptions___root',
@@ -4267,6 +4293,9 @@ export enum SitePluginFieldsEnum {
   PluginOptionsDefaultQuality = 'pluginOptions___defaultQuality',
   PluginOptionsFailOnError = 'pluginOptions___failOnError',
   PluginOptionsExtensions = 'pluginOptions___extensions',
+  PluginOptionsGatsbyRemarkPlugins = 'pluginOptions___gatsbyRemarkPlugins',
+  PluginOptionsGatsbyRemarkPluginsResolve = 'pluginOptions___gatsbyRemarkPlugins___resolve',
+  PluginOptionsGatsbyRemarkPluginsOptionsMaxWidth = 'pluginOptions___gatsbyRemarkPlugins___options___maxWidth',
   PluginOptionsLessBabel = 'pluginOptions___lessBabel',
   PluginOptionsMediaTypes = 'pluginOptions___mediaTypes',
   PluginOptionsRoot = 'pluginOptions___root',
@@ -4416,6 +4445,7 @@ export type SitePluginPluginOptions = {
   defaultQuality?: Maybe<Scalars['Int']>;
   failOnError?: Maybe<Scalars['Boolean']>;
   extensions?: Maybe<Array<Maybe<Scalars['String']>>>;
+  gatsbyRemarkPlugins?: Maybe<Array<Maybe<SitePluginPluginOptionsGatsbyRemarkPlugins>>>;
   lessBabel?: Maybe<Scalars['Boolean']>;
   mediaTypes?: Maybe<Array<Maybe<Scalars['String']>>>;
   root?: Maybe<Scalars['String']>;
@@ -4449,6 +4479,7 @@ export type SitePluginPluginOptionsFilterInput = {
   defaultQuality?: Maybe<IntQueryOperatorInput>;
   failOnError?: Maybe<BooleanQueryOperatorInput>;
   extensions?: Maybe<StringQueryOperatorInput>;
+  gatsbyRemarkPlugins?: Maybe<SitePluginPluginOptionsGatsbyRemarkPluginsFilterListInput>;
   lessBabel?: Maybe<BooleanQueryOperatorInput>;
   mediaTypes?: Maybe<StringQueryOperatorInput>;
   root?: Maybe<StringQueryOperatorInput>;
@@ -4473,6 +4504,30 @@ export type SitePluginPluginOptionsFilterInput = {
   allExtensions?: Maybe<BooleanQueryOperatorInput>;
   isTSX?: Maybe<BooleanQueryOperatorInput>;
   jsxPragma?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsGatsbyRemarkPlugins = {
+  __typename?: 'SitePluginPluginOptionsGatsbyRemarkPlugins';
+  resolve?: Maybe<Scalars['String']>;
+  options?: Maybe<SitePluginPluginOptionsGatsbyRemarkPluginsOptions>;
+};
+
+export type SitePluginPluginOptionsGatsbyRemarkPluginsFilterInput = {
+  resolve?: Maybe<StringQueryOperatorInput>;
+  options?: Maybe<SitePluginPluginOptionsGatsbyRemarkPluginsOptionsFilterInput>;
+};
+
+export type SitePluginPluginOptionsGatsbyRemarkPluginsFilterListInput = {
+  elemMatch?: Maybe<SitePluginPluginOptionsGatsbyRemarkPluginsFilterInput>;
+};
+
+export type SitePluginPluginOptionsGatsbyRemarkPluginsOptions = {
+  __typename?: 'SitePluginPluginOptionsGatsbyRemarkPluginsOptions';
+  maxWidth?: Maybe<Scalars['Int']>;
+};
+
+export type SitePluginPluginOptionsGatsbyRemarkPluginsOptionsFilterInput = {
+  maxWidth?: Maybe<IntQueryOperatorInput>;
 };
 
 export type SitePluginSortInput = {
@@ -4617,7 +4672,7 @@ export type TestPageQuery = (
 );
 
 export type PostPageQueryVariables = Exact<{
-  path: Scalars['String'];
+  id: Scalars['String'];
 }>;
 
 
@@ -4625,10 +4680,20 @@ export type PostPageQuery = (
   { __typename?: 'Query' }
   & { post?: Maybe<(
     { __typename?: 'Mdx' }
-    & Pick<Mdx, 'html'>
+    & Pick<Mdx, 'timeToRead' | 'body'>
     & { frontmatter?: Maybe<(
       { __typename?: 'MdxFrontmatter' }
-      & Pick<MdxFrontmatter, 'title'>
+      & Pick<MdxFrontmatter, 'title' | 'date' | 'description'>
+      & { image?: Maybe<(
+        { __typename?: 'File' }
+        & { childImageSharp?: Maybe<(
+          { __typename?: 'ImageSharp' }
+          & { resize?: Maybe<(
+            { __typename?: 'ImageSharpResize' }
+            & Pick<ImageSharpResize, 'src'>
+          )> }
+        )> }
+      )> }
     )> }
   )> }
 );
