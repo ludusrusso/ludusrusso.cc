@@ -24,7 +24,6 @@ const Code = ({ children, className }) => {
       >
         {({ className, style, tokens, getLineProps, getTokenProps }) => (
           <CodeWrapper className={className} style={style}>
-            <p>ciao</p>
             {tokens.map((line, i) => (
               <div {...getLineProps({ line, key: i })}>
                 {line.map((token, key) => (
@@ -42,7 +41,6 @@ const Code = ({ children, className }) => {
 export const CodeWrapper = styled.div`
   background-color: red;
   text-align: left;
-  margin: 1em 0;
   padding: 0.5em;
   overflow: scroll;
   & .token-line {
@@ -51,8 +49,14 @@ export const CodeWrapper = styled.div`
   }
 `
 
+const Pre = styled.pre`
+  background-color: transparent !important;
+  padding: 0 !important;
+`
+
 const components: MDXProviderProps["components"] = {
   code: Code,
+  pre: Pre,
 }
 
 export default ({ data }: { data: PostPageQuery }) => {
@@ -67,17 +71,17 @@ export default ({ data }: { data: PostPageQuery }) => {
         image={image?.childImageSharp?.resize?.src}
       />
 
-      <div className="prose max-w-prose m-auto mt-16 mb-16">
-        <h1 className="text-4xl font-bold leading-tight">
-          {post.frontmatter.title}
-        </h1>
+      <article className="prose lg:prose-lg m-auto mt-16">
+        <h1>{post.frontmatter.title}</h1>
         <p className="font-semibold text-gray-500 mt-4 mb-10">
           Ludovico Russo &bull; {date} &bull; read in {post.timeToRead} mins
         </p>
-        <MDXProvider components={components}>
-          <MDXRenderer>{post.body}</MDXRenderer>
-        </MDXProvider>
-      </div>
+        <div className="text-gray-800">
+          <MDXProvider components={components}>
+            <MDXRenderer>{post.body}</MDXRenderer>
+          </MDXProvider>
+        </div>
+      </article>
     </Layout>
   )
 }
