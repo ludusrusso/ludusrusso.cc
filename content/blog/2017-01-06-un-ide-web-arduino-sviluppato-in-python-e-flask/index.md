@@ -20,7 +20,7 @@ Solitamente, quando devo imparare ad utilizzare una nuova tecnologia, cerco di i
 
 ![img1](./main.jpg)
 
-## Idea e Sviluppoì
+## Idea e Sviluppo
 
 L'idea di base era quella di sviluppare un semplice IDE web per Arduino, che mi permettesse di sviluppare codice su un Arduino direttamente connesso ad un Raspberry Pi (ormai sapete che utilizzo tantissimo entrambi questi Hardware), ma senza la scomodità di dover utilizzare direttamente l'interfaccia grafica del Raspberry Pi per programmare.
 
@@ -46,7 +46,7 @@ Prima di tutto dobbiamo installare le dipendenze, che sono:
 
 Arduino-mk si installa da apt-get da linea di comando
 
-```
+```bash
 $ sudo apt-get install arduino-mk
 ```
 
@@ -58,7 +58,7 @@ Per installare virtualenv basta eseguire il comando
 $ sudo pip install virtualenv
 ```
 
-Una volta installato, entriamo nella cartella dove mettiamo solitamente i nostri progetti (nel mio caso è <code>/devs</code>), creiamo un ambiente virtuale e installiamo le dipendenze Python
+Una volta installato, entriamo nella cartella dove mettiamo solitamente i nostri progetti (nel mio caso è `devs`), creiamo un ambiente virtuale e installiamo le dipendenze Python
 
 ```bash
 $ virtualenv remote-arduino
@@ -84,7 +84,7 @@ In questo caso, utilizziamo un Arduino UNO collegato alla porta ttyACM0.
 
 ### Lanciare l'applicazione
 
-Per lanciare l'app, basta entrare nella cartella <code>arduino-compiler-web</code> e lancaire il seguente comando
+Per lanciare l'app, basta entrare nella cartella `arduino-compiler-web` e lancaire il seguente comando
 
 ```bash
 ./manage.py runserver -h 0.0.0.0 --threaded
@@ -92,7 +92,7 @@ Per lanciare l'app, basta entrare nella cartella <code>arduino-compiler-web</cod
 
 ### Utilizzo della WebApp
 
-A questo punto, da qualsiasi browser, collegandosi all'url <code>http://&lt;IP RASPBERRY&gt;:5000</code> accederemo all'applicazione.
+A questo punto, da qualsiasi browser, collegandosi all'url `http://<IP RASPBERRY>:5000` accederemo all'applicazione.
 ![index](index.png)
 
 Possiamo utilizzare l'editor di testo per scrivere codice
