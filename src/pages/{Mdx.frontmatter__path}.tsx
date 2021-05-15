@@ -1,6 +1,7 @@
 import styled from "@emotion/styled"
 import { MDXProvider, MDXProviderProps } from "@mdx-js/react"
 import { graphql } from "gatsby"
+import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Highlight, { defaultProps } from "prism-react-renderer"
 import theme from "prism-react-renderer/themes/nightOwl"
@@ -57,11 +58,19 @@ const Pre = styled.pre`
 const components: MDXProviderProps["components"] = {
   code: Code,
   pre: Pre,
+  a: ({ children, target = "_blank", ...props }) => (
+    <a {...props} target={target}>
+      {children}
+    </a>
+  ),
 }
 
 export default ({ data }: { data: PostPageQuery }) => {
   const post = data.post
-  const { date, title, description, image } = post.frontmatter
+  const { date, title, description, image, author } = post.frontmatter
+  const headerImage = post.frontmatter.headerImage
+    ? getImage(image.childImageSharp.gatsbyImageData)
+    : undefined
 
   return (
     <Layout>
@@ -71,11 +80,12 @@ export default ({ data }: { data: PostPageQuery }) => {
         image={image?.childImageSharp?.resize?.src}
       />
 
-      <article className="prose lg:prose-lg m-auto mt-16">
+      <article className="prose lg:prose-lg px-1 m-auto mt-16">
         <h1>{post.frontmatter.title}</h1>
         <p className="font-semibold text-gray-500 mt-4 mb-10">
-          Ludovico Russo &bull; {date} &bull; read in {post.timeToRead} mins
+          {author?.name} &bull; {date} &bull; read in {post.timeToRead} mins
         </p>
+        {headerImage && <GatsbyImage image={headerImage} alt={title} />}
         <div className="text-gray-800">
           <MDXProvider components={components}>
             <MDXRenderer>{post.body}</MDXRenderer>
@@ -92,11 +102,16 @@ export const query = graphql`
         title
         date(fromNow: false, formatString: "Do MMMM, yyyy")
         description
+        headerImage
+        author {
+          name
+        }
         image {
           childImageSharp {
             resize(width: 600) {
               src
             }
+            gatsbyImageData(width: 900)
           }
         }
       }

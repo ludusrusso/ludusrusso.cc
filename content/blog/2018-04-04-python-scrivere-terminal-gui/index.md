@@ -82,5 +82,5 @@ Vi chiedo perciò di fare alcune, per aiutarmi a far crescere il blog per permet
 
 1. Iscrivetevi alla newsletter (trovate form nel footer di questo blog),
 2. Lasciate dei commenti sotto questo post (e sotto i vari post che ritenete utili). Vorrei sapere da voi come credete possa migliorare il blog, e se avete idee per futuri articoli o qualcosa che vorreste approndire, **questo è uno dei migliori modi con cui potete aiutarmi**!
-3. Mettete un Like alla mia [pagina facebook](https://www.facebook.com/ludusrusso.cc){:target="\_blank"}, aggiungetemi [su linkedin](https://www.linkedin.com/in/ludusrusso/){:target="\_blank"} e seguitemi su [twitter](https://twitter.com/ludusrusso){:target="\_blank"} e [github](https://github.com/ludusrusso){:target="\_blank"}.
+3. Mettete un Like alla mia [pagina facebook](https://www.facebook.com/ludusrusso.cc), aggiungetemi [su linkedin](https://www.linkedin.com/in/ludusrusso/) e seguitemi su [twitter](https://twitter.com/ludusrusso) e [github](https://github.com/ludusrusso).
 4. Condividete i miei post!

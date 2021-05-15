@@ -2,3 +2,19 @@
   name: Ludovico Russo
   bio: Dev Passionate
   profile: ./imgs/authors/ludusrusso.jpg
+- id: sgabello
+  name: Gabriele Ermacora
+  bio: Dev Passionate
+  profile: ./imgs/authors/sgabello.jpg
+- id: Pietro Chiro
+  name: Ludovico Russo
+  bio: Dev Passionate
+  profile: ./imgs/authors/ludusrusso.jpg
+- id: fiorellazza
+  name: Fiorella Sibona
+  bio: Dev Passionate
+  profile: ./imgs/authors/fiorellazza.jpg
+- id: ruslan
+  name: Ludovico Russo
+  bio: Dev Passionate
+  profile: ./imgs/authors/ludusrusso.jpg

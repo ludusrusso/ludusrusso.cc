@@ -8,7 +8,8 @@ interface PostPreviewProps {
 
 export const BlogPostPreview = ({ post }: PostPreviewProps) => {
   const image = getImage(post.frontmatter.image as any)
-  const authorImage = getImage(post.frontmatter.author.profile as any)
+  const authorImage =
+    post.frontmatter.author && getImage(post.frontmatter.author?.profile as any)
 
   const { title, description, date, path, author } = post.frontmatter
   const { timeToRead } = post
@@ -22,10 +23,12 @@ export const BlogPostPreview = ({ post }: PostPreviewProps) => {
           <GatsbyImage
             className="w-12 h-12 rounded-full"
             image={authorImage}
-            alt={author.name}
+            alt={author?.name}
           />
           <div className="ml-3">
-            <h4 className="text font-semibold text-green-700">{author.name}</h4>
+            <h4 className="text font-semibold text-green-700">
+              {author?.name}
+            </h4>
             <p className="text-xs uppercase tracking-wide text-gray-700 ">
               {date}
             </p>

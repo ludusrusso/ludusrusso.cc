@@ -20,8 +20,8 @@ image: "./main.png"
 
 Ciao a tutti, riprendo e concludo con questa terza parte la mia guida su come sviluppare API rest usando Flask e la filosofia di sviluppo TDD.
 
-Nella [prima parte](/2017/10/04/tdd-flask-pytest-1/){:target="\_blank"} ci siamo soffermati su sul setup dell'applicazione e lo sviluppo
-dei test, mentre nella [seconda parte](/2018/01/25/tdd-flask-pytest-2/){:target="\_blank"} abbiamo visto come creare un semplice endpoint
+Nella [prima parte](/2017/10/04/tdd-flask-pytest-1/) ci siamo soffermati su sul setup dell'applicazione e lo sviluppo
+dei test, mentre nella [seconda parte](/2018/01/25/tdd-flask-pytest-2/) abbiamo visto come creare un semplice endpoint
 di login in grado di generare un token JWT (JSON Web Token) univoco e crittograficamente firmato dal server.
 
 In quest'ultima parte ci soffermeremo su come sfruttare il Token generato per autenticarsi all'interno di un endpoint protetto.
@@ -321,7 +321,7 @@ Tutto questo non avrà nessun effetto sue test, che dovrebbero passare senza nes
 
 ### Riorganizziamo gli endpoint sfruttando i Blueprint
 
-Ho parlato dei Blueprint in [questo mio post su Flask](/2016/12/27/tutorial-flask/){:target="\_blank"}.
+Ho parlato dei Blueprint in [questo mio post su Flask](/2016/12/27/tutorial-flask/).
 Questi sono un modo che permette di scrivere e raggruppare endpoint in modo separato
 dalla creazione dell'app stessa, e poi di attaccare questi endpoint all'app una volta
 che l'app viene creata. I vantaggi dei blueprint sono due:
@@ -484,9 +484,9 @@ Vi chiedo perciò di fare alcune, per aiutarmi a far crescere il blog per permet
 
 1. Iscrivetevi alla newsletter (trovate form nel footer di questo blog),
 2. Lasciate dei commenti sotto questo post (e sotto i vari post che ritenete utili). Vorrei sapere da voi come credete possa migliorare il blog, e se avete idee per futuri articoli o qualcosa che vorreste approndire, **questo è uno dei migliori modi con cui potete aiutarmi**!
-3. Mettete un Like alla mia [pagina facebook](https://www.facebook.com/ludusrusso.cc){:target="\_blank"}, aggiungetemi [su linkedin](https://www.linkedin.com/in/ludusrusso/){:target="\_blank"} e seguitemi su [twitter](https://twitter.com/ludusrusso){:target="\_blank"} e [github](https://github.com/ludusrusso){:target="\_blank"}.
+3. Mettete un Like alla mia [pagina facebook](https://www.facebook.com/ludusrusso.cc), aggiungetemi [su linkedin](https://www.linkedin.com/in/ludusrusso/) e seguitemi su [twitter](https://twitter.com/ludusrusso) e [github](https://github.com/ludusrusso).
 4. Condividete i miei post!
 
 Il mio è un piccolo esperimento per vedere se, insieme al vostro aiuto, posso riuscire ad aumentare le visite a questo blog, in caso affermativo, rilascerò la guida che sto scrivendo in PDF a tutti gli iscritti alla newsletter!
 
-Ah dimenticavo, [qui](https://github.com/ludusrusso/flask-rest-tdd){:target="\_blank"} trovate tutto il codice sviluppato!
+Ah dimenticavo, [qui](https://github.com/ludusrusso/flask-rest-tdd) trovate tutto il codice sviluppato!
