@@ -2,7 +2,7 @@
 title: "Call For Rokers (Roboticists and Makers) - 7 Maggio 2017, Torino"
 layout: "post"
 date: "2017-04-07T10:04:38.000Z"
-image: null
+image: "../hotblack.jpg"
 headerImage: false
 lang: "it"
 tag:
@@ -18,7 +18,7 @@ tags: []
 
 ![cloud robotics event ](./https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F30171570%2F88322724341%2F1%2Foriginal.jpg)
 
-Iscriviti al primo ritrovo della comunità di cloud robotics e maker! La call è aperta a tutti ed è orientata a fare *community* con tutti gli interessati di robotica, cloud e IoT, per condividere idee, progetti e farsi influenzare dalla cultura maker!
+Iscriviti al primo ritrovo della comunità di cloud robotics e maker! La call è aperta a tutti ed è orientata a fare _community_ con tutti gli interessati di robotica, cloud e IoT, per condividere idee, progetti e farsi influenzare dalla cultura maker!
 NB: potete portare chi volete basta che vi iscriviate così ci organizziamo!
 
 **Iscriviti qui:**
@@ -27,10 +27,10 @@ NB: potete portare chi volete basta che vi iscriviate così ci organizziamo!
 
 **Perchè dovresti venire?**
 
-* è gratis
-* si mangia e si beve
-* c'è un sacco di gente simpatica
-* ...ovviamente ci sono tantissimi robot!!
+- è gratis
+- si mangia e si beve
+- c'è un sacco di gente simpatica
+- ...ovviamente ci sono tantissimi robot!!
 
 **Presenta il tuo progetto**
 Vieni ad esporre il tuo progetto in palio un kit **O-robot101** sviluppato da HotBlack Robotics in collaborazione con Olivetti!!

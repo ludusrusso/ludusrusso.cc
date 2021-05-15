@@ -2,7 +2,7 @@
 title: "Collegare un Arduino in parallelo al raspberry"
 layout: "post"
 date: "2017-06-16T09:54:19.000Z"
-image: null
+image: "../hotblack.jpg"
 headerImage: false
 lang: "it"
 tag:
@@ -11,7 +11,7 @@ tag:
 redirect_from:
   - "/2017/06/16/collegare-un-arduino-in-parallelo-al-raspberry/"
   - "/blog/posts/2017-06-16-collegare-un-arduino-in-parallelo-al-raspberry"
-author: "Pietro Chirio"
+author: "pietrochirio"
 description: ""
 path: "/hbr/collegare-un-arduino-in-parallelo-al-raspberry/"
 tags: []
@@ -27,15 +27,15 @@ Per far funzionare questo tutorial, prima di tutto è necessario accedere al ter
 curl https://gist.githubusercontent.com/ludusrusso/a3533daae7a03c07ce55b90019f2a0ba/raw/c20b544de544f0c13577c31a3bc0322718c884d8/arduino_patch_hbrain | bash
 ```
 
-Includiamo le librerie di ROS su Arduino
--------
-Utilizzando il pacchetto **rosserial_arduino** si "trasforma" Arduino in un nodo ROS  a tutti gli effetti, che può pubblicare o sottoscriversi a topic ROS.  La comunicazione con ROS è resa possibile dalla libreria `ros_lib`, quindi basta implementarla nella cartella delle librerie di Arduino in questo modo:
+## Includiamo le librerie di ROS su Arduino
+
+Utilizzando il pacchetto **rosserial_arduino** si "trasforma" Arduino in un nodo ROS a tutti gli effetti, che può pubblicare o sottoscriversi a topic ROS. La comunicazione con ROS è resa possibile dalla libreria `ros_lib`, quindi basta implementarla nella cartella delle librerie di Arduino in questo modo:
 
 - scaricate [da qui](https://github.com/HotBlackRobotics/ros_lib_arduino) (premendo su **clone or download**) le librerie presenti
-![](./27024733-1708cddc-4f58-11e7-9427-c3b4e0770ae6.png)
+  ![](./27024733-1708cddc-4f58-11e7-9427-c3b4e0770ae6.png)
 
 - aprite l'Arduino IDE e andate su **sketch/include library/manage libraries**, cercate **Rosserial Arduino Library** e cliccate su **install**
-![](./27024877-b5702b28-4f58-11e7-87cb-16065a54e8d9.png)
+  ![](./27024877-b5702b28-4f58-11e7-87cb-16065a54e8d9.png)
 
 A questo punto Arduino è in grado di comunicare con ROS pubblicando o sottoscrivendosi ai topic. E' però necessario predisporre anche il Raspberry per poter comunicare con l'Arduino: collegate la vostra scheda al portale hotblack e digitate nella bara di ricerca di Google l'indirizzo IP assegnatovi dal sito (nel mio caso **192.168.0.112**)
 
@@ -47,9 +47,9 @@ Si aprirà in questo modo una pagina chiamata **supervisor status**. Cercate la 
 
 In questo modo sarà sufficiente collegare l'Arduino al Raspberry attraverso una qualunque delle sue porte USB e le due schede saranno pronte a lavorare in parallelo!
 
-Scrittura di un semplice publisher per Arduino
-----
-Procediamo ora a scrivere il codice di un semplice pulisher per pubblicare una stringa testuale sulla console ROS. Apriamo quindi l'Arduino IDE e iniziamo un nuovo progetto. Andiamo ad includere immediatamente le librerie che utilizzeremo e la stringa `ros::NodeHandle  nh;` che permetterà al nostro programma di creare publisher e subscriber:
+## Scrittura di un semplice publisher per Arduino
+
+Procediamo ora a scrivere il codice di un semplice pulisher per pubblicare una stringa testuale sulla console ROS. Apriamo quindi l'Arduino IDE e iniziamo un nuovo progetto. Andiamo ad includere immediatamente le librerie che utilizzeremo e la stringa `ros::NodeHandle nh;` che permetterà al nostro programma di creare publisher e subscriber:
 
 ```c++
 #include <ros.h>
@@ -57,6 +57,7 @@ Procediamo ora a scrivere il codice di un semplice pulisher per pubblicare una s
 
 ros::NodeHandle nh;
 ```
+
 Ora dobbiamo definire il nostro publisher/subscriber. In questo caso lavoriamo su un publisher chiamato **chatter** che pubblicherà un messaggio di tipo **&str_msg**
 
 ```c++
@@ -86,8 +87,7 @@ void loop()
   }
 ```
 
-Codice completo
----
+## Codice completo
 
 ```c++
 #include <ros.h>

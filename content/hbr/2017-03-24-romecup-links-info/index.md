@@ -2,7 +2,7 @@
 title: "RomeCup - Links & Info"
 layout: "post"
 date: "2017-03-24T14:10:01.000Z"
-image: null
+image: "../hotblack.jpg"
 headerImage: false
 lang: "it"
 tag:

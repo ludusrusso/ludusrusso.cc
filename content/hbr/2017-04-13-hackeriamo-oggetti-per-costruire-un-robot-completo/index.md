@@ -2,7 +2,7 @@
 title: "Hackeriamo oggetti per costruire un robot completo"
 layout: "post"
 date: "2017-04-13T06:59:40.000Z"
-image: null
+image: "../hotblack.jpg"
 headerImage: false
 lang: "it"
 tag: null
@@ -29,7 +29,7 @@ Domenica 7 maggio, chiunque si senta un maker esperto, è il benvenuto all'event
 - Nastro adesivo
 - Strumenti e Attrezzi vari
 
-Avremo a disposizione un tavolo abbastanza largo su cui poter lavorare, con lo scopo di *montare cose a caso* per realizzare un robot autonomo connesso alla cloud.
+Avremo a disposizione un tavolo abbastanza largo su cui poter lavorare, con lo scopo di _montare cose a caso_ per realizzare un robot autonomo connesso alla cloud.
 
 Alla fine dell'evento, il progetto verrà presentato al pubblico!
 

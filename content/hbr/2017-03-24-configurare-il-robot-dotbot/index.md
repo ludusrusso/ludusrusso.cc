@@ -2,7 +2,7 @@
 title: "Configurare il robot DotBot"
 layout: "post"
 date: "2017-03-24T14:13:00.000Z"
-image: null
+image: "../hotblack.jpg"
 headerImage: false
 lang: "it"
 tag:
@@ -27,7 +27,7 @@ Estraete il file (ricordandovi il percorso) e copiate il .img (sui xx B) sulla v
 Dopo un po' di minuti avrà finito.
 
 Ora configuriamo il LED di check. Questo LED vi sarà utilissimo per capire quando il robot ha finito la fase di reboot e si è connesso correttamente.
-Collegate il + del LED (il filo più lungo ) al GPIO 21 e il - lo mettete a terra  (vedi figura sotto).
+Collegate il + del LED (il filo più lungo ) al GPIO 21 e il - lo mettete a terra (vedi figura sotto).
 
 ![](./RP2_Pinout.png)
 
@@ -57,8 +57,7 @@ Collegatelo al router della rete che volete configurare a cui è collegato il pc
 
 Questa è una pratica che vi permette di configurare semplicemente il Raspebrry senza che voi dobbiate entrare nel Raspberry e digitare vari comandi in Linux!:)
 
-
-Ora su Chrome andate su http://hotbot.local/wifi/schemes e si aprirà una schermata simile a questa. **NB** se il vostro robot ha un nome diverso perchè avete cambiato voi il nome in (ad. esempio blot) dovete modificare l'indirizzo a cui accedere da hotbot al nome che avete scelto  tipo http://nome_che_avete_scelto.local/wifi/schemes (ad esempio  http://blot.local/wifi/schemes).
+Ora su Chrome andate su http://hotbot.local/wifi/schemes e si aprirà una schermata simile a questa. **NB** se il vostro robot ha un nome diverso perchè avete cambiato voi il nome in (ad. esempio blot) dovete modificare l'indirizzo a cui accedere da hotbot al nome che avete scelto tipo http://nome_che_avete_scelto.local/wifi/schemes (ad esempio http://blot.local/wifi/schemes).
 
 ![](./shcemes.PNG)
 
@@ -66,6 +65,6 @@ Premete su "Configure" e si aprirà una schermata con la lista delle reti locali
 
 ![](./list.PNG)
 
-Voi ne selezionate una e digitate la password nella casella sottostante. Infine premete "Submit". Ci mette 1-2 minuti non temete! Aspettate fino a quando non vi arriva un pop-up di conferma. Poi ritornate su http://hotbot.local/wifi/schemes  e premete connect sulla rete che avete appena configurato. Riavviate o staccando il cavo di alimentazione o [da piattaforma cloud](http://cloud.hotblackrobotics.com/cloud/robot) senza il cavo Ethernet. Aspettate fino a quando il LED non lampeggia...e siete connessi!
+Voi ne selezionate una e digitate la password nella casella sottostante. Infine premete "Submit". Ci mette 1-2 minuti non temete! Aspettate fino a quando non vi arriva un pop-up di conferma. Poi ritornate su http://hotbot.local/wifi/schemes e premete connect sulla rete che avete appena configurato. Riavviate o staccando il cavo di alimentazione o [da piattaforma cloud](http://cloud.hotblackrobotics.com/cloud/robot) senza il cavo Ethernet. Aspettate fino a quando il LED non lampeggia...e siete connessi!
 
 ![](./Connected.jpeg)

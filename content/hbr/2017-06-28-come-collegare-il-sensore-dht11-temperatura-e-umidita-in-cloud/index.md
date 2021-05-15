@@ -4,11 +4,10 @@ layout: "post"
 date: "2017-06-28T09:33:04.000Z"
 headerImage: false
 lang: "it"
-tag: null
 redirect_from:
   - "/2017/06/28/come-collegare-il-sensore-dht11-temperatura-e-umidita-in-cloud/"
   - "/blog/posts/2017-06-28-come-collegare-il-sensore-dht11-temperatura-e-umidita-in-cloud"
-author: "Ruslan"
+author: "ruslan"
 description: ""
 path: "/hbr/come-collegare-il-sensore-dht11-temperatura-e-umidita-in-cloud/"
 image: "./az3Qd96.png"

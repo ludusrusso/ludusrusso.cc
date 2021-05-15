@@ -2,7 +2,7 @@
 title: "Collegare in cloud i LEGO NXT ed estenderne le funzionalità"
 layout: "post"
 date: "2017-06-16T13:32:57.000Z"
-image: null
+image: "../hotblack.jpg"
 headerImage: false
 lang: "it"
 tag:
@@ -10,7 +10,7 @@ tag:
 redirect_from:
   - "/2017/06/16/collegare-in-cloud-i-lego-nxt-ed-estenderne-le-funzionalita/"
   - "/blog/posts/2017-06-16-collegare-in-cloud-i-lego-nxt-ed-estenderne-le-funzionalita"
-author: "Pietro Chirio"
+author: "pietrochirio"
 description: ""
 path: "/hbr/collegare-in-cloud-i-lego-nxt-ed-estenderne-le-funzionalita/"
 tags: []
@@ -20,12 +20,12 @@ In questo tutorial vedremo come collegare un braccio a 3 gradi di libertà costr
 
 ![](./27220202-9fdf2db6-5284-11e7-9fd3-85c078f423ce.jpg)
 
-Collegamenti
----
+## Collegamenti
+
 Come prima cosa prendete la scheda Raspberry e accendetela collegandola alla corrente. Collegatela al sito di Hotback (come imparato dal manuale). Prendete il lego NXT, accendetelo e collegate il suo cavo usb ad un ingresso qualunque della scheda Raspberry. Avete così collegato il lego NXT al cloud!
 
-La webapp
-----
+## La webapp
+
 Ora che abbiamo connesso l'NXT al cloud procediamo a creare una webapp che ci permetterà di controllarlo attraverso la tastiera del nostro computer. Come prima cosa scaricate, premendo sul pulsante **clone or download** i file che potete trovare [qui](https://github.com/cynicalzero4/raspnxt).
 
 ![](./27223586-5bc4c21e-5291-11e7-8767-43ec9775e773.png)
@@ -44,9 +44,9 @@ Possiamo ora testare la nostra app: aprite il file **keyboard_robotarm** nel bro
 
 ![](./27224569-1c161e74-5296-11e7-824c-125534439931.png)
 
-Sketch ROS
----
-Scriviamo ora lo sketch in ROS che farà comunicare il nostro robot con la webapp.  Importiamo subito le librerie che utilizzeremo nel programma:
+## Sketch ROS
+
+Scriviamo ora lo sketch in ROS che farà comunicare il nostro robot con la webapp. Importiamo subito le librerie che utilizzeremo nel programma:
 
 ```python
 import dotbot_ros
@@ -67,7 +67,7 @@ self.NXT = nxt.locator.find_one_brick()
 self.m1 = Motor(self.NXT, PORT_A) #motore della porta A
 self.m2 = Motor(self.NXT, PORT_B) #motore dell porta B
 self.m3 = Motor(self.NXT, PORT_C) #motore della porta C
-self.cnt = -1  
+self.cnt = -1
 ```
 
 Sempre nel **setup** creiamo un **subscriber** che sottoscriva il programma al messaggio della webapp da noi creata. Il nostro subscriber si sottoscriverà ad un topic chiamato`/keyboard` che scambia messaggi di tipo `std_msgs/Twist` inserendoli in una funzione callback chiamata `xyz` definita dai parmetri `self` e `msg` :
@@ -113,6 +113,7 @@ def xyz(self, msg):
     else:
         self.m1.idle()
 ```
+
 A questo punto abbiamo creato la struttura per far muovere il primo giunto quando riceve un messaggio dal topic. Non ci resta che aggiungere il codice per fa muovere gli altri due, copiando il codice già scritto modificando semplicemente il tipo di messaggio del quale verificare la differenza da 0 e il motore da muovere:
 
 ```python
@@ -139,8 +140,7 @@ def xyz(self, msg):
         self.m3.idle()
 ```
 
-Codice completo
----
+## Codice completo
 
 ```python
 import dotbot_ros
@@ -162,7 +162,7 @@ class Node(dotbot_ros.DotbotNode):
         self.m1 = Motor(self.NXT, PORT_A) #motore della porta A
         self.m2 = Motor(self.NXT, PORT_B) #motore della porta B
         self.m3 = Motor(self.NXT, PORT_C) #motore della porta C
-        self.cnt = -1  
+        self.cnt = -1
 
         dotbot_ros.Subscriber("/keyboard", Twist, self.xyz)
 

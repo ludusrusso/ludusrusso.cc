@@ -2,7 +2,7 @@
 title: "SpiderBot Cloud 2.0 la vendetta - 2 gradi di libertà e controllo vocale"
 layout: "post"
 date: "2017-03-16T22:03:56.000Z"
-image: null
+image: "../hotblack.jpg"
 headerImage: false
 lang: "it"
 tag:
@@ -21,14 +21,14 @@ Il materiale utilizzato è lo stesso del tutorial precedente ma con una batteria
 
 Lista:
 
-* 2 spider robot comprati da Tiger
-* 2 [power bank per cellulare da 5 Volt](http://www.dx.com/p/cylinder-shaped-external-6000mah-emergency-power-battery-charger-for-iphone-cell-phone-silver-206652#.WFpnUrbhB-V)
-* un ponte ad H. Io ho usato [questo](http://eud.dx.com/product/hg7881-two-channel-motor-driver-board-dark-blue-2-5-12v-2-pcs-844407060) ma anche in questo caso potete scegliere quello che volete. Qualcuno li costruisce anche a mano mettendo insieme 4 transistor!
-* un Raspberry PI 3
-* cavetti
-* fascette da idraulico
-* un pezzo di cartone ;)
-* 2 cavetti USB a microUSB (alimentatore per cellulare Android)
+- 2 spider robot comprati da Tiger
+- 2 [power bank per cellulare da 5 Volt](http://www.dx.com/p/cylinder-shaped-external-6000mah-emergency-power-battery-charger-for-iphone-cell-phone-silver-206652#.WFpnUrbhB-V)
+- un ponte ad H. Io ho usato [questo](http://eud.dx.com/product/hg7881-two-channel-motor-driver-board-dark-blue-2-5-12v-2-pcs-844407060) ma anche in questo caso potete scegliere quello che volete. Qualcuno li costruisce anche a mano mettendo insieme 4 transistor!
+- un Raspberry PI 3
+- cavetti
+- fascette da idraulico
+- un pezzo di cartone ;)
+- 2 cavetti USB a microUSB (alimentatore per cellulare Android)
 
 Per prima cosa montate i due Spider Robot come dalle istruzioni di Tiger. Poi smontate una parte dei robot e uniteli insieme come in figura.
 
@@ -53,7 +53,7 @@ Ora effettuiamo i collegamenti.
 
 I pin del Raspberry sono:
 
-![](./RP2_Pinout%20(1).png)
+![](<./RP2_Pinout%20(1).png>)
 
 Il ponte ad H:
 

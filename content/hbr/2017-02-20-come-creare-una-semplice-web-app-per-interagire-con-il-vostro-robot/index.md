@@ -2,7 +2,6 @@
 title: "Come creare una semplice Web App per interagire con il vostro robot"
 layout: "post"
 date: "2017-02-20T18:03:13.000Z"
-image: null
 headerImage: false
 tag: null
 redirect_from:
@@ -13,13 +12,14 @@ description: ""
 lang: "it"
 path: "/hbr/come-creare-una-semplice-web-app-per-interagire-con-il-vostro-robot/"
 tags: []
+image: "./Schermata_2017-02-20_alle_18.36.52_txfrza.png"
 ---
 
 Ecco un semplice tutorial per spiegare un po' meglio come funzionano le Web App. Innanzitutto con il termine Web App intendiamo le applicazioni web che potete trovare nella tendina "Apps" in piattaforma. Queste Web App sono fatte da noi come esempio, ma ovviamente il codice è open source e in questo tutorial vi spiegheremo come potrete scrivere le vostre Web App. Attenzione però le Web App che andrete a scrivere (per motivi di sicurezza) saranno utilizzabili solo in locale sul vostro computer!
 
-![](./Schermata_2017-02-20_alle_18.36.52_txfrza.png)    
+![](./Schermata_2017-02-20_alle_18.36.52_txfrza.png)
 
-Iniziamo a vedere il codice per una Web App di un publisher e subscriber in ROS. Aprite un documento di testo sul vostro pc e chiamatelo "pubsub.html".  Poi copiate e incollate il seguente codice.
+Iniziamo a vedere il codice per una Web App di un publisher e subscriber in ROS. Aprite un documento di testo sul vostro pc e chiamatelo "pubsub.html". Poi copiate e incollate il seguente codice.
 
 ```
 <!DOCTYPE html>
@@ -86,49 +86,48 @@ start_ros('192.168.0.104', 'hotbot', '192.168.0.104:9090', 'None');
 </html>
 ```
 
-Dovete modificare l'indirizzo IP del robot quando usate questa funzione `start_ros('192.168.0.104', 'hotbot', '192.168.0.104:9090', 'None');
-`.
+Dovete modificare l'indirizzo IP del robot quando usate questa funzione `start_ros('192.168.0.104', 'hotbot', '192.168.0.104:9090', 'None'); `.
 Una volta connesso, nel mio caso ho ricevuto l'indirizzo IP 192.168.0.104 e il robot si chiama "hotbot". Poi andiamo a dichirare un publisher, che pubbblica sul topic relativo al nome del vostro robot `/<nome del vostro robot>/command_velocity` un tipo di messaggio geometry_msgs/Twist.
 
 ```javascript
- var cmdVel = new ROSLIB.Topic({
-    ros : ros,
-    name : '/' + robot.name  + '/command_velocity',
-    messageType : 'geometry_msgs/Twist'
-  });
+var cmdVel = new ROSLIB.Topic({
+  ros: ros,
+  name: "/" + robot.name + "/command_velocity",
+  messageType: "geometry_msgs/Twist",
+})
 ```
 
 Riempiamo il messaggio così
 
 ```javascript
 var twist = new ROSLIB.Message({
-    linear : {
-      x :100,
-      y : 100,
-      z : 0
-    },
-    angular : {
-      x : 0,
-      y : 0,
-      z : 0
-    }
-  });
+  linear: {
+    x: 100,
+    y: 100,
+    z: 0,
+  },
+  angular: {
+    x: 0,
+    y: 0,
+    z: 0,
+  },
+})
 ```
 
- e lo pubblichiamo
+e lo pubblichiamo
 
 ```javascript
-  cmdVel.publish(twist);
+cmdVel.publish(twist)
 ```
 
-Per quanto riguara il subscriber, lo dichiariamo che rimanga in ascolto sul topic  `'/<nome del vostro robot>/listener'` (messaggio std_msgs/String).
- E la funzione di call back:
+Per quanto riguara il subscriber, lo dichiariamo che rimanga in ascolto sul topic `'/<nome del vostro robot>/listener'` (messaggio std_msgs/String).
+E la funzione di call back:
 
 ```javascript
-  listener.subscribe(function(message) {
-    console.log('Received message on ' + listener.name + ': ' + message.data);
-  });
+listener.subscribe(function (message) {
+  console.log("Received message on " + listener.name + ": " + message.data)
+})
 ```
 
 Vedrete il risultato della funzione call back sul browser premendo col tasto destro del mouse e andando su console.
- Facile no? ;)
+Facile no? ;)
