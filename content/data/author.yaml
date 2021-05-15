@@ -9,7 +9,7 @@
 - id: pietrochirio
   name: Pietro Chiro
   bio: Dev Passionate
-  profile: ./imgs/authors/ludusrusso.jpg
+  profile: ./imgs/authors/pietrochirio.jpg
 - id: fiorellazza
   name: Fiorella Sibona
   bio: Aspiring roboticist
@@ -17,4 +17,4 @@
 - id: ruslan
   name: Ruslan
   bio: Dev Passionate
-  profile: ./imgs/authors/ludusrusso.jpg
+  profile: ./imgs/authors/ruslan.jpg

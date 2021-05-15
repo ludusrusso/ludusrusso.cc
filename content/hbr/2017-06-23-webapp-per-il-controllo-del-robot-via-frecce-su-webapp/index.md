@@ -9,7 +9,7 @@ tag: null
 redirect_from:
   - "/2017/06/23/webapp-per-il-controllo-del-robot-via-frecce-su-webapp/"
   - "/blog/posts/2017-06-23-webapp-per-il-controllo-del-robot-via-frecce-su-webapp"
-author: "Ruslan"
+author: "ruslan"
 description: ""
 path: "/hbr/webapp-per-il-controllo-del-robot-via-frecce-su-webapp/"
 tags: []

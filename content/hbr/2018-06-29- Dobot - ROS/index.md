@@ -8,7 +8,7 @@ tag:
 author: "sgabello"
 description: "Come usare il braccio robotico con Robot Operating System"
 path: "/hbr/usare-il-braccio-robotico-dobot-con-ros/"
-image: "./Dobot-ROS.jpg"
+image: "./rosdobot.jpg"
 tags: []
 ---
 

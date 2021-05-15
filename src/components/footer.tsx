@@ -1,10 +1,11 @@
 import React from "react"
 
 export const Footer = () => {
+  const year = new Date().getFullYear()
   return (
     <div className="w-full text-gray-900 bg-gray-200 p-10 text-center">
       <p className="text-lg">
-        Copyright © 2016 - 2020 <strong>@ludusrusso</strong>
+        Copyright © 2016 - {year} <strong>@ludusrusso</strong>
       </p>
       <p className="font-bold mt-4 mb-2 text-xl">
         <a

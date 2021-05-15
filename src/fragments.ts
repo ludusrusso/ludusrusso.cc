@@ -5,6 +5,7 @@ export const postPreview = graphql`
     id
     timeToRead
     frontmatter {
+      lang
       path
       title
       author {

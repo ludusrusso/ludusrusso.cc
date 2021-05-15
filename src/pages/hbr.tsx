@@ -4,9 +4,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import { BlogPostPreview } from "../components/post-preview"
 import SEO from "../components/seo"
-import { IndexPageQuery } from "../graphqlTypes"
+import { HbrPageQuery } from "../graphqlTypes"
 
-const IndexPage: React.FC<{ data: IndexPageQuery }> = ({ data }) => {
+const HbrPage: React.FC<{ data: HbrPageQuery }> = ({ data }) => {
   return (
     <Layout>
       <SEO title="ludusrusso" />
@@ -22,11 +22,14 @@ const IndexPage: React.FC<{ data: IndexPageQuery }> = ({ data }) => {
   )
 }
 
-export default IndexPage
+export default HbrPage
 
 export const query = graphql`
-  query IndexPage {
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+  query HbrPage {
+    allMdx(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { path: { regex: "$/hbr/" } } }
+    ) {
       nodes {
         ...PostPreview
       }

@@ -101,7 +101,8 @@ generate_messages(
 # Re-building del package
 
 Adesso che abbiamo creato dei nuovi messaggi, dobbiamo fare di nuovo il make del pacchetto:
-#Nel vostro workspace catkin
+
+# Nel vostro workspace catkin
 
 ```bash
 roscd custom_msgs
