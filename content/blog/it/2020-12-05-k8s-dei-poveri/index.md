@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes dei Poveri"
 layout: "post"
-date: "2020-12-01T00:00:00.000Z"
+date: "2020-12-05T00:00:00.000Z"
 headerImage: false
 read-time: true
 tags:
@@ -10,7 +10,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Creiamo un cluster k8s per gestire i nostri side project senza spendere un patrimonio!"
-path: "/2020/12/01/k8s-dei-poveri/"
+path: "/2020/12/05/k8s-dei-poveri/"
 image: "./main.png"
 ---
 

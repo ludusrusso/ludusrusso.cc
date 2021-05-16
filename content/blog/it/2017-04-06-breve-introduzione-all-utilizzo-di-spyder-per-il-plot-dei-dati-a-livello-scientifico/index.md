@@ -8,11 +8,9 @@ tags:
   - "Spyder"
   - "Plot"
 category: "blog"
-redirect_from:
-  - "/posts/2017-04-06-breve-introduzione-all-utilizzo-di-spyder-per-il-plot-dei-dati-a-livello-scientifico"
 author: "ludusrusso"
 description: "Una brevissima guida che mostra come utilizzare Spyder per il plot dei dati a livello scientifico"
-path: "/2017/04/06/breve-introduzione-allutilizzo-di-spyder-per-il-plot-dei-dati-a-livello-scientifico/"
+path: "/2017/04/06/breve-introduzione-all-utilizzo-di-spyder-per-il-plot-dei-dati-a-livello-scientifico/"
 image: "./marks.png"
 ---
 

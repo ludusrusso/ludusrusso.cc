@@ -9,8 +9,6 @@ tags:
   - "Utils"
   - "Mac"
 category: "blog"
-redirect_from:
-  - "/posts/2017-01-13-copia-e-backup-di-sd-raspberry-da-macos"
 author: "ludusrusso"
 description: ""
 path: "/2017/01/13/copia-e-backup-di-sd-raspberry-da-macos/"

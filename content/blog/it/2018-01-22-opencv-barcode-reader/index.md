@@ -10,7 +10,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Come usare Python per leggere i codici a barre degli alimenti e ricavarne alcune informazioni utili"
-path: "/2018/01/22/leggere-i-codici-a-barre-con-opencv-e-zbar-in-python/"
+path: "/2018/01/22/opencv-barcode-reader/"
 image: "./main.png"
 ---
 

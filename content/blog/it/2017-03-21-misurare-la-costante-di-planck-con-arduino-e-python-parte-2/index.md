@@ -11,8 +11,6 @@ tags:
   - "Diodo"
   - "Python"
 category: "blog"
-redirect_from:
-  - "/posts/2017-03-21-misurare-la-costante-di-plank-con-arduino-e-python-parte-2"
 author: "ludusrusso"
 description: ""
 path: "/2017/03/21/misurare-la-costante-di-planck-con-arduino-e-python-parte-2/"

@@ -8,11 +8,9 @@ tags:
   - "Flask"
   - "Restful"
 category: "blog"
-redirect_from:
-  - "/posts/2017-06-12-gestire-l-autenticazione-in-flask-con-flask-jwt-extended"
 author: "ludusrusso"
 description: "Un breve tutorial che mostra come gestire l'autenticazione JWT in Flask"
-path: "/2017/06/12/gestire-lautenticazione-in-flask-con-flask-jwt-extended/"
+path: "/2017/06/12/gestire-l-autenticazione-in-flask-con-flask-jwt-extended/"
 image: "./login1.png"
 ---
 

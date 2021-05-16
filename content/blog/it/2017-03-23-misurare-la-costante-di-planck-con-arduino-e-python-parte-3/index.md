@@ -12,8 +12,6 @@ tags:
   - "Python"
   - "Planck"
 category: "blog"
-redirect_from:
-  - "/posts/2017-03-23-misurare-la-costante-di-planck-con-arduino-e-python-parte-3"
 author: "ludusrusso"
 description: ""
 path: "/2017/03/23/misurare-la-costante-di-planck-con-arduino-e-python-parte-3/"

@@ -2,8 +2,6 @@
 title: "Buildare e usare container Docker per Raspberry Pi"
 layout: "post"
 date: "2018-06-29T00:00:00.000Z"
-redirect_from:
-  - "/2018/06/11/docker-raspberrypi/"
 headerImage: true
 tags:
   - "Docker"
@@ -14,7 +12,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "In questa guida vediamo come buildare ed utilizzare Docker su Raspberry Pi (ed in generale sistemi Linux Embedded) per velocizzare la produzione di applicazioni Linux Embedded"
-path: "/2018/06/29/buildare-e-usare-container-docker-per-raspberry-pi/"
+path: "/2018/06/28/docker-raspberrypi/"
 image: "./main.jpg"
 ---
 

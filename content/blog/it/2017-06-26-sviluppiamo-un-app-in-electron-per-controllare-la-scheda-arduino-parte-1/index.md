@@ -8,11 +8,9 @@ tags:
   - "Electron"
   - "Arduino"
 category: "blog"
-redirect_from:
-  - "/posts/2017-06-26-sviluppiamo-un-app-in-electron-per-controllare-la-scheda-arduino-parte-1"
 author: "ludusrusso"
 description: ""
-path: "/2017/06/26/sviluppiamo-unapp-in-electron-per-controllare-la-scheda-arduino-parte-1/"
+path: "/2017/06/26/sviluppiamo-un-app-in-electron-per-controllare-la-scheda-arduino-parte-1/"
 image: "./gui_def.png"
 ---
 

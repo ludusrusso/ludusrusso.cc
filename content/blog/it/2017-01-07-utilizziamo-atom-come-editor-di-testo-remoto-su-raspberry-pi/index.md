@@ -8,8 +8,6 @@ tags:
   - "Atom"
   - "Tutorial"
 category: "blog"
-redirect_from:
-  - "/posts/2017-01-07-utilizziamo-atom-come-editor-di-testo-remoto-su-raspberry-pi"
 author: "ludusrusso"
 description: "Come usare Atom come editor di testo remoto per Raspberry Pi"
 path: "/2017/01/07/utilizziamo-atom-come-editor-di-testo-remoto-su-raspberry-pi/"

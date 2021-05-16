@@ -10,7 +10,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Nasce una nuova rubrica sul mio blog, in cui cercherò di spiegare in modo semplice il mondo della robotica di servizio"
-path: "/2018/06/11/robotica-di-servizio-in-pillole/"
+path: "/2018/06/11/pillole-robotica-servizio/"
 image: "./main.jpg"
 ---
 

@@ -10,7 +10,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Un piccolo trucco per gestire al meglio lo sviluppo su Raspberry Pi, specialmente se non si ha a disposizione un monitor."
-path: "/2018/12/31/abilitare-laccesso-ssh-del-raspberry-pi-senza-usare-un-monitor/"
+path: "/2018/12/31/ssh-raspberry-pi-avvio/"
 image: "./main.png"
 ---
 

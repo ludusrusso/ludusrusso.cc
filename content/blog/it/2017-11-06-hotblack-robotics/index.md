@@ -9,7 +9,7 @@ tags:
 projects: true
 author: "ludusrusso"
 description: "La vera storia di HotBlack Robotics, aka la mia Startup. Scritta dal mio socio Gabriele Ermacora"
-path: "/2017/11/06/da-phd-ad-imprenditori-ecco-la-storia-di-hotblack-robotics/"
+path: "/2017/11/06/hotblack-robotics/"
 image: "./team.png"
 ---
 

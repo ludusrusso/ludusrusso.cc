@@ -10,7 +10,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "gtts è una libreria in Python per sfruttare le API di Google Text to Speech per generare file audio dal testo"
-path: "/2018/04/06/parliamo-come-gmaps-come-creare-file-audio-con-gtts-google-text-to-speech-in-python/"
+path: "/2018/04/06/google-text-to-speech-per-generare-file-audio/"
 image: "./main.jpg"
 ---
 

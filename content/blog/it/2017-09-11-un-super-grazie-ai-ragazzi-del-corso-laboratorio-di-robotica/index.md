@@ -1,5 +1,5 @@
 ---
-title: 'Un super grazie ai ragazzi del corso "Laboratorio di Robotica"'
+title: "Un super grazie ai ragazzi del corso \"Laboratorio di Robotica\""
 layout: "post"
 date: "2017-09-11T00:00:00.000Z"
 headerImage: false
@@ -8,8 +8,6 @@ tags:
   - "Robotica"
   - "Stampacchia"
 category: "blog"
-redirect_from:
-  - "/posts/2017-09-11-un-super-grazie-ai-ragazzi-del-corso-laboratorio-di-robotica"
 author: "ludusrusso"
 description: ""
 path: "/2017/09/11/un-super-grazie-ai-ragazzi-del-corso-laboratorio-di-robotica/"

@@ -10,7 +10,7 @@ tags:
   - "PyTest"
 category: "blog"
 author: "ludusrusso"
-path: "/2017/10/03/cosa-e-il-test-driven-development-tdd-e-perche-lo-utilizzo/"
+path: "/2017/10/03/tdd-intro/"
 image: "./TDD.jpeg"
 description: ""
 ---

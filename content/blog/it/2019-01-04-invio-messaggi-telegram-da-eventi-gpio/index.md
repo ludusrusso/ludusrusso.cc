@@ -11,7 +11,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Mandare un messaggio tramite telegram quando il un GPIO del Raspberry cambia stato è possibile, ecco come!"
-path: "/2019/01/04/un-bot-telegram-che-invia-messaggi-al-verificarsi-di-eventi-sui-gpio-del-raspberry-pi/"
+path: "/2019/01/04/invio-messaggi-telegram-da-eventi-gpio/"
 image: "./main.jpg"
 ---
 

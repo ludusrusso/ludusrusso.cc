@@ -12,7 +12,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Usiamo le API di sintesi vocale di google per creare un bot in grado di mandare messaggi vocali"
-path: "/2018/05/17/i-chatbot-possono-parlare-sviluppiamo-un-bot-telegram-che-manda-messaggi-vocali/"
+path: "/2018/05/17/bot-messaggi-vocali/"
 image: "./main.jpg"
 ---
 

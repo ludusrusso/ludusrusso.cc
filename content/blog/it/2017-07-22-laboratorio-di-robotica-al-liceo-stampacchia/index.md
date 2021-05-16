@@ -7,10 +7,8 @@ tags:
   - "Corso"
   - "Stampacchia"
 category: "blog"
-redirect_from:
-  - "/posts/2017-07-22-corso-di-robotica"
 author: "ludusrusso"
-description: 'Aperte le iscrizioni al corso "Laboratorio di Robotica" presso il Liceo G. Stampacchia di Tricase'
+description: "Aperte le iscrizioni al corso \"Laboratorio di Robotica\" presso il Liceo G. Stampacchia di Tricase"
 path: "/2017/07/22/laboratorio-di-robotica-al-liceo-stampacchia/"
 image: "./tricaseAgosto.png"
 ---

@@ -10,11 +10,9 @@ tags:
   - "Arduino"
   - "Tutorial"
 category: "blog"
-redirect_from:
-  - "/posts/2017-03-13-utilizzo-di-nanpy-con-il-sensore-di-temperatura-humidita-della-famiglia-dht"
 author: "ludusrusso"
 description: "Come utilizzare Nanpy col sensore DHT di temperatura e Umidità"
-path: "/2017/03/13/utilizzo-di-nanpy-con-il-sensore-di-temperaturaumidita-della-famiglia-dht/"
+path: "/2017/03/13/utilizzo-di-nanpy-con-il-sensore-di-temperatura-umidita-della-famiglia-dht/"
 image: "./WhatsApp_Image_2017-03-13_at_19.02.01_f7vjmy.jpg"
 ---
 

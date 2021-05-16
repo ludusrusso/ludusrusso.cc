@@ -14,7 +14,7 @@ category: "blog"
 author: "ludusrusso"
 multiple: "ttd-python-flask"
 description: "Tutorial su come usare il Test Driver Development (TDD) con Flask e PyTest per sviluppare delle semplici API REST"
-path: "/2018/04/03/tdd-con-flask-e-pytest-per-lo-sviluppo-di-api-rest-parte-3/"
+path: "/2018/04/03/tdd-flask-pytest-3/"
 image: "./main.png"
 ---
 

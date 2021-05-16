@@ -8,8 +8,6 @@ tags:
   - "Tutorial"
   - "Telegram"
 category: "blog"
-redirect_from:
-  - "/posts/2017-04-27-implementiamo-un-bot-telegram-con-python"
 author: "ludusrusso"
 description: "Una semplice guida per iniziare a muovere i primi passi nello sviluppo di chatbot Telegram con Python"
 path: "/2017/04/27/implementiamo-un-bot-telegram-con-python/"

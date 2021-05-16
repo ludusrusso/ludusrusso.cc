@@ -11,7 +11,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Le UI da terminale fanno molto anni '80, però sono sempre diventerti da implementare. Oggi vi voglio introdurre ad una semplice libreria per creare questo tipo di applicazione."
-path: "/2018/04/04/divertiamoci-sviluppando-ui-da-terminale-con-asciimatics/"
+path: "/2018/04/04/python-scrivere-terminal-gui/"
 image: "./main.png"
 ---
 

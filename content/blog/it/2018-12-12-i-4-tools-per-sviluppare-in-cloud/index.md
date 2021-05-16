@@ -1,7 +1,5 @@
 ---
 title: "I 4 tool Open Source che ogni Sviluppatore Cloud deve conoscere nel 2019"
-redirect_from:
-  - "/2018/12/12/i-4-tools-per-sviluppare-in-cloud/"
 layout: "post"
 date: "2018-12-12T00:00:00.000Z"
 headerImage: false
@@ -13,7 +11,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "I tool Open Source più importanti per lo sviluppo di software e architetture Cloud nel 2019."
-path: "/2018/12/12/i-4-tool-open-source-che-ogni-sviluppatore-cloud-deve-conoscere-nel-2019/"
+path: "/2018/12/12/i-4-tools-per-sviluppare-in-cloud/"
 image: "./main.png"
 ---
 

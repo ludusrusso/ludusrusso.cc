@@ -8,8 +8,6 @@ tags:
   - "Corso"
   - "Arduino"
 category: "blog"
-redirect_from:
-  - "/posts/2017-04-15-corso-arduino-al-liceo-stampacchia-grazie-a-tutti"
 author: "ludusrusso"
 description: ""
 path: "/2017/04/15/corso-arduino-al-liceo-stampacchia-grazie-a-tutti/"

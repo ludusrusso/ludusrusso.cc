@@ -5,8 +5,6 @@ date: "2016-12-22T00:00:00.000Z"
 headerImage: false
 tags: []
 category: "blog"
-redirect_from:
-  - "/posts/inaugurazione"
 author: "ludusrusso"
 description: "Ciao a tutti, mi chiamo Ludovico e sono un maker e un imprenditore. Questo Blog è stato scritto da me in Python e Flask, e lo userò per condividere i miei esperimenti!"
 path: "/2016/12/22/inauguriamo-il-blog/"

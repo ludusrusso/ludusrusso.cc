@@ -9,11 +9,9 @@ tags:
   - "Typescript"
   - "Oscilloscopio"
 category: "blog"
-redirect_from:
-  - "/posts/2017-06-28-sviluppiamo-un-app-in-electron-per-controllare-la-scheda-arduino-parte-2"
 author: "ludusrusso"
 description: "In questo tutorial, vediamo come sviluppare un oscilloscopio con Node.js, Electron e Typescript"
-path: "/2017/06/28/sviluppiamo-unapp-in-electron-per-controllare-la-scheda-arduino-parte-2/"
+path: "/2017/06/28/sviluppiamo-un-app-in-electron-per-controllare-la-scheda-arduino-parte-2/"
 image: "./arduinoscope.png"
 ---
 

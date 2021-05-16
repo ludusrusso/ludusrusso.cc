@@ -11,8 +11,6 @@ tags:
   - "Nanpy"
   - "Tutorial"
 category: "blog"
-redirect_from:
-  - "/posts/2017-02-21-un-laboratorio-di-fisica-con-python-e-arduino-circuito-rc-v2"
 author: "ludusrusso"
 description: ""
 path: "/2017/02/21/un-laboratorio-di-fisica-con-python-e-arduino-circuito-rc-v2/"

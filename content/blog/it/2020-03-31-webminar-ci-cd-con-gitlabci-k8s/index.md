@@ -12,7 +12,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Il primo WebMeetup di GDG Cloud Milano è dedicato al mondo Kuberntes e Continuos Integration!"
-path: "/2020/03/31/gdg-cloud-milano-live-code-cicd-con-gitlab-ci-e-kubernetes/"
+path: "/2020/03/31/webminar-ci-cd-con-gitlabci-k8s/"
 image: "./main.jpg"
 ---
 

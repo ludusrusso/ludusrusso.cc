@@ -8,11 +8,9 @@ tags:
   - "Tutorial"
   - "Linux"
 category: "blog"
-redirect_from:
-  - "/posts/2017-04-25-introduzione-a-vagrant"
 author: "ludusrusso"
 description: "Introduzione ed esempio di utilizzo su Vagrant, il tool che semplifica la gestione delle macchine virtuali per lo sviluppo."
-path: "/2017/04/25/gestire-le-macchine-virtuali-senza-sforzo-con-vagrant/"
+path: "/2017/04/25/introduzione-a-vagrant/"
 image: "./vagrant-logo-800px.jpg"
 ---
 

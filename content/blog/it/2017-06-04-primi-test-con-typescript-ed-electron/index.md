@@ -8,8 +8,6 @@ tags:
   - "Typescript"
   - "Webapp"
 category: "blog"
-redirect_from:
-  - "/posts/2017-06-04-primi-test-con-typescript-ed-electron"
 author: "ludusrusso"
 description: "Un tutorial per iniziare a sviluppare applicazioni native desktop usando tecnologi Web ed il nuovo linguaggio di programmazione Typescript"
 path: "/2017/06/04/primi-test-con-typescript-ed-electron/"

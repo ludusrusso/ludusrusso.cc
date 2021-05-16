@@ -8,8 +8,6 @@ tags:
   - "Robotics"
   - "Ros"
 category: "blog"
-redirect_from:
-  - "/posts/2017-01-23-hb-robotics-con-python-impariamo-la-cloud-robotics"
 author: "ludusrusso"
 description: "Vi presento la mia startup: ecco come riusciamo a insegnare la Cloud Robotics con Python e ROS."
 path: "/2017/01/23/hb-robotics-con-python-impariamo-la-cloud-robotics/"

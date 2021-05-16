@@ -8,7 +8,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Vi presento il mio nuovo Blog!"
-path: "/2017/09/17/vi-presento-il-mio-nuovo-blog/"
+path: "/2017/09/17/nuovo-blog/"
 image: "./screen-shot.png"
 ---
 

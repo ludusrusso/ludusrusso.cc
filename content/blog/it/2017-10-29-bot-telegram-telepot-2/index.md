@@ -11,7 +11,7 @@ category: "blog"
 author: "ludusrusso"
 hidden: true
 description: "Vediamo come gestire i comandi del nostro bot in Telegram"
-path: "/2017/10/29/implementiamo-un-bot-telegram-con-python-i-comandi/"
+path: "/2017/10/29/bot-telegram-telepot-2/"
 image: "./main.jpeg"
 ---
 

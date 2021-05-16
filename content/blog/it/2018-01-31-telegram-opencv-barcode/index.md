@@ -12,7 +12,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Implementiamo un bot Telegram in grado di leggere ed analizzare le immagini per la lettura ed interpretazione dei codici a barre"
-path: "/2018/01/31/sviluppiamo-un-bot-telegram-che-legge-i-codici-a-barre-degli-alimenti/"
+path: "/2018/01/31/telegram-opencv-barcode/"
 image: "./main.jpg"
 ---
 

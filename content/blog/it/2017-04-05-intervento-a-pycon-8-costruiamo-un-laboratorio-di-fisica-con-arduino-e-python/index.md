@@ -9,8 +9,6 @@ tags:
   - "Python"
   - "Fisica"
 category: "blog"
-redirect_from:
-  - "/posts/pycon8"
 author: "ludusrusso"
 description: ""
 path: "/2017/04/05/intervento-a-pycon-8-costruiamo-un-laboratorio-di-fisica-con-arduino-e-python/"

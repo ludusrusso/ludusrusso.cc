@@ -8,8 +8,6 @@ tags:
   - "Python"
   - "Didattica"
 category: "blog"
-redirect_from:
-  - "/posts/2017-01-04-arduino-python-lab-fisica-1"
 author: "ludusrusso"
 description: "Primi esperimenti con Arduino e Python per realizzare un semplice laboratorio di fisica sfruttando la potenza di Python e la versatilità di Arduino"
 path: "/2017/01/04/un-laboratorio-di-fisica-con-arduino-e-python/"

@@ -8,7 +8,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Introduzione ai decoratori in Python"
-path: "/2017/09/30/python-decorators/"
+path: "/2017/09/30/python_decorators/"
 image: "./json_resp.png"
 ---
 

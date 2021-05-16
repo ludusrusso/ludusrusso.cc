@@ -9,7 +9,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Il mio video corso su come utilizzare ROS è disponibile"
-path: "/2017/11/24/un-video-corso-di-ros/"
+path: "/2017/11/24/videocorso-web-ros/"
 image: "./main.jpg"
 ---
 

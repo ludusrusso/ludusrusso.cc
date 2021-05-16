@@ -8,8 +8,6 @@ tags:
   - "Raspberry"
   - "Arduino"
 category: "blog"
-redirect_from:
-  - "/posts/2017-01-06-Flask-IDE-Arduino"
 author: "ludusrusso"
 description: "Un mio progetto dell'estate del 2015 che permette di programmare Arduino da un'interfaccia Web esposta da un Raspberry Pi"
 path: "/2017/01/06/un-ide-web-arduino-sviluppato-in-python-e-flask/"
