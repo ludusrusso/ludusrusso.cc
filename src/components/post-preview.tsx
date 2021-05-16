@@ -11,7 +11,8 @@ export const BlogPostPreview = ({ post }: PostPreviewProps) => {
   const authorImage =
     post.frontmatter.author && getImage(post.frontmatter.author?.profile as any)
 
-  const { title, description, date, path, author, lang } = post.frontmatter
+  const { title, description, date, author, lang } = post.frontmatter
+  const { path } = post.fields
 
   const flag = lang === "en" ? "🇬🇧" : "🇮🇹"
   const { timeToRead } = post

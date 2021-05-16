@@ -4,9 +4,11 @@ export const postPreview = graphql`
   fragment PostPreview on Mdx {
     id
     timeToRead
+    fields {
+      path
+    }
     frontmatter {
       lang
-      path
       title
       author {
         id
