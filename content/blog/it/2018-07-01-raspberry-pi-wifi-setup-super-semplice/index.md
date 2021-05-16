@@ -9,7 +9,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Vi propongo un trucchetto per gestire in modo semplicissimo il WiFi su Raspbian (Lite)."
-path: "/2018/07/02/raspberry-pi-wifi-setup-super-semplice/"
+path: "/2018/07/01/raspberry-pi-wifi-setup-super-semplice/"
 image: "./step2.png"
 ---
 

@@ -10,7 +10,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Ci vediamo alla Maker Faire, pav.6 B.01"
-path: "/2017/11/30/maker-faire-2017/"
+path: "/2017/11/24/maker-faire-2017/"
 image: "./dotbot.png"
 ---
 

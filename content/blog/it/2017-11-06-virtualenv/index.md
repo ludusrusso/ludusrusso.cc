@@ -9,7 +9,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "A cosa servono e come si utilizzano i virtualenv Python"
-path: "/2017/11/10/virtualenv/"
+path: "/2017/11/06/virtualenv/"
 image: "./main.png"
 ---
 

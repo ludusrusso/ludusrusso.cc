@@ -12,7 +12,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "In questa guida vediamo come buildare ed utilizzare Docker su Raspberry Pi (ed in generale sistemi Linux Embedded) per velocizzare la produzione di applicazioni Linux Embedded"
-path: "/2018/06/28/docker-raspberrypi/"
+path: "/2018/06/29/docker-raspberrypi/"
 image: "./main.jpg"
 ---
 
