@@ -5,7 +5,6 @@ date: "2017-06-23T14:31:31.000Z"
 image: "../hotblack.jpg"
 headerImage: false
 lang: "it"
-tag: null
 redirect_from:
   - "/2017/06/23/webapp-per-il-controllo-del-robot-via-frecce-su-webapp/"
   - "/blog/posts/2017-06-23-webapp-per-il-controllo-del-robot-via-frecce-su-webapp"

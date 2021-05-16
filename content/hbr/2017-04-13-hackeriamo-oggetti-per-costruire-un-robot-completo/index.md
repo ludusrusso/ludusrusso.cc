@@ -5,7 +5,6 @@ date: "2017-04-13T06:59:40.000Z"
 image: "../hotblack.jpg"
 headerImage: false
 lang: "it"
-tag: null
 redirect_from:
   - "/2017/04/13/hackeriamo-oggetti-per-costruire-un-robot-completo/"
   - "/blog/posts/2017-04-13-hackeriamo-oggetti-per-costruire-un-robot-completo"

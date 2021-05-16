@@ -9,7 +9,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Sto lavorando ad un nuovo blog, questa volta in inglese, che verrà fuso con questo"
-path: "/2020/09/03/introduzione-a-ludusrussospace/"
+path: "/2020/09/03/nuovo-blog/"
 image: "./main.png"
 ---
 

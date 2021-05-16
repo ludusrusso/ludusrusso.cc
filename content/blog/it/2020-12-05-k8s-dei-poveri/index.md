@@ -10,7 +10,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Creiamo un cluster k8s per gestire i nostri side project senza spendere un patrimonio!"
-path: "/2020/12/01/kubernetes-dei-poveri/"
+path: "/2020/12/01/k8s-dei-poveri/"
 image: "./main.png"
 ---
 

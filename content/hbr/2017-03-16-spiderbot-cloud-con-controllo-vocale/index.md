@@ -5,7 +5,6 @@ date: "2017-03-16T22:05:00.000Z"
 image: "../hotblack.jpg"
 headerImage: false
 lang: "it"
-tag: null
 redirect_from:
   - "/2017/03/16/spiderbot-cloud-con-controllo-vocale/"
   - "/blog/posts/2017-03-16-spiderbot-cloud-con-controllo-vocale"

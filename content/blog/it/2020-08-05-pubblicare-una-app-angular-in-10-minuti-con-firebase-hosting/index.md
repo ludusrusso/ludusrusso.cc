@@ -10,7 +10,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Vediamo come possiamo pubblicare un'app Angular dopo 10 minuti dalla creazione del progetto sfruttando firebase hosting"
-path: "/2020/03/31/firebase-hosting-dalla-creazione-del-progetto-al-sito-online-in-10-minuti/"
+path: "/2020/03/31/pubblicare-una-app-angular-in-10-minuti-con-firebase-hosting//"
 image: "./main.png"
 ---
 

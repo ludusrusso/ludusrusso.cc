@@ -3,7 +3,6 @@ title: "Come creare una semplice Web App per interagire con il vostro robot"
 layout: "post"
 date: "2017-02-20T18:03:13.000Z"
 headerImage: false
-tag: null
 redirect_from:
   - "/2017/02/20/come-creare-una-semplice-web-app-per-interagire-con-il-vostro-robot/"
   - "/blog/posts/2017-02-20-come-creare-una-semplice-web-app-per-interagire-con-il-vostro-robot"

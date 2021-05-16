@@ -9,7 +9,7 @@ tags:
 category: "blog"
 author: "ludusrusso"
 description: "Questo blog è ormai diventato un po' anzianotto! Quindi ho deciso di riprendo ed aggiornarlo un pochettino con le nuove tenconologie che nel frattempo ho scoperto!"
-path: "/2020/12/01/migriamo-il-blog-su-gatsbyjs/"
+path: "/2020/12/01/migriamo-blog-su-gatsby-js/"
 image: "./main.png"
 ---
 
