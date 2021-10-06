@@ -2,7 +2,7 @@
 title: "Installare nuove librerie sul HBRain (temporaneamente)"
 layout: "post"
 date: "2017-03-16T17:04:59.000Z"
-image: null
+image: "../hotblack.jpg"
 headerImage: false
 lang: "it"
 tag:
@@ -31,6 +31,7 @@ Per farlo, da mac o linux si può semplicemente eseguire la seguente linea di co
 ```
 ssh root@<ip robot>
 ```
+
 esempio:
 
 ```
@@ -42,7 +43,6 @@ ed inserire la password `raspberry`
 Da Windows, si può usare un client come [putty](http://www.putty.org/) inserendo come nome utente `root` e come password `raspberry`.
 
 L'indirizzo IP del raspberry lo trovate sulla piattaforma
-
 
 ## Accedere al Virtualenv
 
@@ -61,6 +61,7 @@ Per installare un pacchetto, eseguite la linea di codice
 ```
 pip install <nome pacchetto>
 ```
+
 esempio
 
 ```

@@ -6,15 +6,15 @@
   name: Gabriele Ermacora
   bio: Dev Passionate
   profile: ./imgs/authors/sgabello.jpg
-- id: Pietro Chiro
-  name: Ludovico Russo
+- id: pietrochirio
+  name: Pietro Chiro
   bio: Dev Passionate
-  profile: ./imgs/authors/ludusrusso.jpg
+  profile: ./imgs/authors/pietrochirio.jpg
 - id: fiorellazza
   name: Fiorella Sibona
-  bio: Dev Passionate
+  bio: Aspiring roboticist
   profile: ./imgs/authors/fiorellazza.jpg
 - id: ruslan
-  name: Ludovico Russo
+  name: Ruslan
   bio: Dev Passionate
-  profile: ./imgs/authors/ludusrusso.jpg
+  profile: ./imgs/authors/ruslan.jpg

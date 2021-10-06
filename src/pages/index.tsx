@@ -4,9 +4,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import { BlogPostPreview } from "../components/post-preview"
 import SEO from "../components/seo"
-import { TestPageQuery } from "../graphqlTypes"
+import { IndexPageQuery } from "../graphqlTypes"
 
-const IndexPage: React.FC<{ data: TestPageQuery }> = ({ data }) => {
+const IndexPage: React.FC<{ data: IndexPageQuery }> = ({ data }) => {
   return (
     <Layout>
       <SEO title="ludusrusso" />
@@ -25,31 +25,10 @@ const IndexPage: React.FC<{ data: TestPageQuery }> = ({ data }) => {
 export default IndexPage
 
 export const query = graphql`
-  query TestPage {
+  query IndexPage {
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
-        id
-        timeToRead
-        frontmatter {
-          path
-          title
-          author {
-            id
-            name
-            profile {
-              childImageSharp {
-                gatsbyImageData(width: 50)
-              }
-            }
-          }
-          description
-          date(locale: "it", formatString: "DD/MM/yyyy")
-          image {
-            childImageSharp {
-              gatsbyImageData(width: 500)
-            }
-          }
-        }
+        ...PostPreview
       }
     }
   }

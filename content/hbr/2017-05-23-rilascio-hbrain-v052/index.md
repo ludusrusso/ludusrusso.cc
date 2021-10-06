@@ -2,7 +2,7 @@
 title: "Rilascio HBrain v0.5.2"
 layout: "post"
 date: "2017-05-23T11:32:38.000Z"
-image: null
+image: "../hotblack.jpg"
 headerImage: false
 lang: "it"
 tag:
@@ -21,8 +21,8 @@ Con piacere annunciamo il rilascio di una nuova versione del sistema HBRain: la 
 
 Ecco le modifiche apportate:
 
- - Supporto nativo a Lego NXT tramite la libreria nxt-python
- - Aggiunta la possibilità di accedere al terminale linux di HBrain tramite web browser
- - Bux Fix e migliorie minori.
+- Supporto nativo a Lego NXT tramite la libreria nxt-python
+- Aggiunta la possibilità di accedere al terminale linux di HBrain tramite web browser
+- Bux Fix e migliorie minori.
 
 La versione è scaricabile dal seguente [link](https://sourceforge.net/projects/hbrain/).

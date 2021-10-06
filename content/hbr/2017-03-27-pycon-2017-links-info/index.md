@@ -2,10 +2,9 @@
 title: "Pycon 2017 - Links & Info"
 layout: "post"
 date: "2017-03-27T15:01:39.000Z"
-image: null
+image: "../hotblack.jpg"
 headerImage: false
 lang: "it"
-tag: null
 redirect_from:
   - "/2017/03/27/pycon-2017-links-info/"
   - "/blog/posts/2017-03-27-pycon-2017-links-info"

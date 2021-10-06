@@ -68,7 +68,7 @@ SHELL ["/bin/bash","-c"]
 RUN apt-get update && \
     apt-get -y upgrade && \
     apt-get install ...
-#Copia di file dall'Host al Container
+# Copia di file dall'Host al Container
 COPY /source/path/del/file/locale/ /destination/path/nel/contenitore
 # Copia e definizione di un file di operazioni da eseguire all'avvio, i.e., entrypoint
 COPY /path/locale/entrypoint.sh
@@ -88,7 +88,7 @@ source /catkin_ws/devel/setup.bash
 # Avvia nginx
 service nginx start
 
-#Launch dei nodi ROS
+# Launch dei nodi ROS
 roslaunch ntbd_core NTBD_launch.launch
 exec "$@"
 ```

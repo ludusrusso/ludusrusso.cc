@@ -2,7 +2,7 @@
 title: "Immagine SD per la cloud e configurazione"
 layout: "post"
 date: "2017-03-24T14:11:39.000Z"
-image: null
+image: "../hotblack.jpg"
 headerImage: false
 lang: "it"
 tag:

@@ -9,6 +9,7 @@
     "@emotion/styled": "^11.3.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "dateformat": "^4.5.1",
     "gatsby": "^3.4.0",
     "gatsby-plugin-emotion": "^6.4.0",
     "gatsby-plugin-google-analytics": "^3.4.0",
@@ -22,12 +23,15 @@
     "gatsby-source-filesystem": "^3.4.0",
     "gatsby-transformer-sharp": "^3.4.0",
     "gatsby-transformer-yaml": "^3.4.0",
+    "json-to-pretty-yaml": "^1.2.2",
+    "parse-md": "^2.0.4",
     "postcss": "^8.2.13",
     "prism-react-renderer": "^1.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
-    "react-youtube": "^7.13.1"
+    "react-youtube": "^7.13.1",
+    "slugify": "^1.5.3"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "1.21.4",

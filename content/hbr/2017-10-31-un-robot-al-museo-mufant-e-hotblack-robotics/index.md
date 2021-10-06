@@ -2,9 +2,8 @@
 title: "Un robot al museo - MuFant e HotBlack Robotics"
 layout: "post"
 date: "2017-10-31T09:55:34.000Z"
-image: null
+image: "../hotblack.jpg"
 headerImage: false
-tag: null
 redirect_from:
   - "/2017/10/31/un-robot-al-museo-mufant-e-hotblack-robotics/"
   - "/blog/posts/2017-10-31-un-robot-al-museo-mufant-e-hotblack-robotics"

@@ -2,10 +2,9 @@
 title: "SpiderBot Cloud con controllo vocale! "
 layout: "post"
 date: "2017-03-16T22:05:00.000Z"
-image: null
+image: "../hotblack.jpg"
 headerImage: false
 lang: "it"
-tag: null
 redirect_from:
   - "/2017/03/16/spiderbot-cloud-con-controllo-vocale/"
   - "/blog/posts/2017-03-16-spiderbot-cloud-con-controllo-vocale"
@@ -15,7 +14,7 @@ path: "/hbr/spiderbot-cloud-con-controllo-vocale/"
 tags: []
 ---
 
-## SpiderBot Cloud con controllo vocale!  ##
+## SpiderBot Cloud con controllo vocale!
 
 Una volta costruito lo SpiderBot come dalle istruzioni di Tiger, vi spiego come scrivere una semplice app per il controllo vocale! Il nostro SpiderBotCloud andrà avanti o indietro a seconda di ciò che direte!
 Leggetevi gli altri tutorial su questo sito per comprendere meglio le righe di codice che vi posterò qui.
@@ -52,9 +51,9 @@ Salvate e avviate il programma! Se non ci sono errori andate sul menù in alto d
 
 ![](./voiceRecognition.png)
 
-Connettete la web app con il tasto "connect" e premete il tasto centrale a forma di microfono per abilitare il controllo vocale. A questo punto dite ad alta voce " Avanti"  e il robot andrà avanti e "Dietro" e il robot andrà indietro! :)
+Connettete la web app con il tasto "connect" e premete il tasto centrale a forma di microfono per abilitare il controllo vocale. A questo punto dite ad alta voce " Avanti" e il robot andrà avanti e "Dietro" e il robot andrà indietro! :)
 Potete provare ad aprire il sito della Web App anche da cellulare e farlo funzionare su mobile!
 
-Per informazioni **info@hotblackrobotics.com**. 
+Per informazioni **info@hotblackrobotics.com**.
 
 Per la licenza da beta tester gratis registratevi [qui](http://cloud.hotblackrobotics.com/register).

@@ -14,11 +14,9 @@ redirect_from:
   - "/2018/01/17/ntbd-guida-parte-II/"
   - "/2018/01/17/ntbd-guida-parte-III/"
 path: "/hbr/ntbd-guida-step-by-step/"
-image: "./NTBD-logo-parte1.png"
+image: "./sibot.png"
 tags: []
 ---
-
-### Indice
 
 Ciao a tutti! Sono di nuovo io, Fiorella e, con questo post, vorrei presentarvi il lavoro svolto per la mia Tesi di Laurea Magistrale in Ingegneria Meccatronica conseguita al Politecnico di Torino, "_Development of a Standard Architecture
 to enable Fast Software Prototyping
@@ -207,7 +205,7 @@ Come possibile vedere dallo sketch, i servomotori, numerati come in figura, sono
 |   4   |      5      |
 
 \n
-Per muovere tutti i servomotori contemporaneamente senza sovraccaricare la scheda, colleghiamola ad un alimentatore esterno a 2 A e 7.5 V.![arduino](./6.jpg)
+Per muovere tutti i servomotori contemporaneamente senza sovraccaricare la scheda, colleghiamola ad un alimentatore esterno a 2 A e 7.5 V.
 Colleghiamo su una breadboard i mini-servo con V+ collegato al pin _Vin_ di Arduino e V- collegato ad uno qualsiasi dei pin _GND_ (ground) della scheda.
 
 Per evitare di surriscaldare il micro-servo, lo colleghiamo il suo V+ al pin da 5V dell'Arduino e V- ad un pin GND.

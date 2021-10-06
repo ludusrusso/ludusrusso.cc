@@ -11,10 +11,10 @@ tag:
 redirect_from:
   - "/2017/06/09/webapp-per-il-controllo-da-tastiera-wasd/"
   - "/blog/posts/2017-06-09-webapp-per-il-controllo-da-tastiera-wasd"
-author: "Pietro Chirio"
+author: "pietrochirio"
 description: "In questo tutorial vedremo come controllare un robot attraverso i tasti **wasd** per farlo muovere nelle 4 direzioni."
 path: "/hbr/webapp-per-il-controllo-da-tastiera-wasd/"
-image: "./images"
+image: "../hotblack.jpg"
 tags: []
 ---
 
