@@ -39,7 +39,7 @@ $$
 
 Dove $i$ e $v$ sono, rispettivamente, corrente che attraversa il diodo e tensione ai suoi capi, mentre $I_0$ (corrente di saturazione) e $V_T$ (tensione termica) sono parametri che caratterizzano il diodo stesso.
 
-Utilizzando i valori tipici per queste due costanti ($I_0 = 10^{-12}A$ e $V_T = $25.85mV\$), è possibile simulare un classico diodo di silicio in Python e Spyder. Lo script utilizzato è il seguente
+Utilizzando i valori tipici per queste due costanti ( $I_0 = 10^{-12}A$ e $V_T = 25.85mV$ ), è possibile simulare un classico diodo di silicio in Python e Spyder. Lo script utilizzato è il seguente
 
 ```python
 from pylab import *

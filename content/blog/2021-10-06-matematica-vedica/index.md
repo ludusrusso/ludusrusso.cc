@@ -48,9 +48,9 @@ Esempio più noto ma volevo partire da cose semplici:
 
 > per moltiplicare un numero per 5 basta agiugnere uno '0' alla fine e prenderne la metà.
 
-Ad esempio: $243 \cdot 5 = 243\mathbf{0} / 2 = 1215$, veloce e indolore (non lo testo nemmeno con la calcolatrice per quando ne sono sicuro).
+Ad esempio: $ 243 \cdot 5 = 243\mathbf{0} / 2 = 1215$, veloce e indolore (non lo testo nemmeno con la calcolatrice per quando ne sono sicuro).
 
-Ma perchè funziona? In realtà è semplicemente perchè moltiplciare per 5 è come moltiplcare per 10 e dividere per 2, dato che $ 5 = 10 / 2$ sappiamo che $n \cdot 5 = n  \cdot 10 / 2 = (n \cdot 10) / 2$.
+Ma perchè funziona? In realtà è semplicemente perchè moltiplciare per 5 è come moltiplcare per 10 e dividere per 2, dato che $5 = 10 / 2$ sappiamo che $n \cdot 5 = n  \cdot 10 / 2 = (n \cdot 10) / 2$.
 
 ### 3. Quadrati di numeri che finiscono con 5
 
