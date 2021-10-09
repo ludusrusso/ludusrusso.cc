@@ -1,3 +1,5 @@
+const remarkMath = require(`remark-math`)
+
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
@@ -31,12 +33,19 @@ module.exports = {
         extensions: [`.mdx`, `.md`],
         gatsbyRemarkPlugins: [
           {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: `ignore`,
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,
             },
           },
         ],
+        remarkPlugins: [remarkMath],
       },
     },
     {
