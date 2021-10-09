@@ -38,7 +38,9 @@ Partiamo dal più semplice:
 
 Questo credo sia banalissimo ma è alla base di tantissimi altri tricchetti: per motiplicare per 10 un numero (si parla di numeri interi) basta aggiungere uno "0" alla fine!
 
-$2345 \cdot 10 = 2345\mathbf{0}$
+$$
+2345 \cdot 10 = 2345\mathbf{0}
+$$
 
 ### 2. Moltiplicare un numero per 5
 
