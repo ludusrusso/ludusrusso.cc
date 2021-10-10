@@ -3,7 +3,7 @@ title: "Gestire le macchine virtuali senza sforzo con Vagrant"
 layout: "post"
 date: "2017-04-25T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Vagrant"
   - "Tutorial"
   - "Linux"

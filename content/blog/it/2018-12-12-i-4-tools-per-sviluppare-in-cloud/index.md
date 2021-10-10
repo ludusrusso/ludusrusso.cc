@@ -4,7 +4,7 @@ layout: "post"
 date: "2018-12-12T00:00:00.000Z"
 headerImage: false
 read-time: true
-tags:
+tag: 
   - "Docker"
   - "Kubernetes"
   - "Helm"

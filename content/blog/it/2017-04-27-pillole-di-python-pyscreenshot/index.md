@@ -3,7 +3,7 @@ title: "Pillole di Python: pyscreenshot"
 layout: "post"
 date: "2017-04-27T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Python"
   - "Pillole"
   - "Pyscreenshot"

@@ -3,7 +3,7 @@ title: "Un super grazie ai ragazzi del corso \"Laboratorio di Robotica\""
 layout: "post"
 date: "2017-09-11T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Corso"
   - "Robotica"
   - "Stampacchia"

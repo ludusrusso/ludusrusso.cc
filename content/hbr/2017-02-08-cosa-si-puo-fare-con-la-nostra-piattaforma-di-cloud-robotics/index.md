@@ -15,7 +15,7 @@ author: "ludusrusso"
 description: "Ecco alcune cosa che è possibile fare con la nostra piattaforma di Cloud Robotics"
 path: "/hbr/cosa-si-puo-fare-con-la-nostra-piattaforma-di-cloud-robotics/"
 image: "./Schermata_2017-02-08_alle_17.27.39_sl8vdb.png"
-tags: []
+
 ---
 
 Da quando abbiamo iniziato a mostrare in giro la nostra piattaforma di Cloud Robotics, sempre più gente mi fa questa domanda: **Ma quindi, cosa si può fare con la piattaforma di Cloud robotics?**.

@@ -176,7 +176,7 @@ Finally, we need to create a `DOCKER_IMAGE_NAME` variable to host the docker ima
 dockerize:
   stage: dockerize
   image: docker:stable
-  tags:
+  tag: 
     - docker
   services:
     - docker:dind
@@ -278,7 +278,7 @@ So, I'll set the `DOCKER_IMAGE_NAME` to `eu.gcr.io/gitlab-ci-cloud-run/simple-ap
 dockerize:
   stage: dockerize
   image: docker:stable
-  tags:
+  tag: 
     - docker
   services:
     - docker:dind
@@ -321,7 +321,7 @@ build:
 dockerize:
   stage: dockerize
   image: docker:stable
-  tags:
+  tag: 
     - docker
   services:
     - docker:dind

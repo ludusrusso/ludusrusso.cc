@@ -4,7 +4,7 @@ layout: "post"
 date: "2020-03-31T00:00:00.000Z"
 headerImage: false
 read-time: true
-tags:
+tag: 
   - "Gitlab"
   - "Kuberentes"
   - "CI/CD"

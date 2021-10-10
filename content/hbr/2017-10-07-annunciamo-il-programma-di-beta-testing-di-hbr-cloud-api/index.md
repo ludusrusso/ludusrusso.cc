@@ -15,7 +15,7 @@ lang: "it"
 description: ""
 path: "/hbr/annunciamo-il-programma-di-beta-testing-di-hbr-cloud-api/"
 image: "./betasting.png"
-tags: []
+
 ---
 
 ![Time Plot](./betasting.png)

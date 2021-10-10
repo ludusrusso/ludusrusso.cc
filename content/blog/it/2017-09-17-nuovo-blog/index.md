@@ -3,7 +3,7 @@ title: "Vi presento il mio nuovo Blog"
 layout: "post"
 date: "2017-09-17T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "news"
 category: "blog"
 author: "ludusrusso"

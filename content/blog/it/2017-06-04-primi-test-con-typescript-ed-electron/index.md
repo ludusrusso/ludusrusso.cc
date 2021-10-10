@@ -3,7 +3,7 @@ title: "Primi test con TypeScript ed Electron"
 layout: "post"
 date: "2017-06-04T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Electron"
   - "Typescript"
   - "Webapp"

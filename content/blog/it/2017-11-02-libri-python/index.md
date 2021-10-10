@@ -3,7 +3,7 @@ title: "4 (+1) Libri su Python (in Inglese) da cui imparare"
 layout: "post"
 date: "2017-11-02T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Python"
   - "Libri"
 category: "blog"

@@ -3,7 +3,7 @@ title: "Python Decorators"
 layout: "post"
 date: "2017-09-30T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Python"
 category: "blog"
 author: "ludusrusso"

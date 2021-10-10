@@ -3,7 +3,7 @@ title: "TDD con Flask e PyTest per lo sviluppo di API REST. Parte 1"
 layout: "post"
 date: "2017-10-04T00:00:00.000Z"
 headerImage: true
-tags:
+tag: 
   - "Python"
   - "Test Driver Development"
   - "Flask"

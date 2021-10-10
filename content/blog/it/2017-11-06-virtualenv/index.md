@@ -3,7 +3,7 @@ title: "Virtualenv: gestiamo meglio le dipendenze in Python"
 layout: "post"
 date: "2017-11-06T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Python"
   - "Virtualenv"
 category: "blog"

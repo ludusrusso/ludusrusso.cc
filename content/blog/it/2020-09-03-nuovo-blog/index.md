@@ -4,7 +4,7 @@ layout: "post"
 date: "2020-09-03T00:00:00.000Z"
 headerImage: true
 read-time: true
-tags:
+tag: 
   - "Blog"
 category: "blog"
 author: "ludusrusso"

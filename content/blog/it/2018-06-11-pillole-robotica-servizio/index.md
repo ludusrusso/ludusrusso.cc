@@ -3,7 +3,7 @@ title: "Robotica di Servizio in Pillole"
 layout: "post"
 date: "2018-06-11T00:00:00.000Z"
 headerImage: true
-tags:
+tag: 
   - "Robotica"
   - "Robotica di Servizio"
   - "Pillole di Robotica"

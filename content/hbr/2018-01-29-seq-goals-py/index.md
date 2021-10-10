@@ -12,7 +12,7 @@ author: "fiorellazza"
 description: "Inviare una sequenza di pose desiderate alla ROS Navigation Stack usando un nodo Python"
 path: "/hbr/inviare-una-sequenza-di-goals-alla-ros-navstack-usando-python/"
 image: "./cover_seq_ita.png"
-tags: []
+
 ---
 
 ![cover](./coverpost.png)

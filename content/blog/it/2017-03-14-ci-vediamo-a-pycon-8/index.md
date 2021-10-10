@@ -3,7 +3,7 @@ title: "Ci vediamo a PyCon 8"
 layout: "post"
 date: "2017-03-14T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Pycon"
 category: "blog"
 author: "ludusrusso"

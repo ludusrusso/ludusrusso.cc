@@ -3,7 +3,7 @@ title: "Pasqua al Liceo Stampacchia di Tricase: Corsi di Arduino e Stampa 3D"
 layout: "post"
 date: "2017-03-20T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Stampacchia"
   - "Corsi"
   - "Arduino"

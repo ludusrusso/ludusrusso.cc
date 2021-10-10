@@ -13,7 +13,7 @@ redirect_from:
 author: "sgabello"
 description: ""
 path: "/hbr/analizziamo-il-codice-del-primo-esempio-blink-led/"
-tags: []
+
 ---
 
 Analizziamo il codice di `dotbot_led_cnt`.

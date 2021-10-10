@@ -69,7 +69,7 @@ const components: MDXProviderProps["components"] = {
 export default ({ data }: { data: PostPageQuery }) => {
   const post = data.post
   const { date, title, description, image, author } = post.frontmatter
-  const headerImage = post.frontmatter.headerImage
+  const headerImage = image?.childImageSharp?.gatsbyImageData
     ? getImage(image.childImageSharp.gatsbyImageData)
     : undefined
 

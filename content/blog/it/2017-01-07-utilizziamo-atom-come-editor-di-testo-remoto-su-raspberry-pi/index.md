@@ -3,7 +3,7 @@ title: "Utilizziamo Atom come editor di testo remoto su Raspberry Pi"
 layout: "post"
 date: "2017-01-07T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Raspberry"
   - "Atom"
   - "Tutorial"

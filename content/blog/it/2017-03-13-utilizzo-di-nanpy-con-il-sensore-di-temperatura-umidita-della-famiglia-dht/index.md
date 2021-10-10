@@ -3,7 +3,7 @@ title: "Utilizzo di Nanpy con il sensore di temperatura/umidità della famiglia 
 layout: "post"
 date: "2017-03-13T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Dht"
   - "Nanpy"
   - "Python"

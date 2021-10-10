@@ -14,7 +14,7 @@ redirect_from:
 author: "ludusrusso"
 description: ""
 path: "/hbr/rilascio-hbrain-v052/"
-tags: []
+
 ---
 
 Con piacere annunciamo il rilascio di una nuova versione del sistema HBRain: la v0.5.2.

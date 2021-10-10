@@ -3,7 +3,7 @@ title: "Un laboratorio di Fisica con Python e Arduino - Circuito RC v2"
 layout: "post"
 date: "2017-02-21T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Fisica"
   - "Arduino"
   - "Python"

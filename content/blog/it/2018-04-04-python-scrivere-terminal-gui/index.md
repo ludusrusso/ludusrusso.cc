@@ -4,7 +4,7 @@ layout: "post"
 date: "2018-04-04T00:00:00.000Z"
 headerImage: true
 read-time: true
-tags:
+tag: 
   - "Python"
   - "Asciimatics"
   - "Terminal UI"

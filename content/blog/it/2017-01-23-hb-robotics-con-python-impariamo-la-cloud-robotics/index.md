@@ -3,7 +3,7 @@ title: "HB Robotics: con Python impariamo la Cloud Robotics"
 layout: "post"
 date: "2017-01-23T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Hbrobotics"
   - "Robotics"
   - "Ros"

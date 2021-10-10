@@ -4,7 +4,7 @@ layout: "post"
 date: "2020-03-31T00:00:00.000Z"
 headerImage: true
 read-time: true
-tags:
+tag: 
   - "Angular"
   - "Firebase"
 category: "blog"

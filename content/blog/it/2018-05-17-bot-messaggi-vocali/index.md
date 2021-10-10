@@ -3,7 +3,7 @@ title: "I chatbot possono Parlare? Sviluppiamo un bot telegram che manda messagg
 layout: "post"
 date: "2018-05-17T00:00:00.000Z"
 headerImage: true
-tags:
+tag: 
   - "Python"
   - "gtts"
   - "text to speech"

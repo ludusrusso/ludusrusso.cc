@@ -3,7 +3,7 @@ title: "Da Ph.D. ad Imprenditori. Ecco la storia di HotBlack Robotics"
 layout: "post"
 date: "2017-11-06T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "HotBlack Robotics"
   - "Robotica"
 projects: true

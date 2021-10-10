@@ -3,7 +3,7 @@ title: "Come vengono scoperti gli Esopianeti? Un semplice esperimento con Arduin
 layout: "post"
 date: "2017-03-26T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Fisica"
   - "Arduino"
   - "Python"

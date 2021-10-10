@@ -3,7 +3,7 @@ title: "Corso Arduino al Liceo Stampacchia - Grazie a tutti"
 layout: "post"
 date: "2017-04-15T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Stampacchia"
   - "Corso"
   - "Arduino"

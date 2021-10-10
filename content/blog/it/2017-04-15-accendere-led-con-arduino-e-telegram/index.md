@@ -3,7 +3,7 @@ title: "Accendere led con Arduino e Telegram"
 layout: "post"
 date: "2017-04-15T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Stampacchia"
   - "Arduino"
   - "Telegram"

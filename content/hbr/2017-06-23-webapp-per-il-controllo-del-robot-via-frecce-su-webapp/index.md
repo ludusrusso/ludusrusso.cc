@@ -11,7 +11,7 @@ redirect_from:
 author: "ruslan"
 description: ""
 path: "/hbr/webapp-per-il-controllo-del-robot-via-frecce-su-webapp/"
-tags: []
+
 ---
 
 ![enter image description here](./7GYgCAW.png)

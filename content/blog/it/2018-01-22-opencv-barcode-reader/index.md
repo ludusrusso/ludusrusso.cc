@@ -3,7 +3,7 @@ title: "Leggere i codici a barre con OpenCV e zbar in Python"
 layout: "post"
 date: "2018-01-22T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Python"
   - "Barcode"
   - "OpenCV"

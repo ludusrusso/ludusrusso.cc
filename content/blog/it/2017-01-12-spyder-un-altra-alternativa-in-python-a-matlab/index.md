@@ -3,7 +3,7 @@ title: "Spyder, un'altra alternativa in Python a Matlab"
 layout: "post"
 date: "2017-01-12T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Spyder"
   - "Python"
   - "Scientific"

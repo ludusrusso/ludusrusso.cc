@@ -12,7 +12,7 @@ author: "ludusrusso"
 description: ""
 lang: "it"
 path: "/hbr/il-fondamento-della-piattaforma-di-cloud-robotics-robotics-operating-system/"
-tags: []
+
 image: "../hotblack.jpg"
 ---
 

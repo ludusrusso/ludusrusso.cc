@@ -9,7 +9,7 @@ author: "sgabello"
 description: "Come usare il braccio robotico con Robot Operating System"
 path: "/hbr/usare-il-braccio-robotico-dobot-con-ros/"
 image: "./rosdobot.jpg"
-tags: []
+
 ---
 
 Ciao! In questo (primo) tutorial vi spiegherò come interfacciare ROS con Dobot e scrivere una semplice applicazione per disegnare. Un grazie speciale va all'azienda [Alumotion](http://www.alumotion.eu/), distributore italiano di Dobot, che ci ha donato il robot per progetti di ricerca e sviluppo su ROS (no no non li ho assolutamente messo pressione data la mia passione per la fabbricazione digitale :P ).

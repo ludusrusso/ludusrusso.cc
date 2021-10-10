@@ -15,7 +15,7 @@ redirect_from:
 author: "ludusrusso"
 description: ""
 path: "/hbr/installare-nuove-librerie-sul-hbrain-temporaneamente/"
-tags: []
+
 ---
 
 Un breve post per informarci su come installare nuove librerie Python sul robot utilizzabili dalla nostra interfaccia grafica.

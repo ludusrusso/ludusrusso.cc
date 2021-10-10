@@ -3,7 +3,7 @@ title: "Breve Introduzione all'utilizzo di Spyder per il Plot dei dati a livello
 layout: "post"
 date: "2017-04-06T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Fisica"
   - "Spyder"
   - "Plot"

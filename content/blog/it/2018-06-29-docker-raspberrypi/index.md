@@ -3,7 +3,7 @@ title: "Buildare e usare container Docker per Raspberry Pi"
 layout: "post"
 date: "2018-06-29T00:00:00.000Z"
 headerImage: true
-tags:
+tag: 
   - "Docker"
   - "Embedded Linux"
   - "Raspberry"

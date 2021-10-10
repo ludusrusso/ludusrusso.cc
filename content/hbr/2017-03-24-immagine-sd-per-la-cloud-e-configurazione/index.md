@@ -15,7 +15,7 @@ redirect_from:
 author: "sgabello"
 description: ""
 path: "/hbr/immagine-sd-per-la-cloud-e-configurazione/"
-tags: []
+
 ---
 
 ## Immagine SD

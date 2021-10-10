@@ -3,7 +3,7 @@ title: "PARLOMA"
 layout: "post"
 date: "2017-10-31T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "PARLOMA"
 projects: true
 author: "ludusrusso"

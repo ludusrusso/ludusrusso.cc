@@ -3,7 +3,7 @@ title: "Implementiamo un bot Telegram con Python - I Comandi"
 layout: "post"
 date: "2017-10-29T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Python"
   - "Tutorial"
   - "Telegram"

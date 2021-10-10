@@ -3,7 +3,7 @@ title: "Simuliamo il moto parabolico in Python e Spyder"
 layout: "post"
 date: "2017-01-13T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Fisica"
   - "Python"
   - "Scientific"

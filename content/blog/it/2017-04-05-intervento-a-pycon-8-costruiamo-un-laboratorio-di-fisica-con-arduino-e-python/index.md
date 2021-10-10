@@ -3,7 +3,7 @@ title: "Intervento a Pycon 8 - Costruiamo un laboratorio di fisica con Arduino e
 layout: "post"
 date: "2017-04-05T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Pycon"
   - "Arduino"
   - "Python"

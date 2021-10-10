@@ -3,7 +3,7 @@ title: "Gestire l'autenticazione in Flask con flask-jwt-extended"
 layout: "post"
 date: "2017-06-12T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Jwt"
   - "Flask"
   - "Restful"

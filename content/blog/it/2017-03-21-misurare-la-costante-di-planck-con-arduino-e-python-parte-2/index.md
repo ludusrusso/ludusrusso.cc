@@ -3,7 +3,7 @@ title: "Misurare la costante di Planck con Arduino e Python - Parte 2"
 layout: "post"
 date: "2017-03-21T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Tutorial"
   - "Arduino"
   - "Fisica"

@@ -3,7 +3,7 @@ title: "Sviluppiamo un'app in Electron per controllare la scheda Arduino - parte
 layout: "post"
 date: "2017-06-26T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Typescript"
   - "Electron"
   - "Arduino"

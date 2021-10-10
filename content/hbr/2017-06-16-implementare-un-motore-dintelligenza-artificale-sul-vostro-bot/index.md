@@ -14,7 +14,7 @@ author: "ruslan"
 description: ""
 path: "/hbr/implementare-un-motore-dintelligenza-artificale-sul-vostro-bot/"
 image: "./1iDEl1P.jpg"
-tags: []
+
 ---
 
 **In questo tutorial vedremo come implementare l'intelligenza artificiale sul proprio dotbot.**

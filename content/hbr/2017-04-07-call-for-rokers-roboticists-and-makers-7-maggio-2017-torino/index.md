@@ -13,7 +13,7 @@ redirect_from:
 author: "sgabello"
 description: ""
 path: "/hbr/call-for-rokers-roboticists-and-makers-7-maggio-2017-torino/"
-tags: []
+
 ---
 
 ![cloud robotics event ](./https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F30171570%2F88322724341%2F1%2Foriginal.jpg)

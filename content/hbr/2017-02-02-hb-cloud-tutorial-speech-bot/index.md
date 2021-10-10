@@ -16,7 +16,7 @@ author: "sgabello"
 description: 'Le basi per costruire un "dialogo" con il vostro robot sfruttando le funzionalità di sintesi e riconoscimento vocale.'
 path: "/hbr/hb-cloud-tutorial-speech-bot-come-far-parlare-il-vostro-robot/"
 image: "./talking-robot-cartoon-38038488.jpg"
-tags: []
+
 ---
 
 Un'applicazione cloud interessante e molto divertente è far parlare il vostro robot!

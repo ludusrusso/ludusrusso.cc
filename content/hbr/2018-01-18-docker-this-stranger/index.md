@@ -10,7 +10,7 @@ author: "fiorellazza"
 description: "Perchè utilizzare Docker e la mia esperienza"
 path: "/hbr/docker-questo-sconosciuto/"
 image: "./docker-facebook.png"
-tags: []
+
 ---
 
 ![docker logo](./docker-facebook.png)

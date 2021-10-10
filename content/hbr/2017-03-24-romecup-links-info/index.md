@@ -13,7 +13,7 @@ redirect_from:
 author: "sgabello"
 description: ""
 path: "/hbr/romecup-links-and-info/"
-tags: []
+
 ---
 
 Benvenuto sul nostro sito Hotblack Robotics!

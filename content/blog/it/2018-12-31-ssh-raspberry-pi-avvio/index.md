@@ -4,7 +4,7 @@ layout: "post"
 date: "2018-12-31T00:00:00.000Z"
 headerImage: true
 read-time: true
-tags:
+tag: 
   - "Raspberry"
   - "SSH"
 category: "blog"

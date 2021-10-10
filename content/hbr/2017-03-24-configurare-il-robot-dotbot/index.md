@@ -14,7 +14,7 @@ redirect_from:
 author: "sgabello"
 description: ""
 path: "/hbr/configurare-il-robot-dotbot/"
-tags: []
+
 ---
 
 ## Getting started

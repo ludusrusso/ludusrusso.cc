@@ -3,7 +3,7 @@ title: "Un laboratorio di Fisica con Arduino e Python"
 layout: "post"
 date: "2017-01-04T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Arduino"
   - "Python"
   - "Didattica"

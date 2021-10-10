@@ -3,7 +3,7 @@ title: "Scriviamo un Blog in Python e Flask"
 layout: "post"
 date: "2016-12-27T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Flask"
   - "Python"
 category: "blog"

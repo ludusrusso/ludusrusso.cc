@@ -3,7 +3,7 @@ title: "Canopy: una Pythonica alternativa a Matlab"
 layout: "post"
 date: "2017-01-09T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Python"
   - "Canopy"
   - "Tutorial"

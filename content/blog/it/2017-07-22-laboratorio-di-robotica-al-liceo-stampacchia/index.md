@@ -3,7 +3,7 @@ title: "Laboratorio di Robotica al Liceo Stampacchia"
 layout: "post"
 date: "2017-07-22T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Corso"
   - "Stampacchia"
 category: "blog"

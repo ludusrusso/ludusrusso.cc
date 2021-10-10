@@ -10,7 +10,7 @@ author: "sgabello"
 description: ""
 lang: "it"
 path: "/hbr/come-creare-una-semplice-web-app-per-interagire-con-il-vostro-robot/"
-tags: []
+
 image: "./Schermata_2017-02-20_alle_18.36.52_txfrza.png"
 ---
 

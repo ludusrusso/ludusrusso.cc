@@ -19,3 +19,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+exports.createPages = async ({ actions, graphql }) => {
+  const { data } = graphql(`
+    query MyQuery {
+      allMdx {
+        distinct(field: frontmatter___tag)
+      }
+    }
+  `)
+}

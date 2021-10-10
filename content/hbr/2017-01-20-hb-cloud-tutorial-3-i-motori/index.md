@@ -18,7 +18,7 @@ author: "ludusrusso"
 description: "I Motori sono una delle parti essenziali dei robot. In questo tutorial, vederemo come è possibile in modo semplice ed intuitivo implementare un programma in Python che controlla i motori in base a comandi inviati via Wifi al Robot."
 path: "/hbr/hb-cloud-tutorial-3-i-motori/"
 image: "./IMG_20170120_172801_ufb9qy.jpg"
-tags: []
+
 ---
 
 I Motori sono una delle parti essenziali dei robot. In questo tutorial, vedremo come è possibile in modo semplice ed intuitivo implementare un programma in Python che controlla i motori in base a comandi inviati via Wifi al Robot.

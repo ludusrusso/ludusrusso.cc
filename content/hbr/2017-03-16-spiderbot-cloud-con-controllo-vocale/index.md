@@ -11,7 +11,7 @@ redirect_from:
 author: "sgabello"
 description: ""
 path: "/hbr/spiderbot-cloud-con-controllo-vocale/"
-tags: []
+
 ---
 
 ## SpiderBot Cloud con controllo vocale!

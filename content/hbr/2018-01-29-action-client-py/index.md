@@ -12,7 +12,7 @@ author: "fiorellazza"
 description: "Inviare un goal all ROS navigation stack utilizzando un nodo Python"
 path: "/hbr/inviare-goals-alla-navigation-stack-versione-nodo-ros-python/"
 image: "./cover.png"
-tags: []
+
 ---
 
 Ehilà!

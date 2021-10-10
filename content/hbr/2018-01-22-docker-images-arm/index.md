@@ -13,7 +13,7 @@ starred: true
 description: "Buildare Immagini Docker per host ARM su Intel"
 path: "/hbr/come-compilare-immagini-docker-per-arm-su-host-intel/"
 image: "./Processor_ARM_anteprima.png"
-tags: []
+
 ---
 
 ![docker_arm_intel](./Processor_ARM.png)

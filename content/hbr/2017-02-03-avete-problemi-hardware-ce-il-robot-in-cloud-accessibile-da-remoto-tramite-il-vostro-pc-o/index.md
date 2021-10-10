@@ -16,7 +16,7 @@ author: "sgabello"
 description: "Non avete un robot? C'è il robot in cloud accessibile da remoto tramite il vostro PC o cellulare"
 path: "/hbr/non-avete-un-robot-ce-il-robot-in-cloud-accessibile-da-remoto-tramite-il-vostro-pc-o-da-cellulare/"
 image: "./istanza_cloud_1_tdt5ho.jpg"
-tags: []
+
 ---
 
 Molti di voi vorrebbero iniziare subito a programmare in ROS tramite la piattaforma cloud ma sono bloccati (purtroppo) da rognosi problemi hardware. Probabilmente la scheda motori non funziona correttamente o state aspettando ancora il Raspberry Pi o un componente da qualche fornitore.

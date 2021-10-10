@@ -3,7 +3,7 @@ title: "Parliamo come GMaps: come creare file audio con gtts (Google Text to Spe
 layout: "post"
 date: "2018-04-06T00:00:00.000Z"
 headerImage: true
-tags:
+tag: 
   - "Python"
   - "gtts"
   - "text to speech"

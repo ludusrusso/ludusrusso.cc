@@ -15,7 +15,7 @@ lang: "it"
 description: "Sono disponibili online i video tutorial del corso di ROS partito dalla community Rokers"
 path: "/hbr/video-corso-ros-rokers-completati-i-video-di-introduzione/"
 image: "./main.png"
-tags: []
+
 ---
 
 Ciao a tutti,

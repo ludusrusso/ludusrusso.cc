@@ -3,7 +3,7 @@ title: "Un Video Corso di ROS"
 layout: "post"
 date: "2017-11-24T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "ROS"
   - "YouTube"
 category: "blog"

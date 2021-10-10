@@ -3,7 +3,7 @@ title: "Cosa è il Test Driven Development (TDD) e perchè lo utilizzo?"
 layout: "post"
 date: "2017-10-03T00:00:00.000Z"
 headerImage: true
-tags:
+tag: 
   - "Python"
   - "Test Driver Development"
   - "Flask"

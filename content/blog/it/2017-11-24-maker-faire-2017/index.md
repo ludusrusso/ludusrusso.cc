@@ -3,7 +3,7 @@ title: "Maker Faire 2017"
 layout: "post"
 date: "2017-11-24T00:00:00.000Z"
 headerImage: false
-tags:
+tag: 
   - "Maker Faire"
   - "Rokers"
   - "HotBlack Robotics"

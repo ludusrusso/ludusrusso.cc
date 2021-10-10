@@ -15,7 +15,7 @@ author: "pietrochirio"
 description: "In questo tutorial vedremo come controllare un robot attraverso i tasti **wasd** per farlo muovere nelle 4 direzioni."
 path: "/hbr/webapp-per-il-controllo-da-tastiera-wasd/"
 image: "../hotblack.jpg"
-tags: []
+
 ---
 
 In questo tutorial vedremo come controllare un robot attraverso i tasti **wasd** per farlo muovere nelle 4 direzioni. In particolare vedremo:

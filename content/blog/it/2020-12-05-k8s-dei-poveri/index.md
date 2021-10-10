@@ -4,7 +4,7 @@ layout: "post"
 date: "2020-12-05T00:00:00.000Z"
 headerImage: false
 read-time: true
-tags:
+tag: 
   - "Blog"
   - "kubernetes"
 category: "blog"

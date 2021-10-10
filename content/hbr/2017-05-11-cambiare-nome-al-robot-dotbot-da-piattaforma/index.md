@@ -15,7 +15,7 @@ author: "ludusrusso"
 description: ""
 path: "/hbr/cambiare-nome-al-robot-dotbot-da-piattaforma/"
 image: "./change.png"
-tags: []
+
 ---
 
 Questo brevissimo post è un tutorial che spiega come cambiare nome al robot usando la piattaforma.

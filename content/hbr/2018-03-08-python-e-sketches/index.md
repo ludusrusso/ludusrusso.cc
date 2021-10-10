@@ -10,7 +10,7 @@ author: "fiorellazza"
 description: "Sintassi base di Python e sketch HBR"
 path: "/hbr/python-e-sketch-hbr/"
 image: "./py.png"
-tags: []
+
 ---
 
 Questo post serve a richiamare qualche costrutto base del linguaggio Python ed evidenziarne la sintassi che lo differenzia da altri linguaggi di programmazione. Procederò poi a descrivere quello che troverete nell'editor online della Piattaforma Cloud HBR e che vi sarà utile ricordare per evitare errori.

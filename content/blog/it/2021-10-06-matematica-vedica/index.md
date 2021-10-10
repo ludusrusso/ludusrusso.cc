@@ -4,7 +4,7 @@ layout: "post"
 date: "2021-10-05T00:00:00.000Z"
 headerImage: true
 read-time: true
-tags:
+tag: 
   - "Blog"
   - "Math"
 category: "blog"

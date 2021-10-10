@@ -18,7 +18,7 @@ lang: "it"
 description: "Un breve tutorial su come utilizzare ROS sul Raspberry Pi"
 path: "/hbr/installiamo-ros-su-raspberry-pi/"
 image: "./FPNU31FHBNXVG6G.jpg"
-tags: []
+
 ---
 
 ![ROS+Raspberry Logo](./FPNU31FHBNXVG6G.jpg)

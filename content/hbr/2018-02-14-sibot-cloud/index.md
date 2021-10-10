@@ -13,7 +13,7 @@ author: "fiorellazza"
 description: "Come controllare il manipolatore siBOT utilizzando la piattaforma HBR"
 path: "/hbr/controllare-sibot-dalla-piattaforma-hbr/"
 image: "./cover.png"
-tags: []
+
 ---
 
 In questo tutorial vedremo come collegare il manipolatore antropomorfo, siBOT, alla piattaforma HBR.

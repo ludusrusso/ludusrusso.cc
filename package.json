@@ -44,6 +44,7 @@
     "@graphql-codegen/typescript": "1.22.0",
     "@graphql-codegen/typescript-operations": "^1.17.16",
     "@tailwindcss/typography": "^0.4.0",
+    "@types/dateformat": "^3.0.1",
     "@types/mdx-js__react": "^1.5.3",
     "@types/react-helmet": "^6.1.0",
     "@types/react-youtube": "^7.6.2",
