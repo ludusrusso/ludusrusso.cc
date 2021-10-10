@@ -48,7 +48,7 @@ Esempio più noto ma volevo partire da cose semplici:
 
 > per moltiplicare un numero per 5 basta agiugnere uno '0' alla fine e prenderne la metà.
 
-Ad esempio: $ 243 \cdot 5 = 243\mathbf{0} / 2 = 1215$, veloce e indolore (non lo testo nemmeno con la calcolatrice per quando ne sono sicuro).
+Ad esempio: $243 \cdot 5 = 243\mathbf{0} / 2 = 1215$, veloce e indolore (non lo testo nemmeno con la calcolatrice per quando ne sono sicuro).
 
 Ma perchè funziona? In realtà è semplicemente perchè moltiplciare per 5 è come moltiplcare per 10 e dividere per 2, dato che $5 = 10 / 2$ sappiamo che $n \cdot 5 = n  \cdot 10 / 2 = (n \cdot 10) / 2$.
 
@@ -74,7 +74,13 @@ Da qui è facilissimo fare a meno
 
 Ma perchè funziona? Ogni numero che finisce per 5 è scrivibile nella forma $10n \cdot 5$, proviamo a calcolarne il quadrato:
 
-$(10n + 5) \cdot (10n + 5) = 100n^2 + 25 + 2 \cdot 5 \cdot 10n = 100n\cdot n + 25 + 100n = 100 n \cdot (n+1) + 25$.
+$$
+\begin{aligned}
+  (10n + 5) \cdot (10n + 5)  &= 100n^2 + 25 + 2 \cdot 5 \cdot 10n \\
+  &= 100n\cdot n + 25 + 100n \\
+  &= 100 n \cdot (n+1) + 25 \\
+\end{aligned}
+$$
 
 Da qui è facile vedere la regola: abbiamo la somma di 25 e di $n(n+1)$ moltiplicato per 100. Ma il moltiplicare per 100 $n(n+1)$ non è altro che metterci due zeri davanti, e il sommare 25 equivale a prendere $n(n+1)$ e metterci 25 davanti!
 
@@ -103,16 +109,48 @@ Questo è parente del precedente, anche se essendo numeri visimanete semplici ma
 4. A sto punto basta mettere in sequenza i due risultati, mettendo degli zero al centro sapendo che il numero finale deve avere 9 cifre (o in generare un numero di cifre pari al doppio di quelle due numeri di partenza meno). Quindi 10027 - 00 - 92
 5. $10004 \cdot 10023 = 100270092$
 
-Per dimostrare perchè funziona dobbiamo ricorarci che un numero vicino ad una potenza di 10 può essere scritto come $10^k + n$, con n piccolo e intero.
+Per dimostrare perchè funziona dobbiamo ricorarci che un numero $N$ vicino ad una potenza di 10 può essere scritto come $N = 10^k + n$, con n piccolo e intero.
 
-Quindi possiamo scrivere la moltiplicazione come: $(10^k + n) \cdot (10^k + m)$ che possiamo svolegere:
+Quindi possiamo scrivere la moltiplicazione come: 
 
-$(10^k + n) \cdot (10^k + m) = 10^{2k} + 10^kn + 10^km + n\cdot m = 10^{2k} + 10^k (n \cdot m) + (n + m)$
+$$
+N \cdot M = (10^k + n) \cdot (10^k + m)
+$$
 
-Da qui ci siamo quasi. La regola numero (3) è visibilissima nell'ultimo addendo $(n+m)$ mentre la regola numero 2 non è ancora chiara. Per farla venire fuori basta riscrivere la prima parte del risultato del prodotto $10^{2k} + 10^k (n \cdot m)$ mettendo in evidenza un $10^k$.
+che possiamo svolegere:
 
-$10^{2k} + 10^k (n \cdot m) = 10^k ((10^k + n) + m)$, e notiamo subito che il $10^k + n$ è il numero originale.
+
+$$
+\begin{aligned}
+  (10^k + n) \cdot (10^k + m) &= 10^{2k} + 10^kn + 10^km + n\cdot m \\
+                              &= 10^{2k} + 10^k (n + m) + (n \cdot m) \\
+\end{aligned}
+$$
+
+
+Da qui ci siamo quasi. La regola numero (3) è visibilissima nell'ultimo addendo $(n \cdot m)$ mentre la regola numero 2 non è ancora chiara. Per farla venire fuori basta riscrivere la prima parte del risultato del prodotto $10^{2k} + 10^k (n + m)$ mettendo in evidenza un $10^k$.
+
+$$
+\begin{aligned}
+10^{2k} + 10^k (n + m) &= 10^k ((10^k + n) + m) \\
+                        &= 10^k (N + m)
+\end{aligned}
+$$ 
+
+e notiamo subito che il $10^k + n$ è il numero originale $N$.
+
+Da qui, possiamo quindi scrivere il conto completo:
+
+$$
+\begin{matrix}
+  N \cdot M = 10^k (N + m) + (n \cdot m) \\
+  N = 10^k + n \\
+  M = 10^k + m \\
+\end{matrix}
+$$
+
 
 ## Conclusioni
 
 Oggi mi sono divertito a raccontarvi pochissimi trucchi di matematica vedica che conoscevo al liceo, ovviamente ce ne sono tantissimi altri che forse racconterò nei prossimi post. Ma se vi interessa vi suggerisco [questo sito](http://mathlearners.com/) da cui poter approfondire o di cercare su internet essendoci tantissimo materiale sull'argomento. Un grazie alla mia amica Silvia per avermi ispirato a scrivere questo articolo!
+
