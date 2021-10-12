@@ -10,6 +10,7 @@ export const postPreview = graphql`
     frontmatter {
       lang
       title
+      headerImage
       author {
         id
         name

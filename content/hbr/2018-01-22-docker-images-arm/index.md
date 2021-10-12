@@ -9,7 +9,7 @@ tag:
   - "ARM"
   - "qemu"
 author: "fiorellazza"
-starred: true
+starred: false
 description: "Buildare Immagini Docker per host ARM su Intel"
 path: "/hbr/come-compilare-immagini-docker-per-arm-su-host-intel/"
 image: "./Processor_ARM_anteprima.png"

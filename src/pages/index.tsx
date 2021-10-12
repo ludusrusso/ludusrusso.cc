@@ -11,13 +11,37 @@ const IndexPage: React.FC<{ data: IndexPageQuery }> = ({ data }) => {
     <Layout>
       <SEO title="ludusrusso" />
       <Hero />
+
       <div className="max-w-6xl m-auto">
+        <h2 className="text-4xl text-center mt-20 font-bold">
+          Latest posts on my <span className="text-green-600">blog</span>
+          <span role="img" aria-label="blog">
+            {" "}
+            📖
+          </span>
+        </h2>
         <ul className="mx-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {data.allMdx.nodes.map(post => {
+          {data.latest.nodes.map(post => {
             return <BlogPostPreview key={post.id} post={post} />
           })}
         </ul>
       </div>
+      {data.starred.nodes.length > 0 && (
+        <div className="max-w-6xl m-auto">
+          <h2 className="text-4xl text-center mt-20 font-bold">
+            Starred posts on my <span className="text-green-600">blog</span>
+            <span role="img" aria-label="blog">
+              {" "}
+              📖
+            </span>
+          </h2>
+          <ul className="mx-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {data.starred.nodes.map(post => {
+              return <BlogPostPreview key={post.id} post={post} />
+            })}
+          </ul>
+        </div>
+      )}
     </Layout>
   )
 }
@@ -26,7 +50,18 @@ export default IndexPage
 
 export const query = graphql`
   query IndexPage {
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+    latest: allMdx(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 12
+    ) {
+      nodes {
+        ...PostPreview
+      }
+    }
+    starred: allMdx(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { starred: { eq: true } } }
+    ) {
       nodes {
         ...PostPreview
       }
@@ -132,15 +167,6 @@ const Hero = () => {
             </OutboundLink>
           </div>
         </div>
-      </div>
-      <div className="mb-10">
-        <h2 className="text-4xl text-center mt-20 font-bold">
-          I have a <span className="text-green-600">blog</span>
-          <span role="img" aria-label="blog">
-            {" "}
-            📖
-          </span>
-        </h2>
       </div>
     </div>
   )

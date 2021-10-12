@@ -68,10 +68,18 @@ const components: MDXProviderProps["components"] = {
 
 export default ({ data }: { data: PostPageQuery }) => {
   const post = data.post
-  const { date, title, description, image, author } = post.frontmatter
-  const headerImage = image?.childImageSharp?.gatsbyImageData
-    ? getImage(image.childImageSharp.gatsbyImageData)
-    : undefined
+  const {
+    date,
+    title,
+    description,
+    image,
+    author,
+    headerImage,
+  } = post.frontmatter
+  const showImage =
+    headerImage && image?.childImageSharp?.gatsbyImageData
+      ? getImage(image.childImageSharp.gatsbyImageData)
+      : undefined
 
   return (
     <Layout>
@@ -86,7 +94,7 @@ export default ({ data }: { data: PostPageQuery }) => {
         <p className="font-semibold text-gray-500 mt-4 mb-10">
           {author?.name} &bull; {date} &bull; read in {post.timeToRead} mins
         </p>
-        {headerImage && <GatsbyImage image={headerImage} alt={title} />}
+        {showImage && <GatsbyImage image={showImage} alt={title} />}
         <div className="text-gray-800">
           <MDXProvider components={components}>
             <MDXRenderer>{post.body}</MDXRenderer>

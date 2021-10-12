@@ -20,12 +20,18 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
-exports.createPages = async ({ actions, graphql }) => {
-  const { data } = graphql(`
-    query MyQuery {
-      allMdx {
-        distinct(field: frontmatter___tag)
-      }
-    }
-  `)
-}
+// exports.createPages = async ({ actions, graphql }) => {
+//   const { data } = graphql(`
+//     query TagQuery {
+//       allMdx {
+//         tags: distinct(field: frontmatter___tag)
+//       }
+//     }
+//   `)
+
+//   actions.createPage({
+//     path: 'tags',
+//     component: 
+//   })
+
+// }
